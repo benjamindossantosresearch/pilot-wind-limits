@@ -16,9 +16,12 @@ identifiers:
     value: "10.5281/zenodo.23173344"
     description: "All versions"
   - type: doi
+    value: "10.5281/zenodo.23174546"
+    description: "Version 1.0.1, as submitted"
+  - type: doi
     value: "10.5281/zenodo.23173345"
     description: "Version 1.0.0"
-version: 1.0.0
+version: 1.0.1
 keywords:
   - general aviation
   - crosswind
