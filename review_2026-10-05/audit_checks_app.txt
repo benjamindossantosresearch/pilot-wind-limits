@@ -1,0 +1,8 @@
+Measurable piston approaches (observed): 5,205,992
+Wind source at the gate: onemin 4,035,606 (77.5%), metar 1,154,898 (22.2%), nan 15,488 (0.3%)
+  metar: gust spread median 0.0 kt, zero on 88.2%, max 35.0
+  onemin: gust spread median 2.0 kt, zero on 6.4%, max 30.0
+  nan: gust spread median 0.0 kt, zero on 100.0%, max 0.0
+Position source of the gate point: adsb_icao 4,743,894 (91.12%), adsr_icao 411,465 (7.90%), tisb_icao 50,123 (0.96%), mlat 362 (0.01%), adsb_icao_nt 117 (0.00%), adsb_other 28 (0.00%), adsr_other 3 (0.00%)
+Ownership, measurable: fleet 3,478,430 (66.82%), private 1,705,070 (32.75%), trust 20,546 (0.39%), unknown 1,946 (0.04%)
+Ownership, piston VMC (Q1b base): fleet 4,329,098 (66.20%), private 2,183,537 (33.39%), trust 24,533 (0.38%), unknown 2,664 (0.04%)
