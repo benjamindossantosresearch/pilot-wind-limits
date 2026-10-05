@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "Do Pilots Know Their Limits? Code, decision log, and aggregate results"
+type: software
+authors:
+  - family-names: "DosSantos"
+    given-names: "Benjamin"
+    name-suffix: "Jr."
+    orcid: "https://orcid.org/0009-0001-8509-5840"
+    affiliation: "Independent Researcher, New Bedford, Massachusetts"
+repository-code: "https://github.com/benjamindossantosresearch/pilot-wind-limits"
+license: MIT
+version: 1.0.0
+keywords:
+  - general aviation
+  - crosswind
+  - ADS-B
+  - stabilized approach

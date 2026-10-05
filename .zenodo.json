@@ -1,0 +1,16 @@
+{
+  "title": "Do Pilots Know Their Limits? Code, decision log, and aggregate results",
+  "upload_type": "software",
+  "description": "<p>Analysis code, the dated decision log, and aggregate results for the paper \"Do Pilots Know Their Limits? Comparing Revealed Wind Limits with Measured Approach Performance Using ADS-B\". The study estimates the crosswind at which general aviation pilots stop flying from public ADS-B data, counts approaches flown above the maximum demonstrated crosswind, and scores approaches against stabilized approach criteria at 300 ft, at 467 airports in the contiguous United States. No per-aircraft or per-approach data is included.</p><p>The code is released under the MIT License. The aggregate results are derived from ADSB.lol data and are released under the Open Database License 1.0 (see LICENSE-DATA.md).</p>",
+  "creators": [
+    {
+      "name": "DosSantos Jr., Benjamin",
+      "affiliation": "Independent Researcher, New Bedford, Massachusetts",
+      "orcid": "0009-0001-8509-5840"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": ["general aviation", "crosswind", "ADS-B", "stabilized approach", "personal minimums", "aviation safety"],
+  "notes": "Aggregate results and tables are derived from the ADSB.lol globe history archive and are licensed under the Open Database License 1.0 (odbl-1.0)."
+}
