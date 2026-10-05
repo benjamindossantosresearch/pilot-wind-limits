@@ -1,5 +1,7 @@
 # Do Pilots Know Their Limits?
 
+[![DOI](https://zenodo.org/badge/1406418904.svg)](https://doi.org/10.5281/zenodo.23173344)
+
 Code, the dated decision log, and aggregate results for the paper "Do Pilots Know Their Limits? Comparing Revealed Wind Limits with Measured Approach Performance Using ADS-B" by Benjamin DosSantos Jr. (manuscript, 2026).
 
 The study estimates the crosswind at which general aviation pilots stop flying (the revealed limit) from public ADS-B data, counts how often approaches are flown above the airplane's maximum demonstrated crosswind, and scores each approach against stabilized approach criteria at 300 ft. Methods were developed on seven New England airports (16 February 2023 to 30 September 2026) and then frozen and applied to 467 airports in the contiguous United States (1 October 2025 to 30 September 2026).
@@ -70,3 +72,5 @@ The code is released under the MIT License (`LICENSE`). The aggregate results an
 ## Citation
 
 DosSantos Jr., B., "Do Pilots Know Their Limits? Comparing Revealed Wind Limits with Measured Approach Performance Using ADS-B," manuscript, 2026.
+
+This repository: DosSantos Jr., B., "Do Pilots Know Their Limits? Code, decision log, and aggregate results," Zenodo, doi:10.5281/zenodo.23173344 (all versions). Version 1.0.0 is doi:10.5281/zenodo.23173345.

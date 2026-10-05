@@ -10,6 +10,14 @@ authors:
     affiliation: "Independent Researcher, New Bedford, Massachusetts"
 repository-code: "https://github.com/benjamindossantosresearch/pilot-wind-limits"
 license: MIT
+doi: "10.5281/zenodo.23173344"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23173344"
+    description: "All versions"
+  - type: doi
+    value: "10.5281/zenodo.23173345"
+    description: "Version 1.0.0"
 version: 1.0.0
 keywords:
   - general aviation
