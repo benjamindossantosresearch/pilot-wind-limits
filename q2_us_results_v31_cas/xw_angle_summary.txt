@@ -1,0 +1,23 @@
+X6 exploratory: crosswind strength against wind angle. Piston measurable approaches with wind: 5,190,504.
+Angle = atan2(crosswind, headwind) on the runway in use: 0 straight down the runway, 90 direct crosswind, above 90 quartering tailwind.
+
+1. Grid: share above 1 (above 2) for the flight path, above 1 for speed and turn to final
+  crosswind 5-9 kt, angle 0-30 deg: n=   92,817, total wind 14.0 kt median | flight path  49.6% (15.2%) | speed  54.6% | turn  34.7%
+  crosswind 5-9 kt, angle 30-60 deg: n=  487,006, total wind 10.0 kt median | flight path  48.7% (15.4%) | speed  44.1% | turn  36.2%
+  crosswind 5-9 kt, angle 60-90 deg: n=  313,915, total wind  7.0 kt median | flight path  49.8% (16.5%) | speed  37.8% | turn  38.8%
+  crosswind 5-9 kt, angle 90-180 deg: n=  140,691, total wind  7.0 kt median | flight path  52.1% (18.5%) | speed  37.1% | turn  42.7%
+
+  crosswind 10-14 kt, angle 0-30 deg: n=      478, total wind 23.0 kt median | flight path  54.4% (14.4%) | speed  64.6% | turn  35.9%
+  crosswind 10-14 kt, angle 30-60 deg: n=   34,997, total wind 15.0 kt median | flight path  51.1% (16.4%) | speed  54.0% | turn  38.8%
+  crosswind 10-14 kt, angle 60-90 deg: n=   47,323, total wind 12.0 kt median | flight path  52.3% (17.2%) | speed  45.2% | turn  41.6%
+  crosswind 10-14 kt, angle 90-180 deg: n=   13,723, total wind 12.0 kt median | flight path  54.9% (20.3%) | speed  43.7% | turn  45.9%
+
+  crosswind 15-19 kt, angle 0-30 deg: n=2 (too few)
+  crosswind 15-19 kt, angle 30-60 deg: n=      937, total wind 21.0 kt median | flight path  53.1% (16.3%) | speed  62.2% | turn  41.7%
+  crosswind 15-19 kt, angle 60-90 deg: n=    2,792, total wind 17.0 kt median | flight path  56.2% (20.7%) | speed  52.8% | turn  49.4%
+  crosswind 15-19 kt, angle 90-180 deg: n=      668, total wind 17.0 kt median | flight path  57.0% (22.6%) | speed  49.7% | turn  49.6%
+
+2. Variance added over the controls (within R squared x 1000), one wind description at a time
+  flight path above 1 (controls alone 62.60): crosswind (kt) 0.50, wind angle (deg) 1.04, total wind (kt) 0.05, crosswind + headwind (kt) 1.61, crosswind + angle 1.30
+  flight path above 2 (controls alone 43.73): crosswind (kt) 0.03, wind angle (deg) 1.42, total wind (kt) 0.81, crosswind + headwind (kt) 2.21, crosswind + angle 1.56
+  speed above 1 (controls alone 41.83): crosswind (kt) 0.70, wind angle (deg) 2.51, total wind (kt) 9.76, crosswind + headwind (kt) 10.56, crosswind + angle 6.36

@@ -1,0 +1,114 @@
+Exploratory analyses X1 to X4, US sample. Airports: 441, single-runway 109. Crosswind climate tertile cut points (share of VMC hours with 10 kt or more): 0.004, 0.018
+
+X1. Round-number line at 10 kt: arrivals over normal demand per 1 kt bin (95% CI)
+  mean best-runway crosswind, piston: 4: 0.97, 5: 0.92, 6: 0.87, 7: 0.80, 8: 0.72, 9: 0.64, 10: 0.57, 11: 0.48, 12: 0.42, 13: 0.36, 14: 0.27, 15: 0.27
+    drop per kt, 8 to 10 kt: 0.076; 10 to 12 kt: 0.073; difference -0.003 (95% CI -0.030 to +0.024)
+  mean best-runway crosswind, fleet: 4: 0.97, 5: 0.92, 6: 0.86, 7: 0.79, 8: 0.70, 9: 0.61, 10: 0.53, 11: 0.45, 12: 0.37, 13: 0.31, 14: 0.20, 15: 0.25
+    drop per kt, 8 to 10 kt: 0.083; 10 to 12 kt: 0.083; difference +0.000 (95% CI -0.034 to +0.033)
+  mean best-runway crosswind, private: 4: 0.96, 5: 0.92, 6: 0.88, 7: 0.82, 8: 0.75, 9: 0.68, 10: 0.63, 11: 0.54, 12: 0.51, 13: 0.43, 14: 0.38, 15: 0.30
+    drop per kt, 8 to 10 kt: 0.064; 10 to 12 kt: 0.059; difference -0.005 (95% CI -0.036 to +0.028)
+  mean wind speed, piston: 4: 1.09, 5: 1.08, 6: 1.07, 7: 1.05, 8: 1.02, 9: 1.00, 10: 0.97, 11: 0.92, 12: 0.87, 13: 0.81, 14: 0.73, 15: 0.66
+    drop per kt, 8 to 10 kt: 0.029; 10 to 12 kt: 0.048; difference +0.019 (95% CI +0.010 to +0.029)
+  mean wind speed, fleet: 4: 1.09, 5: 1.08, 6: 1.07, 7: 1.06, 8: 1.03, 9: 1.01, 10: 0.97, 11: 0.92, 12: 0.87, 13: 0.80, 14: 0.72, 15: 0.64
+    drop per kt, 8 to 10 kt: 0.028; 10 to 12 kt: 0.050; difference +0.022 (95% CI +0.010 to +0.034)
+  mean wind speed, private: 4: 1.09, 5: 1.07, 6: 1.06, 7: 1.04, 8: 1.02, 9: 0.99, 10: 0.96, 11: 0.91, 12: 0.87, 13: 0.81, 14: 0.73, 15: 0.69
+    drop per kt, 8 to 10 kt: 0.032; 10 to 12 kt: 0.046; difference +0.014 (95% CI +0.002 to +0.026)
+
+X2/X3. Revealed limits by runway layout and crosswind climate
+one runway, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.04, 4-6: 0.97, 6-8: 0.86, 8-10: 0.68, 10-12: 0.49, 12-14: 0.34, 14-16: 0.21, 16-18: 0.16, 18-20: 0.19, 20-22: 0.00, 22-24: 0.20
+  revealed limit 50%: 10.9 kt (95% CI 10.6 to 11.2)
+  revealed limit 75%: 8.2 kt (95% CI 8.0 to 8.4)
+one runway, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.04, 4-6: 0.98, 6-8: 0.85, 8-10: 0.66, 10-12: 0.45, 12-14: 0.27, 14-16: 0.16, 16-18: 0.10, 18-20: 0.08, 20-22: 0.00, 22-24: 0.00
+  revealed limit 50%: 10.5 kt (95% CI 10.2 to 10.8)
+  revealed limit 75%: 8.0 kt (95% CI 7.9 to 8.3)
+one runway, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.05, 2-4: 1.04, 4-6: 0.97, 6-8: 0.86, 8-10: 0.70, 10-12: 0.54, 12-14: 0.42, 14-16: 0.27, 16-18: 0.24, 18-20: 0.30, 20-22: 0.00, 22-24: 0.48
+  revealed limit 50%: 11.6 kt (95% CI 11.0 to 12.2)
+  revealed limit 75%: 8.4 kt (95% CI 8.2 to 8.7)
+more than one runway, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.94, 6-8: 0.84, 8-10: 0.69, 10-12: 0.56, 12-14: 0.43, 14-16: 0.29, 16-18: 0.17, 18-20: 0.17, 20-22: 0.23, 22-24: 0.16
+  revealed limit 50%: 11.9 kt (95% CI 11.6 to 12.3)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.4)
+more than one runway, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.94, 6-8: 0.83, 8-10: 0.67, 10-12: 0.52, 12-14: 0.38, 14-16: 0.23, 16-18: 0.12, 18-20: 0.14, 20-22: 0.19
+  revealed limit 50%: 11.3 kt (95% CI 10.9 to 11.6)
+  revealed limit 75%: 8.0 kt (95% CI 7.8 to 8.2)
+more than one runway, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.94, 6-8: 0.85, 8-10: 0.74, 10-12: 0.62, 12-14: 0.51, 14-16: 0.39, 16-18: 0.26, 18-20: 0.23, 20-22: 0.28, 22-24: 0.25
+  revealed limit 50%: 13.2 kt (95% CI 12.6 to 13.8)
+  revealed limit 75%: 8.8 kt (95% CI 8.5 to 9.1)
+crosswind climate low, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 0.99, 4-6: 0.92, 6-8: 0.83, 8-10: 0.69, 10-12: 0.47, 12-14: 0.39
+  revealed limit 50%: 10.7 kt (95% CI 10.3 to 11.7)
+  revealed limit 75%: 8.2 kt (95% CI 7.9 to 8.6)
+crosswind climate low, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 0.99, 4-6: 0.91, 6-8: 0.83, 8-10: 0.67, 10-12: 0.45, 12-14: 0.38
+  revealed limit 50%: 10.5 kt (95% CI 10.1 to 11.5)
+  revealed limit 75%: 8.0 kt (95% CI 7.7 to 8.4)
+crosswind climate low, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 1.00, 4-6: 0.92, 6-8: 0.85, 8-10: 0.71, 10-12: 0.49, 12-14: 0.41
+  revealed limit 50%: 10.9 kt (95% CI 10.4 to 12.1, not reached in 6% of resamples)
+  revealed limit 75%: 8.5 kt (95% CI 8.1 to 9.1)
+crosswind climate middle, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.83, 8-10: 0.67, 10-12: 0.50, 12-14: 0.39, 14-16: 0.29, 16-18: 0.21
+  revealed limit 50%: 11.0 kt (95% CI 10.6 to 11.8)
+  revealed limit 75%: 8.0 kt (95% CI 7.8 to 8.2)
+crosswind climate middle, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.82, 8-10: 0.65, 10-12: 0.49, 12-14: 0.38, 14-16: 0.23, 16-18: 0.12
+  revealed limit 50%: 10.9 kt (95% CI 10.4 to 11.6)
+  revealed limit 75%: 7.9 kt (95% CI 7.7 to 8.1)
+crosswind climate middle, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 1.02, 4-6: 0.94, 6-8: 0.83, 8-10: 0.69, 10-12: 0.52, 12-14: 0.41, 14-16: 0.39, 16-18: 0.35
+  revealed limit 50%: 11.3 kt (95% CI 10.8 to 12.3)
+  revealed limit 75%: 8.1 kt (95% CI 7.9 to 8.3)
+crosswind climate high, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.10, 2-4: 1.05, 4-6: 0.98, 6-8: 0.87, 8-10: 0.71, 10-12: 0.56, 12-14: 0.40, 14-16: 0.27, 16-18: 0.17, 18-20: 0.18, 20-22: 0.17, 22-24: 0.15
+  revealed limit 50%: 11.8 kt (95% CI 11.5 to 12.1)
+  revealed limit 75%: 8.5 kt (95% CI 8.3 to 8.7)
+crosswind climate high, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.11, 2-4: 1.05, 4-6: 0.97, 6-8: 0.86, 8-10: 0.67, 10-12: 0.51, 12-14: 0.34, 14-16: 0.21, 16-18: 0.11, 18-20: 0.12, 20-22: 0.16, 22-24: 0.05
+  revealed limit 50%: 11.1 kt (95% CI 10.8 to 11.4)
+  revealed limit 75%: 8.2 kt (95% CI 7.9 to 8.4)
+crosswind climate high, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.04, 4-6: 0.98, 6-8: 0.89, 8-10: 0.76, 10-12: 0.63, 12-14: 0.50, 14-16: 0.35, 16-18: 0.24, 18-20: 0.26, 20-22: 0.18, 22-24: 0.26
+  revealed limit 50%: 13.0 kt (95% CI 12.6 to 13.4)
+  revealed limit 75%: 9.2 kt (95% CI 8.9 to 9.5)
+
+X2/X3. Q2 wind effects (change in points against calm, airport-runway effects absorbed)
+  one runway, S_fp above 2 (base 17.8%, n=894,894): change in points against calm crosswind: 5 kt -0.1 (-0.4 to +0.3), 10 kt +0.0 (-0.7 to +0.8), 15 kt +2.4 (-0.3 to +5.1), 20 kt +4.1 (+0.3 to +7.8). Per 5 kt headwind -2.9 (-3.1 to -2.7), per 5 kt gust spread +0.4 (+0.1 to +0.7)
+  one runway, log S_fp per 5 kt crosswind: +1.8% (+1.2 to +2.3), n=894,894
+  one runway, S_spd above 2 (base 8.3%, n=894,894): change in points against calm crosswind: 5 kt -0.4 (-0.6 to -0.1), 10 kt +1.7 (+1.2 to +2.2), 15 kt +6.3 (+4.3 to +8.4), 20 kt +13.6 (+10.3 to +16.9). Per 5 kt headwind +2.5 (+2.3 to +2.7), per 5 kt gust spread -1.5 (-1.8 to -1.3)
+  one runway, log S_spd per 5 kt crosswind: +4.3% (+3.8 to +4.8), n=882,423
+  one runway turn to final, S_turn above 2 (base 6.1%, n=694,682): change in points against calm crosswind: 5 kt +0.0 (-0.2 to +0.3), 10 kt +0.6 (+0.1 to +1.1), 15 kt +2.3 (+0.3 to +4.3), 20 kt +2.1 (-0.8 to +5.1). Per 5 kt headwind -0.8 (-0.9 to -0.7), per 5 kt gust spread +0.1 (-0.1 to +0.3)
+  one runway turn to final, log S_turn per 5 kt crosswind: +0.6% (+0.3 to +1.0), n=694,682
+  more than one runway, S_fp above 2 (base 18.7%, n=4,397,507): change in points against calm crosswind: 5 kt +0.1 (-0.0 to +0.3), 10 kt +0.8 (+0.5 to +1.0), 15 kt +2.1 (+1.4 to +2.8), 20 kt +2.9 (+1.0 to +4.8). Per 5 kt headwind -2.1 (-2.2 to -2.0), per 5 kt gust spread +0.3 (+0.2 to +0.4)
+  more than one runway, log S_fp per 5 kt crosswind: +2.7% (+2.5 to +2.9), n=4,397,507
+  more than one runway, S_spd above 2 (base 10.7%, n=4,397,507): change in points against calm crosswind: 5 kt +0.0 (-0.1 to +0.2), 10 kt +1.9 (+1.7 to +2.0), 15 kt +6.7 (+5.9 to +7.4), 20 kt +14.5 (+12.8 to +16.2). Per 5 kt headwind +3.5 (+3.4 to +3.6), per 5 kt gust spread -2.1 (-2.2 to -1.9)
+  more than one runway, log S_spd per 5 kt crosswind: +4.1% (+3.9 to +4.3), n=4,342,235
+  more than one runway turn to final, S_turn above 2 (base 7.6%, n=2,969,249): change in points against calm crosswind: 5 kt +0.3 (+0.1 to +0.4), 10 kt +0.8 (+0.6 to +1.0), 15 kt +1.4 (+0.8 to +2.1), 20 kt +1.3 (-0.0 to +2.6). Per 5 kt headwind -0.7 (-0.8 to -0.7), per 5 kt gust spread +0.0 (-0.1 to +0.1)
+  more than one runway turn to final, log S_turn per 5 kt crosswind: +1.3% (+1.1 to +1.4), n=2,969,249
+  crosswind climate low, S_fp above 2 (base 17.5%, n=1,873,391): change in points against calm crosswind: 5 kt +0.2 (+0.0 to +0.5), 10 kt +0.4 (+0.0 to +0.8), 15 kt +0.8 (-0.7 to +2.3), 20 kt +3.0 (-3.2 to +9.2). Per 5 kt headwind -2.2 (-2.3 to -2.1), per 5 kt gust spread +0.3 (+0.1 to +0.5)
+  crosswind climate low, log S_fp per 5 kt crosswind: +2.3% (+2.0 to +2.7), n=1,873,391
+  crosswind climate low, S_spd above 2 (base 9.1%, n=1,873,391): change in points against calm crosswind: 5 kt -0.2 (-0.4 to -0.0), 10 kt +1.1 (+0.8 to +1.4), 15 kt +4.8 (+3.5 to +6.2), 20 kt +17.0 (+11.0 to +23.0). Per 5 kt headwind +2.9 (+2.7 to +3.0), per 5 kt gust spread -1.7 (-1.9 to -1.5)
+  crosswind climate low, log S_spd per 5 kt crosswind: +3.3% (+3.0 to +3.6), n=1,849,694
+  crosswind climate low turn to final, S_turn above 2 (base 7.1%, n=1,288,560): change in points against calm crosswind: 5 kt +0.2 (+0.0 to +0.4), 10 kt +0.4 (+0.0 to +0.8), 15 kt +2.5 (+0.9 to +4.1), 20 kt +1.2 (-5.4 to +7.8). Per 5 kt headwind -0.7 (-0.8 to -0.6), per 5 kt gust spread +0.1 (-0.1 to +0.2)
+  crosswind climate low turn to final, log S_turn per 5 kt crosswind: +0.6% (+0.3 to +0.9), n=1,288,560
+  crosswind climate middle, S_fp above 2 (base 18.6%, n=2,136,506): change in points against calm crosswind: 5 kt -0.1 (-0.3 to +0.1), 10 kt +0.7 (+0.4 to +1.1), 15 kt +3.4 (+2.3 to +4.5), 20 kt +3.0 (+0.9 to +5.1). Per 5 kt headwind -2.0 (-2.1 to -1.9), per 5 kt gust spread +0.2 (+0.0 to +0.4)
+  crosswind climate middle, log S_fp per 5 kt crosswind: +2.6% (+2.3 to +2.9), n=2,136,506
+  crosswind climate middle, S_spd above 2 (base 10.5%, n=2,136,506): change in points against calm crosswind: 5 kt -0.1 (-0.3 to +0.1), 10 kt +1.9 (+1.6 to +2.1), 15 kt +6.2 (+5.2 to +7.2), 20 kt +14.0 (+12.0 to +16.0). Per 5 kt headwind +3.4 (+3.3 to +3.6), per 5 kt gust spread -2.2 (-2.4 to -2.0)
+  crosswind climate middle, log S_spd per 5 kt crosswind: +4.1% (+3.8 to +4.4), n=2,108,061
+  crosswind climate middle turn to final, S_turn above 2 (base 7.5%, n=1,481,962): change in points against calm crosswind: 5 kt +0.1 (-0.0 to +0.3), 10 kt +0.9 (+0.6 to +1.2), 15 kt +1.6 (+0.5 to +2.6), 20 kt +1.0 (-0.4 to +2.4). Per 5 kt headwind -0.7 (-0.8 to -0.6), per 5 kt gust spread +0.1 (-0.1 to +0.2)
+  crosswind climate middle turn to final, log S_turn per 5 kt crosswind: +1.4% (+1.1 to +1.6), n=1,481,962
+  crosswind climate high, S_fp above 2 (base 19.9%, n=1,282,208): change in points against calm crosswind: 5 kt +0.2 (-0.1 to +0.5), 10 kt +0.9 (+0.5 to +1.4), 15 kt +1.2 (+0.2 to +2.2), 20 kt +5.5 (+2.7 to +8.3). Per 5 kt headwind -2.7 (-2.8 to -2.5), per 5 kt gust spread +0.6 (+0.4 to +0.8)
+  crosswind climate high, log S_fp per 5 kt crosswind: +2.7% (+2.3 to +3.0), n=1,282,208
+  crosswind climate high, S_spd above 2 (base 11.9%, n=1,282,208): change in points against calm crosswind: 5 kt +0.4 (+0.2 to +0.6), 10 kt +2.6 (+2.3 to +3.0), 15 kt +7.7 (+6.6 to +8.8), 20 kt +14.3 (+11.6 to +17.0). Per 5 kt headwind +3.8 (+3.6 to +4.0), per 5 kt gust spread -1.9 (-2.2 to -1.7)
+  crosswind climate high, log S_spd per 5 kt crosswind: +5.2% (+4.9 to +5.6), n=1,266,617
+  crosswind climate high turn to final, S_turn above 2 (base 7.2%, n=893,206): change in points against calm crosswind: 5 kt +0.4 (+0.1 to +0.6), 10 kt +0.9 (+0.6 to +1.2), 15 kt +1.0 (+0.1 to +1.9), 20 kt +3.0 (+0.1 to +5.9). Per 5 kt headwind -0.8 (-0.9 to -0.7), per 5 kt gust spread +0.0 (-0.2 to +0.2)
+  crosswind climate high turn to final, log S_turn per 5 kt crosswind: +1.5% (+1.2 to +1.7), n=893,206
+
+X4. Home-field exposure: 14,607 aircraft with a home field, 4,209,468 approaches; tertile cut points 0.004, 0.013
+  home exposure low, S_fp above 2 (base 17.7%, n=1,434,031): change in points against calm crosswind: 5 kt +0.2 (-0.0 to +0.5), 10 kt +0.3 (-0.2 to +0.8), 15 kt +0.5 (-1.2 to +2.3), 20 kt +2.2 (-1.9 to +6.3). Per 5 kt headwind -2.1 (-2.2 to -2.0), per 5 kt gust spread +0.2 (+0.0 to +0.5)
+  home exposure low, log S_fp per 5 kt crosswind: +2.1% (+1.7 to +2.5), n=1,434,031
+  home exposure low, S_spd above 2 (base 8.8%, n=1,434,031): change in points against calm crosswind: 5 kt -0.3 (-0.5 to -0.0), 10 kt +1.0 (+0.6 to +1.3), 15 kt +4.2 (+2.6 to +5.8), 20 kt +19.5 (+16.1 to +22.9). Per 5 kt headwind +3.0 (+2.8 to +3.1), per 5 kt gust spread -1.7 (-1.9 to -1.4)
+  home exposure low, log S_spd per 5 kt crosswind: +2.8% (+2.4 to +3.2), n=1,420,556
+  home exposure low turn to final, S_turn above 2 (base 7.1%, n=1,009,792): change in points against calm crosswind: 5 kt +0.3 (+0.1 to +0.5), 10 kt +0.5 (+0.1 to +0.9), 15 kt +2.0 (+0.3 to +3.8), 20 kt +0.4 (-1.5 to +2.2). Per 5 kt headwind -0.6 (-0.7 to -0.5), per 5 kt gust spread +0.0 (-0.2 to +0.2)
+  home exposure low turn to final, log S_turn per 5 kt crosswind: +0.8% (+0.5 to +1.1), n=1,009,792
+  home exposure middle, S_fp above 2 (base 17.3%, n=1,431,203): change in points against calm crosswind: 5 kt +0.2 (-0.1 to +0.4), 10 kt +1.5 (+1.1 to +1.9), 15 kt +3.2 (+1.8 to +4.6), 20 kt +3.7 (+1.2 to +6.1). Per 5 kt headwind -1.6 (-1.8 to -1.5), per 5 kt gust spread +0.2 (+0.0 to +0.4)
+  home exposure middle, log S_fp per 5 kt crosswind: +3.4% (+3.0 to +3.7), n=1,431,203
+  home exposure middle, S_spd above 2 (base 9.2%, n=1,431,203): change in points against calm crosswind: 5 kt -0.3 (-0.5 to -0.1), 10 kt +1.5 (+1.2 to +1.8), 15 kt +6.1 (+4.9 to +7.3), 20 kt +13.8 (+11.6 to +16.0). Per 5 kt headwind +3.2 (+3.0 to +3.4), per 5 kt gust spread -1.8 (-2.0 to -1.6)
+  home exposure middle, log S_spd per 5 kt crosswind: +4.0% (+3.7 to +4.4), n=1,413,893
+  home exposure middle turn to final, S_turn above 2 (base 6.9%, n=993,586): change in points against calm crosswind: 5 kt +0.1 (-0.1 to +0.3), 10 kt +1.2 (+0.9 to +1.6), 15 kt +1.4 (+0.1 to +2.8), 20 kt +1.4 (-0.7 to +3.4). Per 5 kt headwind -0.5 (-0.6 to -0.4), per 5 kt gust spread +0.1 (-0.1 to +0.2)
+  home exposure middle turn to final, log S_turn per 5 kt crosswind: +1.8% (+1.5 to +2.1), n=993,586
+  home exposure high, S_fp above 2 (base 20.6%, n=1,331,562): change in points against calm crosswind: 5 kt -0.0 (-0.3 to +0.3), 10 kt +0.7 (+0.3 to +1.1), 15 kt +1.6 (+0.5 to +2.7), 20 kt +7.8 (+3.7 to +11.9). Per 5 kt headwind -2.8 (-2.9 to -2.6), per 5 kt gust spread +0.5 (+0.3 to +0.8)
+  home exposure high, log S_fp per 5 kt crosswind: +2.2% (+1.9 to +2.6), n=1,331,562
+  home exposure high, S_spd above 2 (base 12.7%, n=1,331,562): change in points against calm crosswind: 5 kt +0.4 (+0.1 to +0.6), 10 kt +2.7 (+2.3 to +3.1), 15 kt +8.1 (+6.9 to +9.3), 20 kt +16.7 (+12.4 to +21.0). Per 5 kt headwind +4.1 (+3.9 to +4.3), per 5 kt gust spread -2.6 (-2.9 to -2.3)
+  home exposure high, log S_spd per 5 kt crosswind: +4.7% (+4.3 to +5.0), n=1,318,837
+  home exposure high turn to final, S_turn above 2 (base 7.3%, n=960,541): change in points against calm crosswind: 5 kt +0.3 (+0.0 to +0.5), 10 kt +0.8 (+0.5 to +1.1), 15 kt +1.0 (+0.0 to +1.9), 20 kt +3.0 (-0.9 to +6.9). Per 5 kt headwind -0.9 (-1.0 to -0.8), per 5 kt gust spread +0.0 (-0.2 to +0.2)
+  home exposure high turn to final, log S_turn per 5 kt crosswind: +1.3% (+1.0 to +1.6), n=960,541

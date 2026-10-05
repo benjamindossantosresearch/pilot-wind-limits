@@ -1,0 +1,4 @@
+piston VMC 6,539,832; Q1b 4,934,969; Q2 measurable 5,205,992; Q2 with gate wind 5,190,504
+both (Q1b and Q2 with gate wind) 3,982,667; Q1b only 952,302; Q2 only 1,207,837; neither 397,026
+Q1b only: inferred 278,678, not measurable observed 673,624
+Q2 only: no POH value 776,883, assumed value 430,653, published but no low-point wind 301

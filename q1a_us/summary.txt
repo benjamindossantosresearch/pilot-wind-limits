@@ -1,0 +1,99 @@
+US Q1a: 927,617 VMC airport-hours at 441 airports. 755 airports with traffic, 467 with at least one included month, 3871 included airport-months, 5442 outage airport-days, 364 days processed. Thin baseline cells dropped: 26,869 hours.
+Wind source: onemin 722,050, metar 205,567
+
+PRIMARY: model-free revealed limit
+Model-free, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.69, 10-12: 0.54, 12-14: 0.40, 14-16: 0.27, 16-18: 0.17, 18-20: 0.18, 20-22: 0.17, 22-24: 0.17
+  revealed limit 50%: 11.6 kt (95% CI 11.3 to 11.8)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.4)
+
+Model-free, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.67, 10-12: 0.50, 12-14: 0.35, 14-16: 0.22, 16-18: 0.11, 18-20: 0.12, 20-22: 0.16, 22-24: 0.08
+  revealed limit 50%: 11.0 kt (95% CI 10.8 to 11.3)
+  revealed limit 75%: 8.0 kt (95% CI 7.9 to 8.2)
+
+Model-free, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.86, 8-10: 0.73, 10-12: 0.59, 12-14: 0.48, 14-16: 0.35, 16-18: 0.25, 18-20: 0.26, 20-22: 0.18, 22-24: 0.28
+  revealed limit 50%: 12.7 kt (95% CI 12.2 to 13.2)
+  revealed limit 75%: 8.6 kt (95% CI 8.4 to 8.8)
+
+Model-free, piston [post-hoc, model-free, gust_xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 1.06, 4-6: 1.06, 6-8: 1.06, 8-10: 1.04, 10-12: 1.00, 12-14: 0.94, 14-16: 0.85, 16-18: 0.74, 18-20: 0.63, 20-22: 0.51, 22-24: 0.41
+  revealed limit 50%: 21.2 kt (95% CI 20.9 to 21.5)
+  revealed limit 75%: 16.8 kt (95% CI 16.6 to 17.0)
+
+Model-free, piston, towered [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.85, 8-10: 0.70, 10-12: 0.55, 12-14: 0.42, 14-16: 0.28, 16-18: 0.19, 18-20: 0.19, 20-22: 0.21, 22-24: 0.17
+  revealed limit 50%: 11.8 kt (95% CI 11.5 to 12.1)
+  revealed limit 75%: 8.3 kt (95% CI 8.2 to 8.5)
+
+Model-free, piston, non-towered [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.03, 4-6: 0.94, 6-8: 0.79, 8-10: 0.63, 10-12: 0.47, 12-14: 0.32, 14-16: 0.22, 16-18: 0.10, 18-20: 0.12, 20-22: 0.00, 22-24: 0.20
+  revealed limit 50%: 10.6 kt (95% CI 10.3 to 11.1)
+  revealed limit 75%: 7.5 kt (95% CI 7.3 to 7.7)
+
+Model-free, piston, FAA region ACE (33 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.05, 4-6: 0.98, 6-8: 0.86, 8-10: 0.70, 10-12: 0.51, 12-14: 0.39, 14-16: 0.24, 16-18: 0.14
+  revealed limit 50%: 11.2 kt (95% CI 10.7 to 12.1)
+  revealed limit 75%: 8.4 kt (95% CI 7.9 to 8.9)
+
+Model-free, piston, FAA region AEA (55 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.13, 2-4: 1.04, 4-6: 0.92, 6-8: 0.69, 8-10: 0.53, 10-12: 0.35, 12-14: 0.26, 14-16: 0.18, 16-18: 0.10
+  revealed limit 50%: 9.3 kt (95% CI 8.9 to 9.7)
+  revealed limit 75%: 6.5 kt (95% CI 6.3 to 6.7)
+
+Model-free, piston, FAA region AGL (73 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.03, 4-6: 0.96, 6-8: 0.85, 8-10: 0.66, 10-12: 0.55, 12-14: 0.35, 14-16: 0.24, 16-18: 0.11, 18-20: 0.15, 20-22: 0.00
+  revealed limit 50%: 11.5 kt (95% CI 11.0 to 11.9)
+  revealed limit 75%: 8.1 kt (95% CI 7.8 to 8.4)
+
+Model-free, piston, FAA region ANE (29 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.10, 2-4: 1.04, 4-6: 0.95, 6-8: 0.81, 8-10: 0.63, 10-12: 0.47, 12-14: 0.36, 14-16: 0.16, 16-18: 0.21
+  revealed limit 50%: 10.6 kt (95% CI 10.1 to 11.4)
+  revealed limit 75%: 7.7 kt (95% CI 7.3 to 8.1)
+
+Model-free, piston, FAA region ANM (57 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 0.99, 4-6: 0.89, 6-8: 0.76, 8-10: 0.61, 10-12: 0.50, 12-14: 0.39, 14-16: 0.30, 16-18: 0.24, 18-20: 0.14, 20-22: 0.40, 22-24: 0.09
+  revealed limit 50%: 11.0 kt (95% CI 10.2 to 11.8)
+  revealed limit 75%: 7.1 kt (95% CI 6.7 to 7.5)
+
+Model-free, piston, FAA region ASO (76 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 1.02, 4-6: 0.95, 6-8: 0.86, 8-10: 0.74, 10-12: 0.58, 12-14: 0.56, 14-16: 0.28, 16-18: 0.23, 18-20: 0.26
+  revealed limit 50%: 13.4 kt (95% CI 12.2 to 14.1)
+  revealed limit 75%: 8.9 kt (95% CI 8.5 to 9.3)
+
+Model-free, piston, FAA region ASW (56 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 1.02, 4-6: 0.99, 6-8: 0.92, 8-10: 0.81, 10-12: 0.67, 12-14: 0.51, 14-16: 0.34, 16-18: 0.21, 18-20: 0.15
+  revealed limit 50%: 13.1 kt (95% CI 12.2 to 14.8)
+  revealed limit 75%: 9.9 kt (95% CI 9.4 to 10.6)
+
+Model-free, piston, FAA region AWP (62 airports) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.04, 2-4: 1.00, 4-6: 0.95, 6-8: 0.90, 8-10: 0.77, 10-12: 0.63, 12-14: 0.47, 14-16: 0.36, 16-18: 0.15
+  revealed limit 50%: 12.6 kt (95% CI 11.9 to 13.6)
+  revealed limit 75%: 9.3 kt (95% CI 8.9 to 9.8)
+
+SECOND: spline Poisson model
+Spline model, piston [post-hoc spline model]: 883,995 hours, headwind 6.0 kt, gust spread 6.4 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.10, 1.07, 0.78, 0.39
+  revealed limit 50%: 13.3 kt (95% CI 13.0 to 13.7)
+  revealed limit 75%: 10.4 kt (95% CI 10.2 to 10.5)
+  fit check by crosswind band: 0-4 kt obs 1.03 model 1.03, 5-9 kt obs 0.85 model 0.85, 10-14 kt obs 0.49 model 0.49, 15-19 kt obs 0.22 model 0.26, 20-+ kt obs 0.26 model 0.29
+
+Spline model, fleet [post-hoc spline model]: 842,197 hours, headwind 6.0 kt, gust spread 6.4 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.11, 1.07, 0.76, 0.32
+  revealed limit 50%: 12.5 kt (95% CI 12.2 to 12.8)
+  revealed limit 75%: 10.1 kt (95% CI 9.9 to 10.3)
+  fit check by crosswind band: 0-4 kt obs 1.04 model 1.04, 5-9 kt obs 0.84 model 0.84, 10-14 kt obs 0.45 model 0.45, 15-19 kt obs 0.18 model 0.21, 20-+ kt obs 0.23 model 0.26
+
+Spline model, private [post-hoc spline model]: 871,135 hours, headwind 6.0 kt, gust spread 6.4 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.10, 1.06, 0.82, 0.49
+  revealed limit 50%: 14.9 kt (not reached in 28% of resamples)
+  revealed limit 75%: 10.9 kt (95% CI 10.7 to 11.1)
+  fit check by crosswind band: 0-4 kt obs 1.03 model 1.03, 5-9 kt obs 0.86 model 0.87, 10-14 kt obs 0.55 model 0.55, 15-19 kt obs 0.28 model 0.33, 20-+ kt obs 0.29 model 0.32
+
+AS REGISTERED IN NEW ENGLAND: log-linear Poisson model
+Log-linear model, piston: 883,995 VMC airport-hours, 2,882,799 arrivals
+  rate ratio per 5 kt crosswind: 0.866 (95% CI 0.860 to 0.873)
+  rate ratio per 5 kt headwind: 0.911 (95% CI 0.907 to 0.915)
+  rate ratio per 5 kt gust spread: 0.932 (95% CI 0.928 to 0.937)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.0 kt, gust spread 6.4 kt): 27.0 kt (95% CI 25.9 to 28.2)
+  revealed limit, crosswind at 75% of normal demand: 12.8 kt (95% CI 12.4 to 13.4)
+  fit check by crosswind band: 0-4 kt obs 1.03 model 1.03, 5-9 kt obs 0.85 model 0.85, 10-14 kt obs 0.49 model 0.70, 15-19 kt obs 0.22 model 0.57, 20-+ kt obs 0.26 model 0.41
+
+Piston by FAA region, mean best-runway crosswind: arrivals / normal demand by xw band (ratio of sums, day-cluster bootstrap 95% CI)
+  airport                      0-4                     5-9                   10-14                   15-19                     20+
+  ACE        1.06 (1.02-1.10) n=36426   0.86 (0.81-0.91) n= 8882   0.47 (0.41-0.53) n= 1290   0.18 (0.12-0.27) n=  100                    n<20
+  AEA        1.07 (1.04-1.11) n=96107   0.72 (0.67-0.77) n=21554   0.31 (0.26-0.37) n= 2533   0.16 (0.06-0.30) n=  136                    n<20
+  AGL        1.05 (1.02-1.08) n=116728   0.85 (0.80-0.88) n=26952   0.49 (0.44-0.54) n= 3924   0.17 (0.12-0.25) n=  337   0.05 (0.00-0.20) n=   38
+  ANE        1.06 (1.02-1.10) n=42465   0.81 (0.76-0.87) n= 9812   0.42 (0.36-0.49) n= 1345   0.17 (0.09-0.27) n=   86                    n<20
+  ANM        1.03 (1.01-1.05) n=94404   0.77 (0.73-0.81) n=12187   0.46 (0.40-0.52) n= 1653   0.24 (0.16-0.35) n=  266   0.26 (0.06-0.61) n=   63
+  ASO        1.03 (1.00-1.05) n=125972   0.87 (0.84-0.91) n=22127   0.56 (0.51-0.62) n= 2131   0.25 (0.19-0.36) n=  117                    n<20
+  ASW        1.03 (1.00-1.05) n=81596   0.92 (0.88-0.96) n=18487   0.61 (0.50-0.71) n= 1629   0.30 (0.19-0.56) n=  158   0.37 (0.00-0.65) n=   26
+  AWP        1.02 (1.00-1.03) n=137630   0.90 (0.87-0.92) n=15204   0.58 (0.52-0.64) n= 1450   0.26 (0.19-0.35) n=  126                    n<20
+  pooled     1.03 (1.02-1.05) n=731328   0.85 (0.83-0.86) n=135205   0.49 (0.47-0.52) n=15955   0.22 (0.18-0.26) n= 1326   0.26 (0.16-0.38) n=  181

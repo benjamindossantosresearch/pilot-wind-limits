@@ -1,0 +1,113 @@
+Q2 measurement checks: 311,416 approaches (VMC, study airports in their windows), 218,398 measurable at 300 ft
+
+1. True height (barometric, METAR altimeter, cold-temperature corrected) minus GNSS geometric height at the gate, ft
+  piston height source: baro 58.0%, baro_coarse 0.0%, gnss_calibrated 41.9%
+  jet height source: baro 99.7%, gnss_calibrated 0.3%
+  piston: n=94,671, share of measurable approaches (barometric heights) with GNSS height 1.00; after removing each airport-month median: SD 46.9 ft, IQR 29.2 ft, p5 -43.2, p95 42.4
+  piston: absolute residual by gust spread band: 0-0.5 kt 14.7 ft, 0.5-5 kt 14.5 ft, 5-10 kt 14.6 ft, 10+ kt 14.3 ft
+  piston: absolute residual (ft) on gust spread and wind speed, airport-month effects (n=94,464): gust_spread +0.099 per 10 kt (95% CI -1.280 to +1.478); wind_kt -0.181 per 10 kt (95% CI -1.022 to +0.660)
+  jet: n=40,764, share of measurable approaches (barometric heights) with GNSS height 1.00; after removing each airport-month median: SD 24.6 ft, IQR 20.5 ft, p5 -26.1, p95 27.4
+  jet: absolute residual by gust spread band: 0-0.5 kt 9.7 ft, 0.5-5 kt 10.2 ft, 5-10 kt 11.0 ft, 10+ kt 10.4 ft
+  jet: absolute residual (ft) on gust spread and wind speed, airport-month effects (n=40,717): gust_spread -0.190 per 10 kt (95% CI -0.743 to +0.363); wind_kt +0.361 per 10 kt (95% CI -0.199 to +0.922)
+
+2. Barometric minus geometric vertical rate at the gate, fpm
+  piston: n=94,445, mean +3, SD 140, IQR 0
+  piston: absolute difference by gust spread band: 0-0.5 kt 0, 0.5-5 kt 0, 5-10 kt 0, 10+ kt 0
+  piston: absolute difference (fpm) on gust spread and wind speed (n=94,163): gust_spread +5.136 per 10 kt (95% CI +0.025 to +10.248); wind_kt +5.201 per 10 kt (95% CI +1.572 to +8.830)
+  jet: n=15,442, mean +1, SD 104, IQR 0
+  jet: absolute difference by gust spread band: 0-0.5 kt 0, 0.5-5 kt 0, 5-10 kt 0, 10+ kt 0
+  jet: absolute difference (fpm) on gust spread and wind speed (n=15,423): gust_spread +5.878 per 10 kt (95% CI -1.324 to +13.080); wind_kt +2.185 per 10 kt (95% CI -3.205 to +7.575)
+
+3. Position accuracy (NACp) at the gate. NACp 9 means under 30 m (98 ft), 10 under 10 m, 11 under 3 m. C1 tolerance is 200 ft.
+  piston: NACp 0: 1.0%, NACp 10: 71.4%, NACp 5: 0.0%, NACp 6: 0.0%, NACp 7: 0.0%, NACp 8: 1.4%, NACp 9: 24.6%, NACp none: 1.6%
+  piston: share NACp 9 or better by crosswind band: 0-5 kt 96.0%, 5-10 kt 95.7%, 10-15 kt 96.7%, 15+ kt 97.8%
+  jet: NACp 0: 0.1%, NACp 10: 88.4%, NACp 11: 1.1%, NACp 4: 0.0%, NACp 8: 0.6%, NACp 9: 9.7%, NACp none: 0.0%
+  jet: share NACp 9 or better by crosswind band: 0-5 kt 99.2%, 5-10 kt 99.4%, 10-15 kt 99.2%, 15+ kt 100.0%
+
+4. Share of piston approaches measurable at 300 ft (status ok), by wind at the lowest point
+  by xw_low_kt: 0-5 kt 66.8% (n=182,856), 5-10 kt 71.3% (n=52,094), 10-15 kt 70.6% (n=5,059), 15+ kt 75.4% (n=187)
+  by gust_spread: 0-0.5 kt 71.9% (n=55,017), 0.5-5 kt 66.7% (n=147,025), 5-10 kt 66.1% (n=35,328), 10+ kt 70.5% (n=3,331)
+    BDR: 0-5 87%, 5-10 87%, 10-15 86%, 15+ 86%
+    BED: 0-5 66%, 5-10 64%, 10-15 59%, 15+ 66%
+    HVN: 0-5 68%, 5-10 69%, 10-15 66%
+    LWM: 0-5 30%, 5-10 27%, 10-15 12%
+    OWD: 0-5 68%, 5-10 67%, 10-15 63%, 15+ 68%
+    PYM: 0-5 58%, 5-10 59%, 10-15 61%
+    TAN: 0-5 78%, 5-10 79%, 10-15 77%
+  piston: measurable (0/1) on crosswind and gust spread, airport-month effects (linear probability) (n=240,196): xw_low_kt -0.012 per 10 kt (95% CI -0.022 to -0.001); gust_spread +0.032 per 10 kt (95% CI +0.020 to +0.045)
+
+5. Machine-flown control group: criterion ratios against wind
+  jets, straight-in, measurable: 37,724 (autopilot and approach modes at the gate: 576)
+  jets straight-in s, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.67 / 1.58 / 25.6% / 26,807
+      5-10: 0.68 / 1.43 / 23.1% / 9,331
+     10-15: 0.72 / 1.34 / 23.3% / 1,409
+       15+: 0.76 / 1.49 / 27.7% / 130
+  jets straight-in b_c4, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.40 / 0.80 / 4.7% / 26,803
+      5-10: 0.42 / 0.85 / 5.9% / 9,330
+     10-15: 0.47 / 0.94 / 8.6% / 1,409
+       15+: 0.53 / 1.04 / 11.5% / 130
+  jets straight-in g_c5b, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.58 / 1.58 / 23.7% / 24,743
+      5-10: 0.57 / 1.40 / 19.8% / 8,610
+     10-15: 0.60 / 1.23 / 17.3% / 1,331
+       15+: 0.60 / 1.24 / 19.7% / 127
+  jets straight-in b_c1, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.09 / 0.17 / 0.1% / 26,807
+      5-10: 0.09 / 0.18 / 0.2% / 9,331
+     10-15: 0.10 / 0.20 / 0.1% / 1,409
+       15+: 0.12 / 0.22 / 0.0% / 130
+  jets straight-in b_c3, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.29 / 0.51 / 0.2% / 26,807
+      5-10: 0.28 / 0.51 / 0.3% / 9,331
+     10-15: 0.29 / 0.52 / 0.1% / 1,409
+       15+: 0.30 / 0.51 / 0.0% / 130
+  jets straight-in s, by gust_spread band (kt): median / p90 / share above 1 / n
+     0-0.5: 0.69 / 1.69 / 28.2% / 10,009
+     0.5-5: 0.66 / 1.53 / 23.8% / 18,856
+      5-10: 0.69 / 1.38 / 23.4% / 7,411
+       10+: 0.71 / 1.33 / 23.9% / 1,446
+  jets straight-in s on crosswind, headwind, gust spread, airport effects (n=37,677): xw_kt -0.031 per 10 kt (95% CI -0.055 to -0.006); hw_kt -0.018 per 10 kt (95% CI -0.036 to +0.000); gust_spread -0.035 per 10 kt (95% CI -0.057 to -0.012)
+  jets straight-in g_c4 on crosswind, headwind, gust spread, airport effects (n=37,672): xw_kt +0.036 per 10 kt (95% CI +0.026 to +0.047); hw_kt +0.008 per 10 kt (95% CI +0.001 to +0.016); gust_spread +0.016 per 10 kt (95% CI +0.004 to +0.029)
+  jets straight-in b_c4 on crosswind, headwind, gust spread, airport effects (n=37,672): xw_kt +0.061 per 10 kt (95% CI +0.047 to +0.076); hw_kt +0.023 per 10 kt (95% CI +0.012 to +0.034); gust_spread +0.044 per 10 kt (95% CI +0.020 to +0.069)
+  jets straight-in g_c5b on crosswind, headwind, gust spread, airport effects (n=34,811): xw_kt -0.070 per 10 kt (95% CI -0.097 to -0.043); hw_kt -0.003 per 10 kt (95% CI -0.023 to +0.017); gust_spread -0.050 per 10 kt (95% CI -0.078 to -0.021)
+  jets straight-in b_c1 on crosswind, headwind, gust spread, airport effects (n=37,677): xw_kt +0.015 per 10 kt (95% CI +0.011 to +0.019); hw_kt -0.003 per 10 kt (95% CI -0.006 to -0.000); gust_spread +0.003 per 10 kt (95% CI -0.001 to +0.006)
+  jets straight-in b_c3 on crosswind, headwind, gust spread, airport effects (n=37,677): xw_kt -0.003 per 10 kt (95% CI -0.011 to +0.004); hw_kt +0.007 per 10 kt (95% CI +0.002 to +0.013); gust_spread +0.001 per 10 kt (95% CI -0.006 to +0.008)
+  jets coupled s, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.64 / 1.85 / 27.6% / 416
+      5-10: 0.66 / 1.50 / 24.3% / 136
+     10-15: 0.78 / 1.33 / 23.8% / 21
+       15+: n<20
+  jets coupled b_c4, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.33 / 0.67 / 1.7% / 416
+      5-10: 0.35 / 0.66 / 2.9% / 136
+     10-15: 0.45 / 0.76 / 4.8% / 21
+       15+: n<20
+  jets coupled g_c5b, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.66 / 1.98 / 29.5% / 352
+      5-10: 0.65 / 1.57 / 25.6% / 117
+     10-15: n<20
+       15+: n<20
+  jets coupled b_c1, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.08 / 0.17 / 1.2% / 416
+      5-10: 0.09 / 0.17 / 0.0% / 136
+     10-15: 0.09 / 0.17 / 0.0% / 21
+       15+: n<20
+  jets coupled b_c3, by xw_kt band (kt): median / p90 / share above 1 / n
+       0-5: 0.26 / 0.42 / 0.2% / 416
+      5-10: 0.27 / 0.40 / 0.0% / 136
+     10-15: 0.33 / 0.44 / 0.0% / 21
+       15+: n<20
+  jets coupled s, by gust_spread band (kt): median / p90 / share above 1 / n
+     0-0.5: 0.64 / 2.01 / 29.9% / 157
+     0.5-5: 0.64 / 1.69 / 25.8% / 287
+      5-10: 0.71 / 1.33 / 23.9% / 113
+       10+: n<20
+  jets coupled s on crosswind, headwind, gust spread, airport effects (n=576): xw_kt -0.177 per 10 kt (95% CI -0.428 to +0.075); hw_kt -0.090 per 10 kt (95% CI -0.269 to +0.089); gust_spread +0.090 per 10 kt (95% CI -0.209 to +0.389)
+  jets coupled g_c4 on crosswind, headwind, gust spread, airport effects (n=576): xw_kt -0.024 per 10 kt (95% CI -0.068 to +0.021); hw_kt +0.003 per 10 kt (95% CI -0.028 to +0.034); gust_spread +0.088 per 10 kt (95% CI +0.023 to +0.153)
+  jets coupled b_c4 on crosswind, headwind, gust spread, airport effects (n=576): xw_kt +0.004 per 10 kt (95% CI -0.083 to +0.090); hw_kt +0.048 per 10 kt (95% CI -0.001 to +0.098); gust_spread +0.121 per 10 kt (95% CI +0.030 to +0.212)
+  jets coupled g_c5b on crosswind, headwind, gust spread, airport effects (n=491): xw_kt -0.197 per 10 kt (95% CI -0.479 to +0.085); hw_kt -0.153 per 10 kt (95% CI -0.364 to +0.057); gust_spread +0.140 per 10 kt (95% CI -0.199 to +0.478)
+  jets coupled b_c1 on crosswind, headwind, gust spread, airport effects (n=576): xw_kt -0.024 per 10 kt (95% CI -0.083 to +0.036); hw_kt +0.010 per 10 kt (95% CI -0.015 to +0.035); gust_spread -0.039 per 10 kt (95% CI -0.120 to +0.042)
+  jets coupled b_c3 on crosswind, headwind, gust spread, airport effects (n=576): xw_kt +0.001 per 10 kt (95% CI -0.063 to +0.064); hw_kt +0.032 per 10 kt (95% CI +0.002 to +0.062); gust_spread -0.031 per 10 kt (95% CI -0.111 to +0.050)
+

@@ -1,0 +1,14 @@
+Measurable piston approaches 5,205,992; with a POH approach speed 4,426,830 (85.0%)
+S_spd above 1 by crosswind band: all with a speed score | with a POH approach speed (value and consistency) | without (consistency only)
+  0-4 kt: 39.9% (n=4,005,152) | 45.3% (n=3,446,185) | 6.5% (n=558,967)
+  5-9 kt: 42.7% (n=1,022,687) | 48.2% (n=882,471) | 7.7% (n=140,216)
+  10-14 kt: 48.8% (n=95,439) | 55.6% (n=81,002) | 10.8% (n=14,437)
+  15-19 kt: 55.0% (n=4,344) | 66.4% (n=3,394) | 14.6% (n=950)
+  with a POH approach speed, S_spd above 1: base 46.1%, 10 kt +5.4 (+5.0 to +5.7), 15 kt +15.7 (+14.7 to +16.7), per 5 kt headwind +6.7
+  with a POH approach speed, S_spd above 2: base 8.6%, 10 kt +1.1 (+0.9 to +1.3), 15 kt +5.6 (+5.0 to +6.3), per 5 kt headwind +1.8
+
+Table 4 with published maximum demonstrated values only (as Q1b). Intervals: wider of aircraft and day cluster bootstrap.
+  Calm, crosswind below 5 kt: n=4,054,893 | S_fp>1 49.5 (49.2 to 49.8) | S_fp>2 17.3 (17.0 to 17.5) | S_fp>3 10.6 (10.4 to 10.8) | S_spd>1 39.9 (39.6 to 40.3)
+  Revealed limit, 11.6 kt plus or minus 1 kt: n=53,540 | S_fp>1 52.2 (51.5 to 52.8) | S_fp>2 17.4 (16.8 to 17.9) | S_fp>3 10.8 (10.3 to 11.2) | S_spd>1 48.5 (47.9 to 49.1)
+  0.75 to 1.0 of maximum demonstrated (published): n=26,585 | S_fp>1 55.8 (54.9 to 56.7) | S_fp>2 17.6 (16.9 to 18.3) | S_fp>3 10.8 (10.2 to 11.4) | S_spd>1 56.8 (55.9 to 57.7)
+  Above maximum demonstrated (published): n=2,468 | S_fp>1 60.7 (58.1 to 63.1) | S_fp>2 20.3 (18.1 to 22.4) | S_fp>3 12.8 (11.0 to 14.7) | S_spd>1 65.8 (63.3 to 67.9)

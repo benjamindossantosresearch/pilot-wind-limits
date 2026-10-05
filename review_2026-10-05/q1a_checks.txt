@@ -1,0 +1,57 @@
+Review checks on the US revealed limit, from q1a_us/hours.csv (927,617 VMC airport-hours)
+
+A. New England development airports present in the US Q1a hours: BDR, BED, HVN, LWM, OWD, PYM, TAN (18,759 hours, 56,479 piston arrivals)
+Development airports out, model-free, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.85, 8-10: 0.69, 10-12: 0.54, 12-14: 0.40, 14-16: 0.27, 16-18: 0.17, 18-20: 0.17, 20-22: 0.17, 22-24: 0.17
+  revealed limit 50%: 11.6 kt (95% CI 11.3 to 11.9)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.4)
+Development airports out, model-free, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.67, 10-12: 0.50, 12-14: 0.35, 14-16: 0.22, 16-18: 0.11, 18-20: 0.12, 20-22: 0.16, 22-24: 0.08
+  revealed limit 50%: 11.1 kt (95% CI 10.8 to 11.3)
+  revealed limit 75%: 8.0 kt (95% CI 7.9 to 8.2)
+Development airports out, model-free, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.86, 8-10: 0.73, 10-12: 0.60, 12-14: 0.48, 14-16: 0.36, 16-18: 0.25, 18-20: 0.26, 20-22: 0.18, 22-24: 0.28
+  revealed limit 50%: 12.7 kt (95% CI 12.3 to 13.2)
+  revealed limit 75%: 8.7 kt (95% CI 8.5 to 8.9)
+
+B. Capture correction. Arrivals divided by exp(b x wind), b from the capture-vs-weather tests (log capture), baselines recomputed.
+  development, mean wind, -3.9% per 10 kt: revealed limit 50%: 11.8 kt (95% CI 11.5 to 12.0)
+  development, lower bound, -6.2% per 10 kt: revealed limit 50%: 11.9 kt (95% CI 11.6 to 12.2)
+  US v3.1, mean wind, -1.8% per 10 kt: revealed limit 50%: 11.7 kt (95% CI 11.4 to 11.9)
+  US v3.1, lower bound, -4.0% per 10 kt: revealed limit 50%: 11.8 kt (95% CI 11.5 to 12.1)
+  development, best-runway crosswind, -1.9% per 10 kt: revealed limit 50%: 11.7 kt (95% CI 11.4 to 12.0)
+  US v3.1, crosswind, -2.9% per 10 kt: revealed limit 50%: 11.7 kt (95% CI 11.5 to 12.0)
+  US v3.1, crosswind lower bound, -6.4% per 10 kt: revealed limit 50%: 11.9 kt (95% CI 11.7 to 12.3)
+
+C. Why the model-free limit (total effect) sits below the spline limit (headwind and gust spread at their medians)
+  Mean headwind, gust spread, and total wind by 2 kt crosswind bin (piston hours with a baseline):
+     0- 2 kt: n=376,830, headwind   5.5, gust spread   4.9, total wind   5.8, activity 1.06
+     2- 4 kt: n=281,572, headwind   7.3, gust spread   6.7, total wind   8.1, activity 1.02
+     4- 6 kt: n=123,711, headwind   7.8, gust spread   7.2, total wind   9.6, activity 0.95
+     6- 8 kt: n= 58,556, headwind   8.1, gust spread   8.1, total wind  11.1, activity 0.84
+     8-10 kt: n= 25,864, headwind   8.5, gust spread   9.4, total wind  12.8, activity 0.69
+    10-12 kt: n= 10,737, headwind   8.7, gust spread  10.5, total wind  14.5, activity 0.54
+    12-14 kt: n=  4,245, headwind   8.7, gust spread  11.5, total wind  16.2, activity 0.40
+    14-16 kt: n=  1,528, headwind   9.2, gust spread  12.7, total wind  18.2, activity 0.27
+    16-18 kt: n=    540, headwind   9.6, gust spread  13.5, total wind  20.1, activity 0.17
+    18-20 kt: n=    231, headwind   9.0, gust spread  14.2, total wind  21.7, activity 0.18
+  Spline fit, headwind 6.0 and gust spread 6.4 at their medians: 50% point 13.3 kt
+  Spline fit, headwind and gust spread at the means seen in each crosswind bin (the conditions that come with that crosswind): 50% point 12.2 kt
+  Spline fit, headwind at its median, gust spread at the bin means: 50% point 12.3 kt
+  Spline fit, gust spread at its median, headwind at the bin means: 50% point 13.1 kt
+  Observed (model-free on the same 2 kt bins, centers): 50% point 11.6 kt
+  Spline in crosswind only (no headwind or gust terms): 50% point 11.3 kt
+  Model-free limit within strata (hours split by gust spread and headwind):
+    gust spread under 3 kt [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.07, 4-6: 1.03, 6-8: 1.00, 8-10: 0.93, 10-12: 0.83, 12-14: 0.75, 14-16: 0.58
+    revealed limit 50%: not reached in bins with at least 20 hours
+    gust spread 3 to 8 kt [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.07, 4-6: 1.03, 6-8: 0.99, 8-10: 0.88, 10-12: 0.75, 12-14: 0.65, 14-16: 0.48, 16-18: 0.28
+    revealed limit 50%: 14.8 kt (95% CI 13.9 to 15.9)
+    gust spread 8 kt or more [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 0.94, 2-4: 0.92, 4-6: 0.84, 6-8: 0.72, 8-10: 0.60, 10-12: 0.47, 12-14: 0.35, 14-16: 0.25, 16-18: 0.16, 18-20: 0.17, 20-22: 0.15, 22-24: 0.15
+    revealed limit 50%: 10.6 kt (95% CI 10.3 to 10.9)
+    gust spread at or below the median (6.4 kt) [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.07, 4-6: 1.04, 6-8: 1.00, 8-10: 0.91, 10-12: 0.82, 12-14: 0.76, 14-16: 0.61, 16-18: 0.24
+    revealed limit 50%: 15.6 kt (95% CI 14.7 to 16.3, not reached in 4% of resamples)
+    headwind under 3 kt [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.10, 2-4: 1.08, 4-6: 1.04, 6-8: 0.95, 8-10: 0.78, 10-12: 0.61, 12-14: 0.43, 14-16: 0.35, 16-18: 0.14, 18-20: 0.32, 20-22: 0.17
+    revealed limit 50%: 12.2 kt (95% CI 11.8 to 12.9)
+    headwind 3 to 8 kt [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.07, 4-6: 1.02, 6-8: 0.94, 8-10: 0.81, 10-12: 0.64, 12-14: 0.48, 14-16: 0.30, 16-18: 0.21, 18-20: 0.19, 20-22: 0.08
+    revealed limit 50%: 12.8 kt (95% CI 12.4 to 13.3)
+    headwind 8 kt or more [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 0.96, 2-4: 0.92, 4-6: 0.84, 6-8: 0.73, 8-10: 0.59, 10-12: 0.46, 12-14: 0.35, 14-16: 0.25, 16-18: 0.16, 18-20: 0.15, 20-22: 0.18, 22-24: 0.15
+    revealed limit 50%: 10.4 kt (95% CI 10.1 to 10.8)
+    total wind under 15 kt [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 1.04, 4-6: 0.98, 6-8: 0.89, 8-10: 0.76, 10-12: 0.61, 12-14: 0.46, 14-16: 0.35
+    revealed limit 50%: 12.5 kt (95% CI 12.1 to 13.0)

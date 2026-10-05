@@ -1,0 +1,33 @@
+Airport-days used: 9,465 (excluded: fewer than 30 tower ops 2,005, archive outages (capture < 0.2) 3,730)
+Outages by airport: BAF 754, BDR 124, BED 43, BVY 12, DXR 440, EWB 687, GON 764, HFD 47, HVN 132, LWM 283, ORH 406, OWD 38
+
+Capture by mean wind during tower hours, relative to the same airport's 0-4 kt days
+  airport     0- 4 kt     5- 7 kt     8-10 kt    11-13 kt    14- + kt
+  BAF       1.000 (120)   1.068 (126)   1.103 ( 51)   1.003 ( 17)        n<10
+  BDR       1.000 (110)   1.022 (445)   0.992 (300)   1.025 ( 87)   0.923 ( 19)
+  BED       1.000 (342)   1.017 (526)   1.005 (257)   1.051 ( 91)   1.022 ( 30)
+  BVY       1.000 (181)   0.997 (491)   0.921 (292)   0.864 ( 95)   0.760 ( 20)
+  DXR       1.000 (214)   1.014 (217)   1.069 ( 77)   1.011 ( 12)        n<10
+  EWB       1.000 ( 92)   0.932 (166)   0.905 ( 72)   0.863 ( 20)        n<10
+  GON       1.000 ( 38)   1.150 (144)   0.868 (112)   0.966 ( 40)        n<10
+  HFD       1.000 (425)   0.997 (451)   1.022 (133)   1.178 ( 12)        n<10
+  HVN       1.000 (246)   1.002 (511)   1.050 (265)   1.114 ( 63)   1.062 ( 14)
+  LWM       1.000 (315)   1.046 (324)   0.980 (143)   0.916 ( 42)        n<10
+  ORH       1.000 ( 59)   1.033 (216)   1.016 (182)   1.010 ( 88)   0.987 ( 49)
+  OWD       1.000 (367)   1.017 (465)   0.978 (204)   0.966 ( 58)   0.947 ( 14)
+  (cells: capture relative to calm days, with the number of days)
+
+Well-covered airports (BED, BDR, HVN, LWM, OWD), mean wind: 5,240 airport-days
+  capture change per 10 kt mean wind: -3.9% (95% CI -6.2 to -1.6)  -> PASS
+  all-VMC day vs no-VMC day: +10.6% (+6.1 to +15.4); all-precipitation day: +6.2% (-2.4 to +15.5)
+Well-covered airports (BED, BDR, HVN, LWM, OWD), mean best-runway crosswind: 5,240 airport-days
+  capture change per 10 kt mean best-runway crosswind: -1.9% (95% CI -5.3 to +1.7)  -> PASS
+  all-VMC day vs no-VMC day: +10.5% (+5.9 to +15.3); all-precipitation day: +5.9% (-2.6 to +15.2)
+
+All 12 airports, mean wind: 9,465 airport-days
+  capture change per 10 kt mean wind: -6.4% (95% CI -8.2 to -4.5)  -> FAIL
+  all-VMC day vs no-VMC day: +1.7% (-1.7 to +5.2); all-precipitation day: +1.1% (-5.5 to +8.2)
+All 12 airports, mean best-runway crosswind: 9,465 airport-days
+  capture change per 10 kt mean best-runway crosswind: -5.3% (95% CI -8.3 to -2.3)  -> FAIL
+  all-VMC day vs no-VMC day: +1.5% (-1.9 to +5.0); all-precipitation day: +0.9% (-5.6 to +8.0)
+

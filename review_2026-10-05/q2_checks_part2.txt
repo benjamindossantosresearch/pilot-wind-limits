@@ -1,0 +1,47 @@
+Loaded 19,324,678 approaches (all airports in the extract, before inclusion) from review_2026-10-05/us_cas.pkl
+Included days: 16,800,302. Piston VMC 6,539,832. Measurable piston (Q2) 5,205,992 at 427 airports. Jets straight-in measurable 6,796,476 at 392 airports.
+
+13. DEVELOPMENT AIRPORTS OUT (US Q1b and Q2 headline without BDR, HVN, BED, LWM, OWD, PYM, TAN)
+  Development airports in the measurable sample: ['BDR', 'BED', 'HVN', 'LWM', 'OWD', 'PYM', 'TAN'], 92,397 measurable piston approaches
+  Q1b sustained above max demonstrated: 0.072% of 4,836,961
+  S_fp above 1: 10 kt +3.7 (+3.4 to +4.0), 15 kt +6.9 (+6.1 to +7.7)
+  S_fp above 2: 10 kt +0.6 (+0.4 to +0.8), 15 kt +2.0 (+1.4 to +2.7)
+  S_spd above 1: 10 kt +5.0 (+4.7 to +5.3), 15 kt +13.3 (+12.4 to +14.2)
+
+43. HEADWIND EFFECT ON THE SPEED SCORE BY WIND PROFILE (per 5 kt headwind, crosswind and gust spread held, registered model)
+  exponent 1/7 (primary), S_spd above 1: per 5 kt headwind +5.9 (+5.7 to +6.0); crosswind 15 kt +13.4
+  exponent 1/7 (primary), S_spd above 2: per 5 kt headwind +1.6 (+1.5 to +1.6); crosswind 15 kt +4.4
+    S_spd above 1 by headwind band: tailwind 35.3% (median excess +4.2 kt), 0-4 37.2% (median excess +5.7 kt), 5-9 43.4% (median excess +7.3 kt), 10-14 52.0% (median excess +8.9 kt), 15-+ 62.9% (median excess +11.3 kt)
+  exponent 0, no growth with height, S_spd above 1: per 5 kt headwind +1.2 (+1.1 to +1.3); crosswind 15 kt +7.3
+  exponent 0, no growth with height, S_spd above 2: per 5 kt headwind +0.0 (+0.0 to +0.1); crosswind 15 kt +1.7
+    S_spd above 1 by headwind band: tailwind 35.2% (median excess +4.8 kt), 0-4 35.6% (median excess +4.8 kt), 5-9 37.5% (median excess +4.8 kt), 10-14 41.4% (median excess +4.7 kt), 15-+ 47.0% (median excess +5.4 kt)
+
+19. JETS ON STRAIGHT-IN APPROACHES: autopilot or approach mode reported at the gate ('coupled')
+  values: 0.0 6,644,670, 1.0 151,806
+
+JET COMPARISON GROUP BY AIRPORT (straight-in, measurable, VMC)
+  6,796,476 approaches at 392 airports. Top 25: ORD 341,786, ATL 316,321, DEN 314,457, DFW 310,302, LAS 217,368, LAX 216,255, PHX 214,298, CLT 207,349, MCO 173,992, JFK 158,891, SFO 158,070, SEA 148,152, EWR 142,007, IAD 129,802, SLC 128,150, PHL 128,018, MSP 126,317, DTW 113,882, FLL 110,416, LGA 101,550, BNA 97,491, AUS 97,192, DAL 96,918, TPA 90,323, SAN 90,184
+  Share from the top 30 airports: 67.3%
+
+TURN TO FINAL BY WIND SIDE (pattern approaches with a base leg). Positive = tailwind on base (wind from the base-leg side)
+  -20 to -10 kt: n=32,471; S_turn above 1 46.6%, above 2 9.8%, above 3 4.5%; overshoot over 200 ft 1.0%, over 400 ft 0.2%; not aligned by 300 ft 45.9%, not aligned by 150 ft 14.5%; S_fp above 1 66.5%, above 2 30.9%, above 3 21.0%
+  -10 to -5 kt: n=342,667; S_turn above 1 41.2%, above 2 7.9%, above 3 3.3%; overshoot over 200 ft 1.4%, over 400 ft 0.3%; not aligned by 300 ft 40.2%, not aligned by 150 ft 11.6%; S_fp above 1 61.0%, above 2 26.2%, above 3 17.2%
+  -5 to -2 kt: n=665,832; S_turn above 1 40.4%, above 2 7.5%, above 3 3.1%; overshoot over 200 ft 1.9%, over 400 ft 0.4%; not aligned by 300 ft 39.1%, not aligned by 150 ft 10.6%; S_fp above 1 59.8%, above 2 24.9%, above 3 16.0%
+  -2 to +2 kt: n=1,520,294; S_turn above 1 38.5%, above 2 6.9%, above 3 2.8%; overshoot over 200 ft 3.0%, over 400 ft 0.6%; not aligned by 300 ft 36.3%, not aligned by 150 ft 9.2%; S_fp above 1 57.9%, above 2 23.0%, above 3 14.5%
+  +2 to +5 kt: n=661,057; S_turn above 1 35.7%, above 2 6.1%, above 3 2.4%; overshoot over 200 ft 4.3%, over 400 ft 0.8%; not aligned by 300 ft 32.5%, not aligned by 150 ft 7.9%; S_fp above 1 56.5%, above 2 20.5%, above 3 12.7%
+  +5 to +10 kt: n=338,133; S_turn above 1 34.2%, above 2 5.6%, above 3 2.1%; overshoot over 200 ft 6.2%, over 400 ft 1.3%; not aligned by 300 ft 29.7%, not aligned by 150 ft 7.0%; S_fp above 1 56.7%, above 2 18.3%, above 3 10.9%
+  +10 to +20 kt: n=29,844; S_turn above 1 35.6%, above 2 6.2%, above 3 2.1%; overshoot over 200 ft 9.5%, over 400 ft 2.2%; not aligned by 300 ft 29.0%, not aligned by 150 ft 7.3%; S_fp above 1 60.1%, above 2 18.4%, above 3 10.9%
+
+READINGS
+  Straight-in S_fp above 2: all crosswinds 2.8% (n=1,458,111), calm below 5 kt 2.8%; pattern approaches calm 22.8%
+  Tailwind (headwind below 0): S_fp above 1 52.5%, S_spd above 1 35.3%, S_turn above 1 43.5%
+  S_fp percentiles (lower is better): p1 0.39, p5 0.51, p10 0.57, p25 0.70, p50 0.99. Share below 0.5: 4.6%. Median sink value at 300 ft (g_c4_afh): 0.57
+
+31. SECONDARY 500 FT GATE (position and path checks at 500 ft: centerline, lined up, glide path)
+  measurable at 500 ft: 5,627,723
+    0-4 kt: at 500 ft above 1 73.9%, above 2 56.7% (n=4,380,149); same checks at 300 ft above 1 36.7%, above 2 15.6%
+    5-9 kt: at 500 ft above 1 71.7%, above 2 53.2% (n=1,119,699); same checks at 300 ft above 1 35.2%, above 2 14.4%
+  10-14 kt: at 500 ft above 1 70.6%, above 2 52.2% (n=105,756); same checks at 300 ft above 1 37.1%, above 2 15.3%
+  15-19 kt: at 500 ft above 1 67.3%, above 2 48.5% (n=5,005); same checks at 300 ft above 1 37.7%, above 2 17.2%
+  500 ft gate checks above 1: change at 10 kt +1.2 (+1.0 to +1.4), 15 kt +2.6 (+2.0 to +3.1), base 73.4%
+  500 ft gate checks above 2: change at 10 kt +0.6 (+0.4 to +0.8), 15 kt +2.1 (+1.5 to +2.7), base 55.9%

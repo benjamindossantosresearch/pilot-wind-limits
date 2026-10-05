@@ -1,0 +1,40 @@
+Outage days and wind (US, admitted airport-months, local 08:00 to 18:59, all hours with weather)
+
+  included days: 107,517 airport-days, 1,158,816 hours, VMC 82.4%, mean wind 7.8 kt, mean best-runway crosswind 3.0 kt, hours with crosswind 10 kt or more 2.03%, piston arrivals per VMC hour 3.08
+  outage days with 5 or more fixed-wing visits: 1,874 airport-days, 20,277 hours, VMC 79.2%, mean wind 7.9 kt, mean best-runway crosswind 3.2 kt, hours with crosswind 10 kt or more 2.08%, piston arrivals per VMC hour 1.35
+  outage days with 1 to 4 visits: 795 airport-days, 8,529 hours, VMC 70.9%, mean wind 7.9 kt, mean best-runway crosswind 3.2 kt, hours with crosswind 10 kt or more 3.17%, piston arrivals per VMC hour 0.09
+  outage days with no fixed-wing visits: 3,390 airport-days, 36,330 hours, VMC 74.9%, mean wind 8.0 kt, mean best-runway crosswind 3.2 kt, hours with crosswind 10 kt or more 3.01%, piston arrivals per VMC hour 0.03
+
+as locked (outage days out): 927,617 VMC airport-hours at 441 airports
+  piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.69, 10-12: 0.54, 12-14: 0.40, 14-16: 0.27, 16-18: 0.17, 18-20: 0.18, 20-22: 0.17, 22-24: 0.17
+  revealed limit 50%: 11.6 kt (95% CI 11.3 to 11.8)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.4)
+  fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.67, 10-12: 0.50, 12-14: 0.35, 14-16: 0.22, 16-18: 0.11, 18-20: 0.12, 20-22: 0.16, 22-24: 0.08
+  revealed limit 50%: 11.0 kt (95% CI 10.8 to 11.3)
+  revealed limit 75%: 8.0 kt (95% CI 7.9 to 8.2)
+  private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.86, 8-10: 0.73, 10-12: 0.59, 12-14: 0.48, 14-16: 0.35, 16-18: 0.25, 18-20: 0.26, 20-22: 0.18, 22-24: 0.28
+  revealed limit 50%: 12.7 kt (95% CI 12.2 to 13.2)
+  revealed limit 75%: 8.6 kt (95% CI 8.4 to 8.8)
+
+outage only with 5 or more visits (days with 0 to 4 visits put back): 962,688 VMC airport-hours at 464 airports
+  piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.69, 10-12: 0.53, 12-14: 0.40, 14-16: 0.27, 16-18: 0.16, 18-20: 0.17, 20-22: 0.17, 22-24: 0.17
+  revealed limit 50%: 11.5 kt (95% CI 11.2 to 11.7)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.4)
+  fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.66, 10-12: 0.50, 12-14: 0.34, 14-16: 0.21, 16-18: 0.11, 18-20: 0.12, 20-22: 0.15, 22-24: 0.08
+  revealed limit 50%: 11.0 kt (95% CI 10.7 to 11.2)
+  revealed limit 75%: 8.0 kt (95% CI 7.9 to 8.1)
+  private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.85, 8-10: 0.72, 10-12: 0.59, 12-14: 0.47, 14-16: 0.35, 16-18: 0.25, 18-20: 0.25, 20-22: 0.18, 22-24: 0.28
+  revealed limit 50%: 12.5 kt (95% CI 12.2 to 13.1)
+  revealed limit 75%: 8.6 kt (95% CI 8.4 to 8.8)
+
+every outage day put back: 979,633 VMC airport-hours at 464 airports
+  piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.02, 4-6: 0.95, 6-8: 0.84, 8-10: 0.69, 10-12: 0.53, 12-14: 0.40, 14-16: 0.27, 16-18: 0.16, 18-20: 0.17, 20-22: 0.17, 22-24: 0.17
+  revealed limit 50%: 11.5 kt (95% CI 11.2 to 11.7)
+  revealed limit 75%: 8.2 kt (95% CI 8.1 to 8.3)
+  fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 1.02, 4-6: 0.95, 6-8: 0.83, 8-10: 0.66, 10-12: 0.50, 12-14: 0.34, 14-16: 0.21, 16-18: 0.11, 18-20: 0.12, 20-22: 0.15, 22-24: 0.08
+  revealed limit 50%: 10.9 kt (95% CI 10.7 to 11.2)
+  revealed limit 75%: 8.0 kt (95% CI 7.8 to 8.1)
+  private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.01, 4-6: 0.95, 6-8: 0.85, 8-10: 0.72, 10-12: 0.59, 12-14: 0.47, 14-16: 0.34, 16-18: 0.24, 18-20: 0.25, 20-22: 0.18, 22-24: 0.28
+  revealed limit 50%: 12.5 kt (95% CI 12.1 to 13.1)
+  revealed limit 75%: 8.6 kt (95% CI 8.4 to 8.8)
+

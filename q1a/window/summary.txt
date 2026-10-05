@@ -1,0 +1,183 @@
+Q1a window: 29,131 VMC airport-hours (08-18 local) at BDR, HVN, BED, LWM, OWD
+Windows: BDR from 2024-07-01, HVN from 2024-04-01, BED from 2024-10-01, LWM from 2025-07-01, OWD from 2025-07-01
+Excluded: no weather 376, not VMC 6,961, outage day 418, thin baseline cell (hours) 228
+Wind source: onemin 22,642, metar 6,489
+
+Piston GA, mean best-runway crosswind: arrivals / normal demand by xw band (ratio of sums, day-cluster bootstrap 95% CI)
+  airport                      0-4                     5-9                   10-14                   15-19                     20+
+  BDR        1.06 (1.02-1.09) n= 5553   0.89 (0.83-0.95) n= 1474   0.39 (0.31-0.50) n=  242                    n<20                    n<20
+  BED        1.05 (1.02-1.08) n= 4965   0.83 (0.77-0.90) n=  959   0.43 (0.33-0.56) n=  133                    n<20                    n<20
+  HVN        1.11 (1.07-1.16) n= 5455   0.81 (0.75-0.87) n= 2229   0.52 (0.39-0.66) n=  350   0.23 (0.05-0.46) n=   35                    n<20
+  LWM        1.05 (1.00-1.09) n= 3493   0.49 (0.41-0.57) n=  317                    n<20                    n<20                    n<20
+  OWD        1.03 (0.99-1.07) n= 3330   0.84 (0.76-0.92) n=  558                    n<20                    n<20                    n<20
+  pooled     1.05 (1.03-1.07) n=22796   0.83 (0.79-0.86) n= 5537   0.42 (0.36-0.49) n=  750   0.17 (0.05-0.32) n=   44                    n<20
+
+Piston GA, peak gust crosswind: arrivals / normal demand by gust_xw band (ratio of sums, day-cluster bootstrap 95% CI)
+  airport                      0-4                     5-9                   10-14                   15-19                     20+
+  BDR        1.10 (1.05-1.14) n= 2149   1.09 (1.05-1.14) n= 2692   0.95 (0.89-1.00) n= 1431   0.69 (0.60-0.77) n=  659   0.38 (0.31-0.47) n=  344
+  BED        1.08 (1.03-1.12) n= 1931   1.12 (1.08-1.15) n= 2040   0.96 (0.92-1.02) n= 1257   0.69 (0.61-0.77) n=  569   0.41 (0.34-0.50) n=  263
+  HVN        1.16 (1.09-1.23) n= 1469   1.10 (1.04-1.16) n= 2798   1.05 (0.98-1.11) n= 2055   0.77 (0.71-0.84) n= 1016   0.41 (0.34-0.50) n=  733
+  LWM        1.08 (1.01-1.14) n=  839   1.12 (1.07-1.16) n= 1637   0.95 (0.89-1.01) n=  932   0.58 (0.50-0.67) n=  298   0.21 (0.14-0.30) n=  116
+  OWD        1.05 (0.97-1.13) n=  697   1.08 (1.04-1.12) n= 1436   1.00 (0.95-1.06) n= 1203   0.81 (0.73-0.89) n=  459   0.47 (0.34-0.62) n=  107
+  pooled     1.09 (1.06-1.11) n= 7085   1.10 (1.08-1.12) n=10603   0.98 (0.95-1.00) n= 6878   0.72 (0.68-0.75) n= 3001   0.39 (0.35-0.44) n= 1563
+
+Piston GA, mean headwind on that runway: arrivals / normal demand by hw band (ratio of sums, day-cluster bootstrap 95% CI)
+  airport                      0-4                     5-9                   10-14                   15-19                     20+
+  BDR        1.15 (1.10-1.20) n= 1696   1.06 (1.02-1.09) n= 3849   0.81 (0.76-0.87) n= 1494   0.19 (0.14-0.26) n=  226                    n<20
+  BED        1.15 (1.11-1.19) n= 1792   1.06 (1.03-1.10) n= 2810   0.79 (0.73-0.84) n= 1195   0.32 (0.27-0.39) n=  238   0.08 (0.00-0.33) n=   25
+  HVN        1.02 (0.96-1.07) n= 3876   1.04 (0.99-1.09) n= 3572   0.68 (0.58-0.79) n=  572   0.34 (0.18-0.56) n=   48                    n<20
+  LWM        1.13 (1.08-1.19) n= 1273   1.05 (1.00-1.09) n= 1980   0.55 (0.48-0.63) n=  546   0.04 (0.00-0.11) n=   23                    n<20
+  OWD        1.13 (1.09-1.17) n= 1380   1.02 (0.98-1.06) n= 2037   0.63 (0.56-0.71) n=  417   0.18 (0.10-0.28) n=   67                    n<20
+  pooled     1.12 (1.10-1.14) n=10017   1.05 (1.03-1.07) n=14248   0.74 (0.71-0.78) n= 4224   0.25 (0.21-0.29) n=  602   0.15 (0.03-0.37) n=   40
+
+Poisson model, piston: 29,131 VMC airport-hours, 91,885 arrivals
+  rate ratio per 5 kt crosswind: 0.868 (95% CI 0.837 to 0.900)
+  rate ratio per 5 kt headwind: 0.844 (95% CI 0.825 to 0.864)
+  rate ratio per 5 kt gust spread: 0.898 (95% CI 0.882 to 0.915)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.3 kt, gust spread 6.9 kt): 27.8 kt (95% CI 22.3 to 35.4)
+  revealed limit, crosswind at 75% of normal demand: 13.5 kt (95% CI 11.1 to 16.8)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.04, 5-9 kt obs 0.83 model 0.84, 10-14 kt obs 0.42 model 0.65, 15-19 kt obs 0.17 model 0.55
+
+Poisson model, fleet: 29,112 VMC airport-hours, 52,719 arrivals
+  rate ratio per 5 kt crosswind: 0.877 (95% CI 0.838 to 0.918)
+  rate ratio per 5 kt headwind: 0.829 (95% CI 0.807 to 0.852)
+  rate ratio per 5 kt gust spread: 0.890 (95% CI 0.871 to 0.910)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.3 kt, gust spread 6.9 kt): 29.7 kt (95% CI 23.7 to 44.6)
+  revealed limit, crosswind at 75% of normal demand: 14.3 kt (95% CI 11.7 to 20.4)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.04, 5-9 kt obs 0.83 model 0.83, 10-14 kt obs 0.36 model 0.65, 15-19 kt obs 0.13 model 0.55
+
+Poisson model, private: 29,131 VMC airport-hours, 38,960 arrivals
+  rate ratio per 5 kt crosswind: 0.857 (95% CI 0.827 to 0.888)
+  rate ratio per 5 kt headwind: 0.863 (95% CI 0.842 to 0.886)
+  rate ratio per 5 kt gust spread: 0.909 (95% CI 0.891 to 0.927)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.3 kt, gust spread 6.9 kt): 25.8 kt (95% CI 21.5 to 33.8)
+  revealed limit, crosswind at 75% of normal demand: 12.7 kt (95% CI 10.8 to 16.0)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.05, 5-9 kt obs 0.82 model 0.84, 10-14 kt obs 0.49 model 0.65, 15-19 kt obs 0.21 model 0.54
+
+Poisson model, piston, BDR only: 7,275 VMC airport-hours, 26,862 arrivals
+  rate ratio per 5 kt crosswind: 0.850 (95% CI 0.804 to 0.898)
+  rate ratio per 5 kt headwind: 0.807 (95% CI 0.773 to 0.842)
+  rate ratio per 5 kt gust spread: 0.882 (95% CI 0.851 to 0.915)
+  revealed limit, crosswind at 50% of normal demand (headwind 7.4 kt, gust spread 5.9 kt): 24.5 kt (95% CI 19.4 to 34.1)
+  revealed limit, crosswind at 75% of normal demand: 12.0 kt (95% CI 9.8 to 16.0)
+  fit check by crosswind band: 0-4 kt obs 1.06 model 1.06, 5-9 kt obs 0.89 model 0.85, 10-14 kt obs 0.39 model 0.60
+
+Poisson model, piston, HVN only: 8,072 VMC airport-hours, 9,113 arrivals
+  rate ratio per 5 kt crosswind: 0.798 (95% CI 0.749 to 0.851)
+  rate ratio per 5 kt headwind: 0.914 (95% CI 0.869 to 0.961)
+  rate ratio per 5 kt gust spread: 0.862 (95% CI 0.829 to 0.897)
+  revealed limit, crosswind at 50% of normal demand (headwind 5.1 kt, gust spread 7.1 kt): 19.2 kt (95% CI 15.8 to 24.3)
+  revealed limit, crosswind at 75% of normal demand: 10.2 kt (95% CI 8.6 to 12.2)
+  fit check by crosswind band: 0-4 kt obs 1.11 model 1.10, 5-9 kt obs 0.81 model 0.82, 10-14 kt obs 0.52 model 0.62, 15-19 kt obs 0.23 model 0.47
+
+Poisson model, piston, BED only: 6,060 VMC airport-hours, 25,453 arrivals
+  rate ratio per 5 kt crosswind: 0.887 (95% CI 0.835 to 0.943)
+  rate ratio per 5 kt headwind: 0.838 (95% CI 0.804 to 0.874)
+  rate ratio per 5 kt gust spread: 0.923 (95% CI 0.896 to 0.951)
+  revealed limit, crosswind at 50% of normal demand (headwind 7.0 kt, gust spread 6.8 kt): 31.9 kt (95% CI 20.8 to 65.4)
+  revealed limit, crosswind at 75% of normal demand: 15.0 kt (95% CI 10.4 to 28.8)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.04, 5-9 kt obs 0.83 model 0.84, 10-14 kt obs 0.43 model 0.65
+
+Poisson model, piston, LWM only: 3,822 VMC airport-hours, 13,378 arrivals
+  rate ratio per 5 kt crosswind: 0.775 (95% CI 0.680 to 0.882)
+  rate ratio per 5 kt headwind: 0.802 (95% CI 0.742 to 0.867)
+  rate ratio per 5 kt gust spread: 0.941 (95% CI 0.896 to 0.989)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.2 kt, gust spread 7.3 kt): 15.9 kt (95% CI 11.4 to 31.6)
+  revealed limit, crosswind at 75% of normal demand: 8.0 kt (95% CI 6.1 to 15.2)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.03, 5-9 kt obs 0.49 model 0.65
+
+Poisson model, piston, OWD only: 3,902 VMC airport-hours, 17,079 arrivals
+  rate ratio per 5 kt crosswind: 1.058 (95% CI 0.937 to 1.196)
+  rate ratio per 5 kt headwind: 0.794 (95% CI 0.734 to 0.860)
+  rate ratio per 5 kt gust spread: 0.933 (95% CI 0.873 to 0.998)
+  revealed limit, crosswind at 50% of normal demand (headwind 6.2 kt, gust spread 7.8 kt): inf kt (95% CI 38.4 to 4685.8)
+  revealed limit, crosswind at 75% of normal demand: inf kt (95% CI 17.5 to 2048.6)
+  fit check by crosswind band: 0-4 kt obs 1.03 model 1.02, 5-9 kt obs 0.84 model 0.92
+
+====================================================================================================
+POST-HOC (added 2026-10-02 after the pre-registered model failed its fit check above 10 kt; see notes/decisions.md)
+
+Model-free, piston [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.02, 4-6: 0.97, 6-8: 0.82, 8-10: 0.68, 10-12: 0.48, 12-14: 0.34, 14-16: 0.10
+  revealed limit 50%: 10.8 kt (95% CI 10.3 to 11.6)
+  revealed limit 75%: 8.0 kt (95% CI 7.5 to 8.7)
+
+Model-free, fleet [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.02, 4-6: 0.97, 6-8: 0.83, 8-10: 0.65, 10-12: 0.42, 12-14: 0.28, 14-16: 0.06
+  revealed limit 50%: 10.3 kt (95% CI 9.9 to 11.0)
+  revealed limit 75%: 7.9 kt (95% CI 7.4 to 8.5)
+
+Model-free, private [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.08, 2-4: 1.03, 4-6: 0.96, 6-8: 0.81, 8-10: 0.71, 10-12: 0.54, 12-14: 0.42, 14-16: 0.16
+  revealed limit 50%: 11.7 kt (95% CI 10.6 to 13.2)
+  revealed limit 75%: 8.3 kt (95% CI 7.4 to 9.3)
+
+Model-free, piston [post-hoc, model-free, gust_xw]: activity / normal demand by 2 kt bin: 0-2: 1.06, 2-4: 1.10, 4-6: 1.11, 6-8: 1.12, 8-10: 1.07, 10-12: 1.03, 12-14: 0.95, 14-16: 0.82, 16-18: 0.74, 18-20: 0.61, 20-22: 0.50, 22-24: 0.38
+  revealed limit 50%: 21.0 kt (95% CI 20.1 to 21.8)
+  revealed limit 75%: 16.7 kt (95% CI 15.9 to 17.5)
+
+Model-free, piston, BDR only [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.02, 4-6: 0.99, 6-8: 0.89, 8-10: 0.73, 10-12: 0.48, 12-14: 0.28, 14-16: 0.10
+  revealed limit 50%: 10.8 kt (95% CI 10.1 to 11.7)
+  revealed limit 75%: 8.8 kt (95% CI 7.8 to 9.6)
+
+Model-free, piston, HVN only [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.10, 2-4: 1.12, 4-6: 1.04, 6-8: 0.77, 8-10: 0.71, 10-12: 0.53, 12-14: 0.54, 14-16: 0.18
+  revealed limit 50%: 13.2 kt (95% CI 10.3 to 14.1, not reached in 4% of resamples)
+  revealed limit 75%: 7.6 kt (95% CI 6.7 to 9.6)
+
+Model-free, piston, BED only [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.01, 4-6: 0.96, 6-8: 0.84, 8-10: 0.70, 10-12: 0.50, 12-14: 0.36
+  revealed limit 50%: 11.0 kt (95% CI 10.1 to 12.2, not reached in 9% of resamples)
+  revealed limit 75%: 8.3 kt (95% CI 7.3 to 9.5)
+
+Model-free, piston, LWM only [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.09, 2-4: 1.02, 4-6: 0.79, 6-8: 0.44, 8-10: 0.22
+  revealed limit 50%: 6.7 kt (95% CI 6.2 to 7.2)
+  revealed limit 75%: 5.2 kt (95% CI 4.7 to 5.6)
+
+Model-free, piston, OWD only [post-hoc, model-free, xw]: activity / normal demand by 2 kt bin: 0-2: 1.07, 2-4: 1.00, 4-6: 0.98, 6-8: 0.81, 8-10: 0.64
+  revealed limit 50%: not reached in bins with at least 20 hours
+  revealed limit 75%: 7.7 kt (95% CI 6.6 to 8.8, not reached in 8% of resamples)
+
+Spline model, piston [post-hoc spline model]: 29,131 hours, headwind 6.3 kt, gust spread 6.9 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.15, 1.14, 0.82, 0.29
+  revealed limit 50%: 12.4 kt (95% CI 11.9 to 13.7)
+  revealed limit 75%: 10.5 kt (95% CI 10.0 to 10.9)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.05, 5-9 kt obs 0.83 model 0.84, 10-14 kt obs 0.42 model 0.42, 15-19 kt obs 0.17 model 0.25
+
+Spline model, fleet [post-hoc spline model]: 29,112 hours, headwind 6.3 kt, gust spread 6.9 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.15, 1.15, 0.82, 0.19
+  revealed limit 50%: 11.8 kt (95% CI 11.3 to 12.5)
+  revealed limit 75%: 10.4 kt (95% CI 10.0 to 10.7)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.05, 5-9 kt obs 0.83 model 0.83, 10-14 kt obs 0.36 model 0.37, 15-19 kt obs 0.13 model 0.19
+
+Spline model, private [post-hoc spline model]: 29,131 hours, headwind 6.3 kt, gust spread 6.9 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.15, 1.12, 0.82, 0.39
+  revealed limit 50%: 13.4 kt (not reached in 6% of resamples)
+  revealed limit 75%: 10.6 kt (95% CI 10.0 to 11.6)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.05, 5-9 kt obs 0.82 model 0.85, 10-14 kt obs 0.49 model 0.47, 15-19 kt obs 0.21 model 0.32
+
+Spline model, piston, BDR only [post-hoc spline model]: 7,275 hours, headwind 7.4 kt, gust spread 5.9 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.19, 1.14, 0.89
+  revealed limit 50%: 12.6 kt (not reached in 6% of resamples)
+  revealed limit 75%: 10.8 kt (95% CI 10.2 to 11.7)
+  fit check by crosswind band: 0-4 kt obs 1.06 model 1.05, 5-9 kt obs 0.89 model 0.89, 10-14 kt obs 0.39 model 0.41
+
+Spline model, piston, HVN only [post-hoc spline model]: 8,072 hours, headwind 5.1 kt, gust spread 7.1 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.11, 1.18, 0.79, 0.61
+  revealed limit 50%: 15.8 kt (not reached in 31% of resamples)
+  revealed limit 75%: 11.1 kt (not reached in 4% of resamples)
+  fit check by crosswind band: 0-4 kt obs 1.11 model 1.10, 5-9 kt obs 0.81 model 0.84, 10-14 kt obs 0.52 model 0.49, 15-19 kt obs 0.23 model 0.27
+
+Spline model, piston, BED only [post-hoc spline model]: 6,060 hours, headwind 7.0 kt, gust spread 6.8 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.15, 1.14, 0.81
+  revealed limit 50%: 12.5 kt (not reached in 27% of resamples)
+  revealed limit 75%: 10.5 kt (95% CI 9.3 to 11.3)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.05, 5-9 kt obs 0.83 model 0.85, 10-14 kt obs 0.43 model 0.43
+
+Spline model, piston, LWM only [post-hoc spline model]: 3,822 hours, headwind 6.2 kt, gust spread 7.3 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.19, 1.07
+  revealed limit 50%: 8.8 kt (not reached in 22% of resamples)
+  revealed limit 75%: 6.8 kt (95% CI 6.2 to 8.1)
+  fit check by crosswind band: 0-4 kt obs 1.05 model 1.04, 5-9 kt obs 0.49 model 0.54
+
+Spline model, piston, OWD only [post-hoc spline model]: 3,902 hours, headwind 6.2 kt, gust spread 7.8 kt
+  modeled activity / normal demand at crosswind 0, 5, 10, 15 kt: 1.07, 1.12
+  revealed limit 50%: not reached within observed range (to 9.8 kt) (not reached in 100% of resamples)
+  revealed limit 75%: not reached within observed range (to 9.8 kt) (not reached in 76% of resamples)
+  fit check by crosswind band: 0-4 kt obs 1.03 model 1.03, 5-9 kt obs 0.84 model 0.85
+

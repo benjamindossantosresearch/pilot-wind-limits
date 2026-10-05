@@ -1,0 +1,10 @@
+One-minute wind filter at 461 stations of the admitted US airports (2025-09 to 2026-09 files)
+
+  records 196,084,852, with a sustained speed 192,020,638
+  dropped by the minute rules: above 60 kt 33,467, more than 15 kt from the METAR 50,833, more than 15 kt from the 5-minute median 3,723 (together 0.046% of records)
+  station-months dropped whole: 32 of 5,629 (1,168,760 records)
+  gusts set aside (above 80 kt or more than 40 kt over the sustained wind) with the sustained wind kept: 19
+  in kept months: 191,037,169 records, 25,561 dropped by the minute rules (0.0134%). Gusts kept: 3,958,345 records with a gust of 25 kt or more, 360,771 with 35 kt or more
+  dropped records in kept months: median sustained 12 kt against the METAR's 21 kt and the 5-minute median 11 kt; METAR reported a gust for 57.2% of them; dropped value lower than both METAR and neighbors 30.0%, higher than both 30.1%
+  stations with the most drops in kept months: ELM 880, HVN 869, LND 481, CXY 448, LAR 347, CNM 331, MDT 328, TEB 315, CYS 307, BZN 298
+  stations with months dropped whole: AVL (1), AVP (2), AZO (1), CGI (4), ELM (1), FTW (1), FWA (3), HVN (5), LYH (1), MDT (1), ORF (2), OSH (1), PUW (2), RIC (1), SBA (1), SYR (1), TEB (2), TUS (1), YIP (1)

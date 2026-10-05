@@ -1,0 +1,186 @@
+US confirmatory sample. Approaches after inclusion: 16,800,302. Piston VMC: 6,539,832, measurable at 300 ft: 5,205,992. Jets straight-in measurable (floor): 6,796,476. Airports with measurable piston approaches: 427.
+US revealed limit (model-free 50% point, us_q1a.py): 11.6 kt
+
+1. Q1b: approaches flown above the POH maximum demonstrated crosswind (published values)
+  all          n=4,934,969: sustained 0.07% (0.07-0.08), gust 1.06% (1.03-1.09)
+  fleet        n=3,596,310: sustained 0.07% (0.07-0.08), gust 1.07% (1.03-1.11)
+  private      n=1,319,340: sustained 0.07% (0.06-0.08), gust 1.04% (0.98-1.10)
+  towered      n=4,429,544: sustained 0.07% (0.07-0.08), gust 1.08% (1.04-1.12)
+  non-towered  n=505,425: sustained 0.05% (0.04-0.06), gust 0.86% (0.80-0.94)
+  crosswind / max demonstrated, sustained: median 0.16, p90 0.45, p99 0.73; above 0.5: 6.6%, above 0.75: 0.78%
+
+2. Q2 distributions (piston, measurable)
+Piston, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.99 / 3.15 / 8.86 |  49.5% (49.1-49.8),  17.3% (17.0-17.5),  10.6% (10.4-10.8) | 4,054,893
+       5-10: 0.99 / 2.97 / 8.83 |  49.5% (49.1-49.9),  16.1% (15.9-16.4),   9.8% (9.6-10.1) | 1,034,429
+      10-15: 1.04 / 3.21 / 9.94 |  52.3% (51.7-52.8),  17.3% (16.8-17.8),  10.8% (10.4-11.2) | 96,521
+      15-20: 1.07 / 3.69 / 11.63 |  55.7% (54.0-57.4),  20.1% (18.6-21.6),  12.5% (11.4-13.8) | 4,399
+        20+: 1.08 / 3.56 / 10.30 |  56.5% (49.9-62.8),  20.2% (15.0-26.0),  11.8% (7.7-16.5) | 262
+Piston, crosswind: S_spd by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.97 / 2.01 / 3.48 |  47.7% (47.2-48.2),  10.2% (10.0-10.3),   2.1% (2.0-2.1) | 4,005,152
+       5-10: 1.00 / 2.07 / 3.54 |  50.1% (49.6-50.6),  11.2% (11.0-11.5),   2.3% (2.2-2.4) | 1,022,687
+      10-15: 1.08 / 2.26 / 3.82 |  54.9% (54.3-55.5),  14.7% (14.3-15.1),   3.4% (3.2-3.5) | 95,439
+      15-20: 1.21 / 2.66 / 4.27 |  60.9% (59.1-62.8),  22.3% (20.9-23.8),   5.8% (5.0-6.7) | 4,344
+        20+: 2.00 / 8.41 / 14.86 |  76.4% (70.1-82.4),  50.0% (40.0-59.7),  27.5% (17.4-37.6) | 258
+Piston, crosswind: S_comb by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 1.35 / 3.41 / 8.97 |  71.9% (71.6-72.2),  25.4% (25.1-25.8),  12.4% (12.2-12.6) | 4,054,893
+       5-10: 1.36 / 3.31 / 8.93 |  73.0% (72.7-73.4),  25.3% (24.9-25.6),  11.9% (11.7-12.1) | 1,034,429
+      10-15: 1.45 / 3.60 / 10.08 |  76.8% (76.3-77.2),  29.2% (28.6-29.7),  13.8% (13.3-14.2) | 96,521
+      15-20: 1.61 / 3.99 / 11.98 |  80.5% (79.1-82.0),  36.8% (35.3-38.6),  17.4% (16.1-18.7) | 4,399
+        20+: 2.40 / 8.61 / 15.20 |  89.3% (84.9-93.2),  59.9% (51.4-68.3),  36.3% (26.8-45.8) | 262
+Jets (floor), crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.77 / 0.96 / 1.74 |   6.5% (6.4-6.6),   0.7% (0.7-0.7),   0.0% (0.0-0.0) | 4,699,323
+       5-10: 0.80 / 0.96 / 1.49 |   6.6% (6.4-6.7),   0.5% (0.5-0.5),   0.1% (0.0-0.1) | 1,664,246
+      10-15: 0.83 / 0.96 / 1.49 |   8.1% (7.9-8.3),   0.4% (0.4-0.5),   0.1% (0.1-0.1) | 366,209
+      15-20: 0.83 / 1.02 / 1.58 |  11.9% (11.3-12.4),   0.5% (0.4-0.6),   0.1% (0.1-0.2) | 56,217
+        20+: 0.86 / 1.02 / 1.71 |  15.1% (13.7-16.6),   0.6% (0.4-0.8),   0.1% (0.0-0.2) | 7,584
+Piston, crosswind as a fraction of max demonstrated: S_fp by frac. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+     0-0.25: 0.98 / 3.04 / 8.55 |  48.9% (48.5-49.3),  16.8% (16.5-17.1),  10.2% (9.9-10.4) | 2,974,068
+   0.25-0.5: 1.00 / 2.92 / 8.56 |  49.7% (49.3-50.1),  16.1% (15.8-16.3),   9.7% (9.4-9.9) | 1,151,043
+   0.5-0.75: 1.03 / 2.94 / 8.80 |  51.9% (51.4-52.4),  16.1% (15.8-16.5),   9.7% (9.4-10.0) | 255,394
+     0.75-1: 1.07 / 3.29 / 10.22 |  56.3% (55.5-57.2),  17.9% (17.3-18.6),  11.1% (10.5-11.6) | 30,148
+         1+: 1.14 / 4.02 / 12.98 |  60.3% (58.1-62.5),  21.0% (18.8-23.1),  13.4% (11.5-15.0) | 2,968
+Piston, crosswind as a fraction of max demonstrated: S_spd by frac. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+     0-0.25: 1.06 / 2.10 / 3.58 |  54.2% (53.8-54.7),  11.7% (11.5-11.9),   2.4% (2.3-2.4) | 2,973,849
+   0.25-0.5: 1.08 / 2.13 / 3.59 |  55.7% (55.2-56.1),  12.3% (12.1-12.6),   2.5% (2.4-2.5) | 1,150,931
+   0.5-0.75: 1.12 / 2.21 / 3.66 |  58.1% (57.6-58.6),  13.8% (13.5-14.2),   2.8% (2.7-3.0) | 255,356
+     0.75-1: 1.23 / 2.42 / 3.96 |  64.5% (63.6-65.4),  18.4% (17.7-19.1),   4.2% (3.9-4.5) | 30,145
+         1+: 1.44 / 2.89 / 8.20 |  74.2% (72.2-76.3),  28.3% (26.1-30.6),   8.5% (6.9-10.1) | 2,966
+Piston, gust spread: S_fp by gust_spread. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+      0-0.5: 0.99 / 3.20 / 9.04 |  49.3% (48.9-49.7),  17.5% (17.2-17.8),  10.8% (10.6-11.1) | 1,291,967
+      0.5-5: 0.99 / 3.14 / 8.88 |  49.5% (49.2-49.9),  17.2% (16.9-17.4),  10.6% (10.4-10.8) | 3,324,249
+       5-10: 1.00 / 2.78 / 8.42 |  50.1% (49.8-50.4),  15.4% (15.2-15.7),   9.1% (8.9-9.3) | 548,355
+        10+: 1.02 / 2.62 / 8.19 |  51.1% (50.4-51.9),  14.8% (14.3-15.3),   8.3% (7.8-8.7) | 41,421
+Piston, headwind (negative = tailwind): S_fp by hw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+         <0: 1.05 / 3.64 / 9.58 |  52.5% (52.1-52.8),  20.1% (19.7-20.4),  12.7% (12.5-13.0) | 729,171
+        0-5: 1.00 / 3.23 / 8.99 |  49.7% (49.3-50.0),  17.7% (17.4-18.0),  11.0% (10.8-11.2) | 2,252,120
+       5-10: 0.97 / 2.84 / 8.57 |  48.3% (48.0-48.7),  15.6% (15.3-15.9),   9.3% (9.1-9.6) | 1,637,189
+      10-15: 0.98 / 2.72 / 8.29 |  48.6% (48.2-49.1),  15.0% (14.7-15.3),   8.8% (8.6-9.0) | 499,754
+        15+: 1.00 / 2.60 / 8.13 |  50.1% (49.5-50.7),  14.8% (14.3-15.3),   8.2% (7.9-8.6) | 72,266
+Piston pattern approaches with a base leg, turn to final: S_turn by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.89 / 1.71 / 5.37 |  38.3% (37.9-38.7),   6.8% (6.7-7.0),   2.8% (2.7-2.9) | 2,842,177
+       5-10: 0.89 / 1.70 / 5.15 |  37.7% (37.3-38.2),   6.8% (6.6-7.0),   2.7% (2.6-2.8) | 684,999
+      10-15: 0.91 / 1.82 / 6.00 |  41.2% (40.5-41.8),   8.1% (7.7-8.4),   3.3% (3.1-3.6) | 60,658
+      15-20: 0.98 / 2.02 / 6.00 |  47.9% (45.5-50.3),  10.2% (8.9-11.5),   4.5% (3.6-5.4) | 2,463
+        20+: 0.96 / 2.03 / 3.97 |  45.1% (36.2-54.2),  11.1% (6.1-16.7),   3.5% (0.7-6.8) | 144
+Piston fleet, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.99 / 3.10 / 8.55 |  49.4% (49.0-49.8),  17.1% (16.8-17.5),  10.4% (10.1-10.7) | 2,706,489
+       5-10: 1.00 / 2.94 / 8.54 |  49.8% (49.4-50.2),  16.1% (15.8-16.4),   9.7% (9.4-10.0) | 695,216
+      10-15: 1.06 / 3.22 / 9.59 |  53.1% (52.4-53.7),  17.5% (16.9-18.1),  10.8% (10.3-11.3) | 63,857
+      15-20: 1.10 / 3.84 / 10.85 |  57.7% (55.4-59.8),  21.0% (19.1-22.9),  13.1% (11.6-14.7) | 2,672
+Piston private, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 1.00 / 3.27 / 9.59 |  49.8% (49.2-50.3),  17.6% (17.2-18.1),  11.1% (10.8-11.4) | 1,331,550
+       5-10: 0.99 / 3.03 / 9.54 |  49.2% (48.6-49.8),  16.3% (15.9-16.8),  10.1% (9.7-10.5) | 334,162
+      10-15: 1.02 / 3.20 / 10.48 |  50.8% (49.9-51.6),  17.0% (16.3-17.9),  10.8% (10.1-11.6) | 32,183
+      15-20: 1.06 / 3.39 / 13.24 |  52.7% (49.9-55.3),  18.8% (16.5-21.4),  11.6% (9.7-13.7) | 1,693
+Piston single arrival, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.89 / 2.54 / 8.48 |  42.6% (42.3-42.9),  13.5% (13.3-13.7),   8.1% (8.0-8.3) | 1,643,518
+       5-10: 0.90 / 2.41 / 8.40 |  43.1% (42.8-43.5),  12.7% (12.5-12.9),   7.7% (7.5-7.8) | 446,421
+      10-15: 0.94 / 2.53 / 9.68 |  45.7% (45.0-46.3),  13.4% (12.9-14.0),   8.3% (7.8-8.9) | 49,477
+      15-20: 0.99 / 2.84 / 10.97 |  49.2% (47.0-51.2),  16.0% (14.3-17.5),   9.5% (8.3-10.8) | 2,718
+Piston pattern circuits, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 1.07 / 3.52 / 9.05 |  54.2% (53.7-54.6),  19.9% (19.5-20.2),  12.3% (12.0-12.6) | 2,411,375
+       5-10: 1.07 / 3.35 / 9.07 |  54.4% (53.9-54.9),  18.7% (18.4-19.1),  11.5% (11.2-11.9) | 588,008
+      10-15: 1.13 / 3.91 / 10.22 |  59.2% (58.5-60.1),  21.4% (20.7-22.1),  13.4% (12.9-14.1) | 47,044
+      15-20: 1.27 / 4.88 / 11.71 |  66.3% (63.8-68.9),  26.6% (24.0-29.5),  17.3% (15.0-19.8) | 1,681
+Piston towered, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 0.96 / 3.10 / 8.91 |  48.1% (47.7-48.5),  16.9% (16.6-17.1),  10.4% (10.2-10.6) | 3,579,041
+       5-10: 0.97 / 2.91 / 8.86 |  48.3% (47.9-48.6),  15.8% (15.5-16.1),   9.6% (9.4-9.9) | 943,785
+      10-15: 1.02 / 3.20 / 10.03 |  51.4% (50.8-52.0),  17.1% (16.6-17.6),  10.7% (10.3-11.2) | 89,842
+      15-20: 1.07 / 3.68 / 11.63 |  55.2% (53.4-57.0),  20.0% (18.6-21.5),  12.5% (11.3-13.7) | 4,098
+Piston non-towered, crosswind: S_fp by xw_kt. median / p90 / p99 | above 1, above 2, above 3 (95% CI, wider of aircraft and day bootstrap) | n
+        0-5: 1.14 / 3.46 / 8.51 |  59.9% (59.1-60.7),  20.3% (19.5-20.9),  12.2% (11.7-12.6) | 475,852
+       5-10: 1.17 / 3.41 / 8.59 |  62.8% (62.0-63.7),  19.6% (18.8-20.3),  11.9% (11.3-12.5) | 90,644
+      10-15: 1.20 / 3.40 / 8.67 |  64.5% (63.0-65.9),  19.5% (18.2-20.7),  11.7% (10.7-12.7) | 6,679
+      15-20: 1.19 / 3.71 / 10.77 |  62.1% (56.4-68.0),  20.6% (15.3-25.3),  12.6% (8.7-16.6) | 301
+
+3. Q2 models: change against calm crosswind, airport-runway effects absorbed, controls for type, ownership, season, entry, height source
+  Piston, S_fp above 1 (base 49.5%, n=5,190,504): change in points against calm crosswind: 5 kt +1.1 (+0.9 to +1.3), 10 kt +3.7 (+3.4 to +4.0), 15 kt +6.9 (+6.1 to +7.7), 20 kt +8.0 (+6.1 to +9.8). Per 5 kt headwind -2.0 (-2.0 to -1.9), per 5 kt gust spread +2.4 (+2.3 to +2.6)
+  Piston, S_fp above 2 (base 17.0%, n=5,190,504): change in points against calm crosswind: 5 kt +0.1 (-0.1 to +0.2), 10 kt +0.6 (+0.4 to +0.9), 15 kt +2.0 (+1.3 to +2.7), 20 kt +2.9 (+1.2 to +4.6). Per 5 kt headwind -2.1 (-2.1 to -2.0), per 5 kt gust spread +0.3 (+0.2 to +0.5)
+  Piston, S_fp above 3 (base 10.5%, n=5,190,504): change in points against calm crosswind: 5 kt +0.1 (-0.1 to +0.2), 10 kt +0.4 (+0.2 to +0.6), 15 kt +1.2 (+0.6 to +1.7), 20 kt +1.8 (+0.5 to +3.1). Per 5 kt headwind -1.7 (-1.7 to -1.6), per 5 kt gust spread +0.1 (+0.0 to +0.2)
+  Piston, log S_fp per 5 kt crosswind: +2.4% (+2.2 to +2.6), n=5,190,504
+  Piston, S_spd above 1 (base 47.6%, n=5,190,504): change in points against calm crosswind: 5 kt +0.8 (+0.6 to +1.0), 10 kt +5.2 (+4.9 to +5.5), 15 kt +13.0 (+12.1 to +13.9), 20 kt +14.7 (+11.8 to +17.7). Per 5 kt headwind +7.8 (+7.7 to +8.0), per 5 kt gust spread -4.9 (-5.1 to -4.7)
+  Piston, S_spd above 2 (base 10.3%, n=5,190,504): change in points against calm crosswind: 5 kt -0.1 (-0.2 to +0.0), 10 kt +1.8 (+1.6 to +2.0), 15 kt +6.5 (+5.8 to +7.1), 20 kt +14.2 (+12.7 to +15.8). Per 5 kt headwind +3.3 (+3.2 to +3.4), per 5 kt gust spread -2.0 (-2.1 to -1.8)
+  Piston, S_spd above 3 (base 2.1%, n=5,190,504): change in points against calm crosswind: 5 kt -0.1 (-0.1 to -0.0), 10 kt +0.3 (+0.2 to +0.4), 15 kt +1.5 (+1.2 to +1.9), 20 kt +9.6 (+8.4 to +10.8). Per 5 kt headwind +0.8 (+0.7 to +0.8), per 5 kt gust spread -0.4 (-0.5 to -0.4)
+  Piston, log S_spd per 5 kt crosswind: +4.1% (+4.0 to +4.3), n=5,127,875
+  Piston, S_comb above 1 (base 72.1%, n=5,190,504): change in points against calm crosswind: 5 kt +0.9 (+0.7 to +1.0), 10 kt +4.3 (+4.1 to +4.6), 15 kt +8.9 (+8.2 to +9.5), 20 kt +10.2 (+9.0 to +11.5). Per 5 kt headwind +3.0 (+2.9 to +3.1), per 5 kt gust spread -1.1 (-1.3 to -1.0)
+  Piston, S_comb above 2 (base 25.5%, n=5,190,504): change in points against calm crosswind: 5 kt -0.1 (-0.2 to +0.1), 10 kt +2.0 (+1.7 to +2.2), 15 kt +6.7 (+5.8 to +7.5), 20 kt +13.9 (+12.5 to +15.3). Per 5 kt headwind +0.8 (+0.7 to +1.0), per 5 kt gust spread -1.2 (-1.3 to -1.0)
+  Piston, S_comb above 3 (base 12.3%, n=5,190,504): change in points against calm crosswind: 5 kt -0.0 (-0.1 to +0.1), 10 kt +0.7 (+0.5 to +0.8), 15 kt +2.4 (+1.8 to +3.0), 20 kt +10.2 (+8.7 to +11.6). Per 5 kt headwind -0.9 (-1.0 to -0.9), per 5 kt gust spread -0.3 (-0.4 to -0.2)
+  Piston, log S_comb per 5 kt crosswind: +2.5% (+2.3 to +2.6), n=5,190,504
+  Piston turn to final, S_turn above 1 (base 38.2%, n=3,590,441): change in points against calm crosswind: 5 kt +0.5 (+0.3 to +0.8), 10 kt +2.4 (+2.0 to +2.8), 15 kt +6.2 (+5.0 to +7.3), 20 kt +6.0 (+2.7 to +9.4). Per 5 kt headwind -4.0 (-4.1 to -3.9), per 5 kt gust spread -0.4 (-0.6 to -0.2)
+  Piston turn to final, S_turn above 2 (base 6.9%, n=3,590,441): change in points against calm crosswind: 5 kt +0.2 (+0.1 to +0.3), 10 kt +0.7 (+0.5 to +0.9), 15 kt +1.4 (+0.8 to +2.0), 20 kt +1.4 (+0.2 to +2.6). Per 5 kt headwind -0.7 (-0.7 to -0.6), per 5 kt gust spread +0.1 (-0.0 to +0.2)
+  Piston turn to final, S_turn above 3 (base 2.8%, n=3,590,441): change in points against calm crosswind: 5 kt +0.1 (+0.0 to +0.1), 10 kt +0.3 (+0.1 to +0.4), 15 kt +0.5 (+0.1 to +0.9), 20 kt +0.3 (-0.3 to +0.9). Per 5 kt headwind -0.2 (-0.2 to -0.2), per 5 kt gust spread +0.0 (-0.0 to +0.1)
+  Piston turn to final, log S_turn per 5 kt crosswind: +1.2% (+1.0 to +1.3), n=3,590,441
+  Jets (floor), S_fp above 1 (base 6.7%, n=6,793,579): change in points against calm crosswind: 5 kt -0.1 (-0.1 to +0.0), 10 kt +1.0 (+0.9 to +1.0), 15 kt +2.9 (+2.7 to +3.1), 20 kt +4.8 (+4.4 to +5.3). Per 5 kt headwind -1.2 (-1.2 to -1.2), per 5 kt gust spread +1.8 (+1.7 to +1.8)
+  Jets (floor), S_fp above 2 (base 0.7%, n=6,793,579): change in points against calm crosswind: 5 kt -0.2 (-0.2 to -0.2), 10 kt -0.3 (-0.3 to -0.3), 15 kt -0.2 (-0.3 to -0.2), 20 kt -0.1 (-0.2 to -0.0). Per 5 kt headwind -0.1 (-0.1 to -0.1), per 5 kt gust spread -0.1 (-0.1 to -0.1)
+  Jets (floor), S_fp above 3 (base 0.0%, n=6,793,579): change in points against calm crosswind: 5 kt +0.0 (-0.0 to +0.0), 10 kt +0.0 (+0.0 to +0.0), 15 kt +0.0 (+0.0 to +0.1), 20 kt +0.1 (+0.0 to +0.1). Per 5 kt headwind -0.0 (-0.0 to -0.0), per 5 kt gust spread +0.0 (+0.0 to +0.0)
+  Jets (floor), log S_fp per 5 kt crosswind: +1.2% (+1.1 to +1.2), n=6,793,579
+  Within-aircraft (aircraft effects absorbed, controls season, entry, height source):
+  Piston within-aircraft, S_fp above 1 (base 49.5%, n=5,190,504): change in points against calm crosswind: 5 kt +1.1 (+0.9 to +1.2), 10 kt +3.7 (+3.4 to +4.0), 15 kt +7.4 (+6.6 to +8.2), 20 kt +8.1 (+6.2 to +10.0). Per 5 kt headwind -1.8 (-1.9 to -1.7), per 5 kt gust spread +2.7 (+2.5 to +2.8)
+  Piston within-aircraft, S_fp above 2 (base 17.0%, n=5,190,504): change in points against calm crosswind: 5 kt +0.3 (+0.1 to +0.4), 10 kt +0.9 (+0.7 to +1.2), 15 kt +2.8 (+2.1 to +3.4), 20 kt +2.9 (+1.3 to +4.5). Per 5 kt headwind -1.9 (-2.0 to -1.9), per 5 kt gust spread +0.4 (+0.3 to +0.5)
+  Piston within-aircraft, S_fp above 3 (base 10.5%, n=5,190,504): change in points against calm crosswind: 5 kt +0.2 (+0.1 to +0.3), 10 kt +0.7 (+0.5 to +0.9), 15 kt +2.0 (+1.5 to +2.6), 20 kt +2.1 (+0.9 to +3.4). Per 5 kt headwind -1.6 (-1.6 to -1.5), per 5 kt gust spread +0.1 (+0.0 to +0.2)
+  Piston within-aircraft, log S_fp per 5 kt crosswind: +2.7% (+2.5 to +2.9), n=5,190,504
+
+4. Calibration against Q1
+  calm, 0-4 kt: n=4,054,893, S_fp median 0.99, above 1 49.5%, above 2 17.3%, above 3 10.6%; S_spd above 1 47.1%
+  10-12 kt (New England revealed-limit band): n=70,569, S_fp median 1.03, above 1 52.0%, above 2 17.3%, above 3 10.8%; S_spd above 1 53.4%
+  US revealed limit 11.6 kt plus or minus 1 kt: n=53,540, S_fp median 1.04, above 1 52.2%, above 2 17.4%, above 3 10.8%; S_spd above 1 53.8%
+  0.75-1.0 of max demonstrated: n=30,148, S_fp median 1.07, above 1 56.3%, above 2 17.9%, above 3 11.1%; S_spd above 1 64.5%
+  above max demonstrated: n=2,968, S_fp median 1.14, above 1 60.3%, above 2 21.0%, above 3 13.4%; S_spd above 1 74.2%
+
+5. Which elements degrade: share above 1 by crosswind band
+                                  0-4      5-9    10-14    15-19      20+
+  centerline at 300 ft          14.3%    13.4%    14.8%    16.8%    16.8%
+  lined up at 300 ft            22.9%    21.0%    21.8%    23.1%    23.3%
+  glide path at 300 ft          20.2%    20.1%    21.6%    21.0%    22.5%
+  centerline 300-100 ft         12.4%    11.6%    13.0%    15.1%    16.8%
+  lined up 300-100 ft           20.9%    19.3%    20.5%    22.6%    23.3%
+  glide path 300-100 ft         19.8%    19.8%    21.0%    21.5%    21.4%
+  sink value at 300 ft           5.6%     5.5%     6.0%     7.5%    10.7%
+  sink value 300-100 ft          9.6%     9.7%    10.8%    13.7%    16.8%
+  sink consistency              16.9%    18.7%    20.7%    25.1%    22.0%
+  speed value at 300 ft         43.5%    44.4%    48.1%    56.9%    80.0%
+  speed value 300-100 ft        50.2%    52.1%    57.3%    66.7%    89.7%
+  speed consistency              6.0%     7.4%    10.4%    15.8%    33.6%
+
+6. Crosswind direction relative to the base leg (pattern approaches with a base leg; positive = wind from the base side)
+  -20 to -10 kt: n=  32,471, overshoot above 200 ft   1.0%, lined up below 300 ft or never  45.9%
+  -10 to -5 kt: n= 342,667, overshoot above 200 ft   1.4%, lined up below 300 ft or never  40.2%
+  -5 to -2 kt: n= 665,832, overshoot above 200 ft   1.9%, lined up below 300 ft or never  39.1%
+  -2 to +2 kt: n=1,520,294, overshoot above 200 ft   3.0%, lined up below 300 ft or never  36.3%
+  +2 to +5 kt: n= 661,057, overshoot above 200 ft   4.3%, lined up below 300 ft or never  32.5%
+  +5 to +10 kt: n= 338,133, overshoot above 200 ft   6.2%, lined up below 300 ft or never  29.7%
+  +10 to +20 kt: n=  29,844, overshoot above 200 ft   9.5%, lined up below 300 ft or never  29.0%
+  overshoot above 200 ft: per 5 kt from the base side +2.69 points (+2.61 to +2.77), per 5 kt from the far side -1.05 (-1.09 to -1.00), base share 3.2%
+  lined up below 300 ft or never: per 5 kt from the base side -3.58 points (-3.75 to -3.42), per 5 kt from the far side +4.70 (+4.53 to +4.88), base share 35.9%
+
+7. Measurement checks
+  barometric minus GNSS height at the gate, gust 0-0.5 kt: median absolute residual 14.3 ft (n=907,045)
+  barometric minus GNSS height at the gate, gust 0.5-5 kt: median absolute residual 14.0 ft (n=2,366,168)
+  barometric minus GNSS height at the gate, gust 5-10 kt: median absolute residual 14.2 ft (n=393,472)
+  barometric minus GNSS height at the gate, gust 10-+ kt: median absolute residual 14.6 ft (n=29,936)
+  NACp 10 or better at the gate: 81.5%, NACp 9 or better 97.4%
+  measurable at 300 ft, crosswind 0-5 kt: 80.1% (n=5,060,058)
+  measurable at 300 ft, crosswind 5-10 kt: 79.9% (n=1,295,518)
+  measurable at 300 ft, crosswind 10-15 kt: 76.9% (n=125,749)
+  measurable at 300 ft, crosswind 15-20 kt: 71.2% (n=6,232)
+  measurable at 300 ft, crosswind 20-+ kt: 73.6% (n=368)
+
+8. Sensitivities: S_fp above 2, change at 10 and 15 kt against calm (points)
+  straight-in only             n=1,454,031, base   2.8%: 10 kt +0.1 (-0.0 to +0.3), 15 kt +0.7 (+0.2 to +1.2)
+  25 ft altimeters only        n=3,695,201, base  16.0%: 10 kt +0.8 (+0.6 to +1.1), 15 kt +2.0 (+1.3 to +2.7)
+  calibrated GNSS heights only n=1,494,869, base  19.6%: 10 kt +0.1 (-0.4 to +0.6), 15 kt +1.6 (+0.2 to +3.1)
+  NACp 10 only                 n=4,229,592, base  16.4%: 10 kt +0.7 (+0.5 to +1.0), 15 kt +2.1 (+1.4 to +2.7)
+  late-turn descriptor out     n=4,355,435, base  12.4%: 10 kt +0.5 (+0.3 to +0.7), 15 kt +1.7 (+1.1 to +2.3)
+  towered                      n=4,617,020, base  16.7%: 10 kt +0.6 (+0.3 to +0.8), 15 kt +2.0 (+1.4 to +2.7)
+  non-towered                  n=  573,484, base  20.1%: 10 kt +1.6 (+0.8 to +2.5), 15 kt +0.8 (-1.8 to +3.4)
+  no parallel or near-parallel runways n=2,558,259, base  16.4%: 10 kt +0.6 (+0.3 to +0.9), 15 kt +2.7 (+1.8 to +3.7)
+  FAA region ACE               n=  182,033, base  16.9%: 10 kt +1.9 (+0.9 to +2.9), 15 kt +0.4 (-2.1 to +2.9)
+  FAA region AEA               n=  459,056, base  12.6%: 10 kt +0.2 (-0.3 to +0.8), 15 kt +2.3 (+0.6 to +4.0)
+  FAA region AGL               n=  633,115, base  19.5%: 10 kt +1.8 (+1.3 to +2.4), 15 kt +4.5 (+3.0 to +5.9)
+  FAA region ANE               n=  165,354, base  13.3%: 10 kt +1.6 (+0.6 to +2.7), 15 kt +1.0 (-2.1 to +4.1)
+  FAA region ANM               n=  667,058, base  21.7%: 10 kt +0.2 (-0.5 to +1.0), 15 kt +2.0 (-0.1 to +4.0)
+  FAA region ASO               n=1,079,323, base  13.5%: 10 kt +0.8 (+0.4 to +1.2), 15 kt +1.6 (+0.4 to +2.8)
+  FAA region ASW               n=  455,234, base  17.9%: 10 kt +1.8 (+1.0 to +2.5), 15 kt +1.2 (-1.0 to +3.5)
+  FAA region AWP               n=1,549,331, base  18.0%: 10 kt -0.7 (-1.2 to -0.2), 15 kt +0.9 (-1.2 to +3.0)
+  registered New England score (s) above 2: base 23.8%, 15 kt +4.8 (+4.1 to +5.6)

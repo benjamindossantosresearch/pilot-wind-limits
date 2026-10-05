@@ -1,0 +1,43 @@
+designator,model_regex,year_min,year_max,xwind_kt,xwind_basis,approach_kias,vso_kias,sources,quality,note
+P28A,^PA-28-161,,,17,published,63,44,S1,1,Warrior II VB-1180; flaps 40
+P28A,^PA-28-181,,,17,published,66,45,S3;S4;S5,1,Archer II/III; VSO 49 on Archer II VB-790; flaps 40
+P28A,^PA-28-151,,,17,assumed,63,44,,3,Warrior 1974-77 POH not found; Warrior II values assumed
+P28A,^PA-28-1[48]0,,,17,assumed,70,50,S6;S7;S8,2,Cherokee 140/180 owner's handbooks publish no crosswind figure; 17 kt family value assumed; approach 85 mph minus flap notches about 70 KIAS; VSO 55-61 mph CAS
+P28A,,,,17,assumed,65,47,,3,other PA-28 fixed-gear models; family value assumed
+C172,^172RG,,,15,published,65,42,S77,1,Cutlass RG filed under C172
+C172,^172[RS],,,15,published,65,40,S10;S12,1,172R/S flaps 30 approach 60-70 midpoint; VSO 40 (S) 33 (R) IAS
+C172,^172[PQ],,,15,published,65,33,S13,1,172P flaps 30 approach 60-70 midpoint
+C172,^172[MN],,,15,published,60,41,S14;S15,1,172M/N flaps 40 approach 55-65 midpoint
+C172,,,,15,assumed,60,41,S16,2,pre-1976 172 models; 1975 manual says 15 kt can be handled with safety
+SR22,^SR22T,,,21,published,82,64,S21,1,SR22T filed under SR22
+SR22,,2013,,21,published,82,64,S19;S20,1,3600 lb SR22 (2013 on); approach 80-85 midpoint
+SR22,,,2012,20,published,82,61,S17;S18,1,3400 lb SR22; approach 80-85 midpoint
+S22T,,,,21,published,82,64,S21;S22,1,approach 80-85 midpoint
+SR20,,,,20,published,78,62,S23;S24;S25,1,analog POH says 21 in Sec 4 and 20 in Sec 5; 20 used
+C182,,,,15,published,65,45,S26;S28;S29,1,landing value (182P/Q give 20 for takeoff); approach 60-70 midpoint; VSO 41 (T) 45 (Q) 48 (P)
+P28R,^PA-28R-180,,,17,assumed,78,56,S30,2,no crosswind figure published; family value assumed
+P28R,^PA-28R-200,,,17,published,78,56,S32;S33,1,Arrow II 20 mph (17.4 kt); early Arrow 200 publishes none
+P28R,,,,17,published,75,55,S34;S35;S36,1,PA-28R-201 and PA-28RT-201
+C150,^150M,,,13,published,55,42,S38,1,flaps 40 approach 50-60 midpoint
+C150,,,,13,assumed,57,42,S39;S40,2,pre-1975 150 owner's manuals publish no crosswind figure; 150M value assumed; approach 60-70 mph
+C152,,,,12,published,60,35,S41,1,flaps 30 approach 55-65 midpoint
+AA5,,,,16,published,65,53,S42;S43,1,AA-5A/B; AA-5B lists 69 in one place and 65 in another; original AA-5 assumed
+AG5B,,,,16,assumed,65,53,S43,2,Tiger AG-5B; AA-5B values assumed
+M20P,^M20J,,,11,published,71,54,S44;S45;S46,1,M20J 1996+ POH also shows 13 kt on one chart
+M20P,^M20R,,,13,published,75,59,S50;S51;S52,1,Ovation
+M20P,^M20E|^M20C|^M20F|^M20G,,,11,assumed,70,49,S47,2,owner's manual publishes no crosswind figure; M20J value assumed
+M20P,,,,11,assumed,71,54,,3,other M20 models
+BE36,,,1983,17,published,76,56,S53,1,E-1 thru E-926; later serials to 1983 assumed same
+BE36,,1984,,17,published,79,61,S54;S55,1,A36 2002 POH and G36; 1984-2001 serials assumed
+PA32,^PA-32-300,,,17,published,79,51,S58;S59,1,1974-76 manual 20 mph; 1977+ 17 kt; approach about 78-80
+PA32,,,,17,published,79,58,S60;S61,1,PA-32-301/301T/301FT/301XTC
+C72R,,,,15,published,65,42,S77,1,172RG Cutlass
+DA40,NG,,,25,published,76,60,S76,1,DA 40 NG
+DA40,,,,20,published,71,49,S75,1,DA 40 Lycoming
+P32R,^PA-32R-300|^PA-32RT-300,,,17,published,75,52,S62,1,Lance
+P32R,,,,17,published,80,63,S63;S64;S65,1,Saratoga SP / II HP / II TC
+PA34,^PA-34-200$,,,13,published,83,60,S66,1,Seneca I 15 mph CAS; a data sheet says 12 mph
+PA34,,,,17,published,88,62,S67;S68;S69,1,Seneca II 79-83, III and V 90
+BE58,,,,22,published,96,74,S56,1,G58 values not found; TH-773 POH used
+PA31,,,,20,published,100,70,S72;S73;S74,1,Navajo 100, C/R 95, Chieftain Vref 95
+PA44,,,,17,published,85,55,S70;S71,1,Seminole 75-90

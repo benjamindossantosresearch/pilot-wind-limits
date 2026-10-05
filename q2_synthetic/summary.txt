@@ -1,0 +1,51 @@
+Synthetic approaches: 432 scenarios x 3 sensor cases x 20 noisy samples = 25,920 measured runs
+Measurable at 300 ft after degradation: 100.0%
+
+25 ft altimeter, NACp 10 (8,638 runs): measured minus true ratio, median bias / spread (half the 5-95% range) / classification agreement at 1
+  s      bias +0.022  spread 0.311  agree 99.0%  (n=8,638)
+  g_c1   bias +0.013  spread 0.126  agree 98.9%  (n=8,638)
+  g_c2a  bias +0.030  spread 0.045  agree 100.0%  (n=8,638)
+  g_c3   bias +0.013  spread 0.080  agree 99.2%  (n=8,638)
+  g_c4   bias -0.104  spread 0.513  agree 92.3%  (n=8,638)
+  g_c5b  bias +0.126  spread 0.162  agree 99.8%  (n=8,638)
+  b_c1   bias +0.112  spread 0.097  agree 96.3%  (n=8,638)
+  b_c2a  bias +0.080  spread 0.055  agree 100.0%  (n=8,638)
+  b_c3   bias -0.036  spread 0.218  agree 94.3%  (n=8,638)
+  b_c4   bias -0.110  spread 0.449  agree 95.2%  (n=8,638)
+  alignment height (ft) bias -5  spread 38
+
+25 ft altimeter, NACp 9 (8,638 runs): measured minus true ratio, median bias / spread (half the 5-95% range) / classification agreement at 1
+  s      bias +0.047  spread 0.458  agree 95.8%  (n=8,638)
+  g_c1   bias +0.045  spread 0.378  agree 93.7%  (n=8,638)
+  g_c2a  bias +0.030  spread 0.045  agree 100.0%  (n=8,638)
+  g_c3   bias +0.014  spread 0.090  agree 98.8%  (n=8,638)
+  g_c4   bias -0.099  spread 0.514  agree 92.2%  (n=8,638)
+  g_c5b  bias +0.128  spread 0.163  agree 99.9%  (n=8,638)
+  b_c1   bias +0.346  spread 0.295  agree 75.7%  (n=8,638)
+  b_c2a  bias +0.080  spread 0.055  agree 100.0%  (n=8,638)
+  b_c3   bias -0.034  spread 0.228  agree 94.4%  (n=8,638)
+  b_c4   bias -0.106  spread 0.442  agree 95.1%  (n=8,638)
+  alignment height (ft) bias -27  spread 420
+
+100 ft altimeter (calibrated GNSS heights), NACp 10 (8,640 runs): measured minus true ratio, median bias / spread (half the 5-95% range) / classification agreement at 1
+  s      bias +0.028  spread 0.342  agree 98.6%  (n=8,640)
+  g_c1   bias +0.012  spread 0.110  agree 98.8%  (n=8,640)
+  g_c2a  bias +0.026  spread 0.038  agree 100.0%  (n=8,640)
+  g_c3   bias +0.006  spread 0.149  agree 98.6%  (n=8,640)
+  g_c4   bias -0.116  spread 0.539  agree 91.1%  (n=8,640)
+  g_c5b  bias +0.122  spread 0.160  agree 99.8%  (n=8,638)
+  b_c1   bias +0.113  spread 0.094  agree 96.3%  (n=8,640)
+  b_c2a  bias +0.080  spread 0.055  agree 100.0%  (n=8,640)
+  b_c3   bias +0.029  spread 0.291  agree 93.0%  (n=8,640)
+  b_c4   bias -0.089  spread 0.427  agree 95.5%  (n=8,640)
+  alignment height (ft) bias -6  spread 43
+
+Resolution: median measured ratio for each injected deviation, 25 ft altimeter, NACp 10, straight-in, calm
+  lateral offset (ft) -> g_c1: 0: true 0.00, measured 0.05; 150: true 0.75, measured 0.74; 300: true 1.50, measured 1.50
+  glide path offset (ft) -> g_c3: 0: true 0.27, measured 0.34; 60: true 0.69, measured 0.71; 150: true 1.78, measured 1.78
+  descent-rate swing (fpm) -> b_c4: 0: true 0.00, measured 0.18; 300: true 0.89, measured 0.78; 600: true 1.78, measured 1.57
+  speed swing (kt) -> g_c5b: 0: true 0.00, measured 0.21; 6: true 1.20, measured 1.24
+
+Wind check: speed-stability ratio (C5b) with a steady 15 kt crosswind and no injected speed swing (true airspeed constant)
+  straight: median C5b 0.21 in wind against 0.21 calm
+  pattern: median C5b 0.26 in wind against 0.20 calm

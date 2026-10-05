@@ -1,0 +1,44 @@
+Q2 audit of sink rate (C4) and speed stability (C5b). Piston 163,361 (calm 122,151), jets straight-in 37,724 (calm 26,807), reviewed approaches 29
+
+A. The criteria on their own, calm crosswind: share above 1
+  C4 registered  piston  39.9%   jets   5.0%
+  C4 AFH         piston   8.8%   jets   4.5%
+  C4 stability   piston  12.6%   jets   3.1%
+  C4 AFH+stab    piston  17.9%   jets   6.7%
+  C5b registered  piston  24.5%   jets  21.9%
+  C5b detrended   piston   4.6%   jets  13.1%
+  C5b 15 s        piston   3.9%   jets   8.1%
+  (reference: centerline, lined up and glide path together: piston 63.2% full score)
+
+B. Full score S with each combination
+  C4 / C5b                  calm piston >1   >2    >3  | jets >1 | Spearman with blind ratings | OR per 5 kt crosswind, S>2 and S>1
+  registered / registered     63.2%   19.0%   9.0% |  25.6% | 0.743 | 1.132 (1.092-1.174)  1.134 (1.105-1.163)
+  registered / detrended      55.3%   17.3%   8.8% |  17.8% | 0.748 | 1.133 (1.093-1.176)  1.112 (1.083-1.141)
+  registered / 15 s           55.3%   17.3%   8.7% |  12.9% | 0.696 | 1.128 (1.090-1.168)  1.106 (1.078-1.135)
+  registered / none           54.0%   17.2%   8.7% |   5.3% | 0.691 | 1.108 (1.072-1.146)  1.105 (1.077-1.135)
+  AFH        / registered     51.4%   14.1%   8.0% |  25.5% | 0.742 | 1.144 (1.094-1.196)  1.131 (1.103-1.159)
+  AFH        / detrended      39.7%   12.2%   7.7% |  17.5% | 0.763 | 1.158 (1.107-1.211)  1.111 (1.079-1.145)
+  AFH        / 15 s           39.5%   12.2%   7.7% |  12.6% | 0.690 | 1.150 (1.102-1.200)  1.104 (1.071-1.137)
+  AFH        / none           37.5%   12.0%   7.7% |   5.0% | 0.690 | 1.120 (1.075-1.167)  1.097 (1.063-1.131)
+  stability  / registered     54.9%   15.0%   8.1% |  24.4% | 0.753 | 1.140 (1.095-1.187)  1.139 (1.113-1.166)
+  stability  / detrended      44.2%   13.1%   7.9% |  16.3% | 0.789 | 1.152 (1.107-1.199)  1.115 (1.085-1.146)
+  stability  / 15 s           44.0%   13.1%   7.9% |  11.3% | 0.747 | 1.144 (1.102-1.188)  1.108 (1.078-1.138)
+  stability  / none           42.2%   12.9%   7.8% |   3.6% | 0.740 | 1.117 (1.077-1.160)  1.098 (1.068-1.129)
+  AFH+stab   / registered     55.8%   15.0%   8.1% |  27.1% | 0.742 | 1.139 (1.094-1.186)  1.139 (1.113-1.166)
+  AFH+stab   / detrended      45.4%   13.1%   7.9% |  19.5% | 0.763 | 1.150 (1.105-1.197)  1.117 (1.087-1.147)
+  AFH+stab   / 15 s           45.3%   13.1%   7.9% |  14.5% | 0.690 | 1.143 (1.100-1.187)  1.110 (1.080-1.140)
+  AFH+stab   / none           43.5%   13.0%   7.8% |   7.1% | 0.690 | 1.116 (1.075-1.158)  1.103 (1.074-1.133)
+
+C. Agreement with the problems Benjamin picked on the 30 reviewed approaches
+  tagged sink rate: ['R04', 'R09', 'R16', 'R22', 'R23']; tagged speed: ['R07', 'R09', 'R13', 'R21', 'R27']
+  C4 registered  fires on 11: 4 of 5 he tagged, 7 he did not
+  C4 AFH         fires on  2: 1 of 5 he tagged, 1 he did not
+  C4 stability   fires on  7: 2 of 5 he tagged, 5 he did not
+  C4 AFH+stab    fires on  7: 2 of 5 he tagged, 5 he did not
+  C5b registered fires on  6: 1 of 5 he tagged, 5 he did not
+  C5b detrended  fires on  1: 0 of 5 he tagged, 1 he did not
+  C5b 15 s       fires on  0: 0 of 5 he tagged, 0 he did not
+
+D. Descent rates piston pilots fly between 300 and 100 ft (median per approach), calm
+  piston: median 512 fpm, p10 320, p90 832, above 1,000 fpm 4.2%, n=122,082
+  jet: median 704 fpm, p10 544, p90 896, above 1,000 fpm 2.4%, n=29,064

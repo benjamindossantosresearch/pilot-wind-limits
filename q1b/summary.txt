@@ -1,0 +1,76 @@
+Q1b: piston GA approaches, VMC, study airports in their windows
+Approaches with wind and a POH value: 221,908 (published value 192,571, family value 29,337)
+Dropped: no POH value (type not in table) 18,288, no wind 1,795, not VMC 12,701, outside window 181,010
+
+PRIMARY (published POH values)
+  sustained crosswind above max demonstrated:
+    all      0.04% (83 of 192,571; 95% CI 0.03 to 0.06, wider of aircraft and day clustering)
+    fleet    0.04% (54 of 133,425; 95% CI 0.02 to 0.07, wider of aircraft and day clustering)
+    private  0.05% (29 of 58,704; 95% CI 0.03 to 0.07, wider of aircraft and day clustering)
+    trust    0.00% (0 of 215; 95% CI 0.00 to 0.00, wider of aircraft and day clustering)
+  gust crosswind above max demonstrated:
+    all      1.24% (2,379 of 192,571; 95% CI 1.11 to 1.38, wider of aircraft and day clustering)
+    fleet    1.22% (1,625 of 133,425; 95% CI 1.06 to 1.38, wider of aircraft and day clustering)
+    private  1.27% (747 of 58,704; 95% CI 1.06 to 1.48, wider of aircraft and day clustering)
+    trust    1.40% (3 of 215; 95% CI 0.00 to 4.24, wider of aircraft and day clustering)
+  crosswind / max demonstrated, sustained: median 0.17, p90 0.44, p99 0.71, p99.9 0.92
+  crosswind / max demonstrated, gust:      median 0.23, p90 0.62, p99 1.04, p99.9 1.38
+  share above 0.50: sustained 6.35%, gust 16.90%, 0.75: sustained 0.61%, gust 5.28%, 1.00: sustained 0.04%, gust 1.24%
+  by type (types with at least 200 approaches): approaches, max demo, sustained exceedance, gust exceedance
+    P28A   86,655       17 kt   0.02%   0.80%
+    C172   63,846       15 kt   0.06%   1.73%
+    SR22    8,226    20/21 kt   0.00%   0.23%
+    SR20    7,101       20 kt   0.00%   0.23%
+    P28R    4,553       17 kt   0.09%   0.94%
+    C182    4,516       15 kt   0.04%   2.50%
+    C152    2,755       12 kt   0.22%   3.96%
+    S22T    2,192       21 kt   0.00%   0.41%
+    AA5     1,809       16 kt   0.00%   1.38%
+    PA32    1,394       17 kt   0.07%   2.15%
+    PA34    1,250    13/17 kt   0.16%   4.48%
+    P32R    1,169       17 kt   0.00%   1.28%
+    DA40    1,072    20/25 kt   0.00%   0.37%
+    C72R    1,070       15 kt   0.00%   1.96%
+    PA31    1,063       20 kt   0.00%   0.75%
+    BE58    1,030       22 kt   0.00%   0.58%
+    BE36      940       17 kt   0.00%   0.64%
+    M20P      797    11/13 kt   1.25%   8.91%
+    PA44      691       17 kt   0.00%   1.88%
+    C150      442       13 kt   0.00%   3.85%
+
+SENSITIVITY (published and family values)
+  sustained crosswind above max demonstrated:
+    all      0.04% (97 of 221,908; 95% CI 0.03 to 0.06, wider of aircraft and day clustering)
+    fleet    0.04% (56 of 150,973; 95% CI 0.02 to 0.06, wider of aircraft and day clustering)
+    private  0.06% (41 of 70,461; 95% CI 0.04 to 0.08, wider of aircraft and day clustering)
+    trust    0.00% (0 of 247; 95% CI 0.00 to 0.00, wider of aircraft and day clustering)
+  gust crosswind above max demonstrated:
+    all      1.24% (2,753 of 221,908; 95% CI 1.11 to 1.38, wider of aircraft and day clustering)
+    fleet    1.19% (1,799 of 150,973; 95% CI 1.04 to 1.34, wider of aircraft and day clustering)
+    private  1.34% (947 of 70,461; 95% CI 1.16 to 1.56, wider of aircraft and day clustering)
+    trust    1.21% (3 of 247; 95% CI 0.00 to 3.62, wider of aircraft and day clustering)
+  crosswind / max demonstrated, sustained: median 0.17, p90 0.44, p99 0.70, p99.9 0.92
+  crosswind / max demonstrated, gust:      median 0.23, p90 0.62, p99 1.04, p99.9 1.39
+  share above 0.50: sustained 6.32%, gust 16.92%, 0.75: sustained 0.61%, gust 5.26%, 1.00: sustained 0.04%, gust 1.24%
+  by type (types with at least 200 approaches): approaches, max demo, sustained exceedance, gust exceedance
+    P28A  107,507       17 kt   0.02%   0.83%
+    C172   68,547       15 kt   0.06%   1.69%
+    SR22    8,226    20/21 kt   0.00%   0.23%
+    SR20    7,101       20 kt   0.00%   0.23%
+    P28R    4,795       17 kt   0.08%   0.90%
+    C182    4,516       15 kt   0.04%   2.50%
+    C150    3,209       13 kt   0.03%   2.40%
+    C152    2,755       12 kt   0.22%   3.96%
+    S22T    2,192       21 kt   0.00%   0.41%
+    AA5     1,809       16 kt   0.00%   1.38%
+    M20P    1,572    11/13 kt   1.34%   8.65%
+    PA32    1,394       17 kt   0.07%   2.15%
+    PA34    1,250    13/17 kt   0.16%   4.48%
+    P32R    1,169       17 kt   0.00%   1.28%
+    DA40    1,072    20/25 kt   0.00%   0.37%
+    C72R    1,070       15 kt   0.00%   1.96%
+    PA31    1,063       20 kt   0.00%   0.75%
+    BE58    1,030       22 kt   0.00%   0.58%
+    BE36      940       17 kt   0.00%   0.64%
+    PA44      691       17 kt   0.00%   1.88%
+

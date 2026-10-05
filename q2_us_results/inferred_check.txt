@@ -1,0 +1,49 @@
+Primary Q2 sample: 5,308,201 approaches. Inferred: none 5,206,025 (98.08%), traverse 78,482 (1.48%), end 11,948 (0.23%), gap 11,746 (0.22%)
+
+S_fp by inferred type: median, share above 1, above 2
+  none      n=5,206,025  median 0.99  above 1 49.6%  above 2 17.0%
+  end       n=   11,948  median 6.84  above 1 95.4%  above 2 90.8%
+  gap       n=   11,746  median 7.39  above 1 97.6%  above 2 92.9%
+  traverse  n=   78,482  median 5.99  above 1 97.8%  above 2 93.9%
+
+Airports with most traverse-inferred measurable approaches (share of the airport's sample): HWO 12,334 (11.1%), SFB 7,813 (6.0%), DTO 7,616 (11.2%), PRC 6,002 (17.8%), AFW 5,409 (23.9%), LVK 3,043 (15.4%), DVT 3,013 (1.8%), DWH 2,070 (13.2%), FTW 1,334 (3.0%), BFL 1,323 (24.3%)
+
+== all approaches (as reported), n=5,308,201
+  all approaches (as reported), S_fp above 1 (base 50.5%, n=5,292,401): change in points against calm crosswind: 5 kt +1.1 (+0.9 to +1.2), 10 kt +3.7 (+3.4 to +3.9), 15 kt +6.8 (+6.0 to +7.6), 20 kt +7.9 (+6.0 to +9.8). Per 5 kt headwind -2.1 (-2.1 to -2.0), per 5 kt gust spread +2.4 (+2.2 to +2.5)
+  all approaches (as reported), S_fp above 2 (base 18.5%, n=5,292,401): change in points against calm crosswind: 5 kt +0.1 (-0.0 to +0.2), 10 kt +0.7 (+0.5 to +0.9), 15 kt +2.1 (+1.4 to +2.7), 20 kt +3.0 (+1.2 to +4.7). Per 5 kt headwind -2.2 (-2.3 to -2.2), per 5 kt gust spread +0.3 (+0.2 to +0.4)
+  all approaches (as reported), log S_fp per 5 kt crosswind: +2.5% (+2.4 to +2.7), n=5,292,401
+  all approaches (as reported), S_spd above 1 (base 47.6%, n=5,292,401): change in points against calm crosswind: 5 kt +0.8 (+0.6 to +1.0), 10 kt +5.2 (+4.9 to +5.5), 15 kt +13.1 (+12.2 to +14.0), 20 kt +14.8 (+11.9 to +17.7). Per 5 kt headwind +7.8 (+7.6 to +7.9), per 5 kt gust spread -4.9 (-5.1 to -4.7)
+  all approaches (as reported), S_spd above 2 (base 10.3%, n=5,292,401): change in points against calm crosswind: 5 kt -0.0 (-0.1 to +0.1), 10 kt +1.8 (+1.7 to +2.0), 15 kt +6.6 (+5.9 to +7.2), 20 kt +14.3 (+12.8 to +15.9). Per 5 kt headwind +3.3 (+3.2 to +3.4), per 5 kt gust spread -2.0 (-2.1 to -1.9)
+  all approaches (as reported), log S_spd per 5 kt crosswind: +4.2% (+4.0 to +4.3), n=5,224,658
+  all approaches (as reported) turn to final, S_turn above 1 (base 39.5%, n=3,663,931): change in points against calm crosswind: 5 kt +0.6 (+0.3 to +0.8), 10 kt +2.5 (+2.1 to +2.8), 15 kt +6.1 (+5.0 to +7.3), 20 kt +6.2 (+2.8 to +9.6). Per 5 kt headwind -4.0 (-4.1 to -3.9), per 5 kt gust spread -0.4 (-0.6 to -0.2)
+  all approaches (as reported) turn to final, log S_turn per 5 kt crosswind: +1.2% (+1.0 to +1.3), n=3,663,931
+  crosswind 0-4 kt: S_fp above 1 50.4%, above 2 18.7%, S_spd above 1 47.1% (n=4,132,516)
+  crosswind 10-14 kt: S_fp above 1 53.3%, above 2 19.0%, S_spd above 1 54.2% (n=98,750)
+  crosswind 15-19 kt: S_fp above 1 56.5%, above 2 21.5%, S_spd above 1 59.9% (n=4,488)
+
+== traverse excluded, n=5,229,719
+  traverse excluded, S_fp above 1 (base 49.8%, n=5,214,154): change in points against calm crosswind: 5 kt +1.1 (+0.9 to +1.3), 10 kt +3.7 (+3.4 to +4.0), 15 kt +6.9 (+6.1 to +7.7), 20 kt +8.0 (+6.2 to +9.9). Per 5 kt headwind -2.0 (-2.1 to -1.9), per 5 kt gust spread +2.4 (+2.3 to +2.6)
+  traverse excluded, S_fp above 2 (base 17.4%, n=5,214,154): change in points against calm crosswind: 5 kt +0.1 (-0.0 to +0.2), 10 kt +0.7 (+0.5 to +0.9), 15 kt +2.1 (+1.4 to +2.8), 20 kt +3.0 (+1.3 to +4.8). Per 5 kt headwind -2.1 (-2.2 to -2.0), per 5 kt gust spread +0.4 (+0.2 to +0.5)
+  traverse excluded, log S_fp per 5 kt crosswind: +2.5% (+2.3 to +2.6), n=5,214,154
+  traverse excluded, S_spd above 1 (base 47.6%, n=5,214,154): change in points against calm crosswind: 5 kt +0.8 (+0.6 to +1.0), 10 kt +5.2 (+4.9 to +5.5), 15 kt +13.1 (+12.2 to +14.0), 20 kt +14.7 (+11.8 to +17.6). Per 5 kt headwind +7.8 (+7.6 to +7.9), per 5 kt gust spread -4.9 (-5.1 to -4.7)
+  traverse excluded, S_spd above 2 (base 10.3%, n=5,214,154): change in points against calm crosswind: 5 kt -0.1 (-0.2 to +0.1), 10 kt +1.8 (+1.7 to +2.0), 15 kt +6.5 (+5.8 to +7.2), 20 kt +14.3 (+12.8 to +15.9). Per 5 kt headwind +3.3 (+3.2 to +3.4), per 5 kt gust spread -2.0 (-2.1 to -1.8)
+  traverse excluded, log S_spd per 5 kt crosswind: +4.2% (+4.0 to +4.3), n=5,149,541
+  traverse excluded turn to final, S_turn above 1 (base 38.5%, n=3,604,519): change in points against calm crosswind: 5 kt +0.6 (+0.3 to +0.8), 10 kt +2.4 (+2.1 to +2.8), 15 kt +6.2 (+5.1 to +7.4), 20 kt +6.3 (+2.9 to +9.7). Per 5 kt headwind -4.0 (-4.1 to -3.9), per 5 kt gust spread -0.4 (-0.6 to -0.2)
+  traverse excluded turn to final, log S_turn per 5 kt crosswind: +1.2% (+1.0 to +1.3), n=3,604,519
+  crosswind 0-4 kt: S_fp above 1 49.7%, above 2 17.6%, S_spd above 1 47.1% (n=4,073,109)
+  crosswind 10-14 kt: S_fp above 1 52.5%, above 2 17.7%, S_spd above 1 54.3% (n=97,086)
+  crosswind 15-19 kt: S_fp above 1 56.0%, above 2 20.6%, S_spd above 1 60.0% (n=4,432)
+
+== all inferred excluded, n=5,206,025
+  all inferred excluded, S_fp above 1 (base 49.6%, n=5,190,537): change in points against calm crosswind: 5 kt +1.1 (+0.9 to +1.3), 10 kt +3.7 (+3.4 to +4.0), 15 kt +6.9 (+6.1 to +7.7), 20 kt +8.0 (+6.1 to +9.8). Per 5 kt headwind -2.0 (-2.0 to -1.9), per 5 kt gust spread +2.4 (+2.3 to +2.6)
+  all inferred excluded, S_fp above 2 (base 17.0%, n=5,190,537): change in points against calm crosswind: 5 kt +0.1 (-0.1 to +0.2), 10 kt +0.6 (+0.4 to +0.9), 15 kt +2.0 (+1.3 to +2.7), 20 kt +2.9 (+1.2 to +4.6). Per 5 kt headwind -2.1 (-2.1 to -2.0), per 5 kt gust spread +0.3 (+0.2 to +0.5)
+  all inferred excluded, log S_fp per 5 kt crosswind: +2.4% (+2.2 to +2.6), n=5,190,537
+  all inferred excluded, S_spd above 1 (base 47.6%, n=5,190,537): change in points against calm crosswind: 5 kt +0.8 (+0.6 to +1.0), 10 kt +5.2 (+4.9 to +5.5), 15 kt +13.0 (+12.1 to +13.9), 20 kt +14.7 (+11.8 to +17.7). Per 5 kt headwind +7.8 (+7.7 to +8.0), per 5 kt gust spread -4.9 (-5.1 to -4.7)
+  all inferred excluded, S_spd above 2 (base 10.3%, n=5,190,537): change in points against calm crosswind: 5 kt -0.1 (-0.2 to +0.0), 10 kt +1.8 (+1.6 to +2.0), 15 kt +6.5 (+5.8 to +7.1), 20 kt +14.2 (+12.7 to +15.8). Per 5 kt headwind +3.3 (+3.2 to +3.4), per 5 kt gust spread -2.0 (-2.1 to -1.8)
+  all inferred excluded, log S_spd per 5 kt crosswind: +4.1% (+4.0 to +4.3), n=5,127,906
+  all inferred excluded turn to final, S_turn above 1 (base 38.2%, n=3,590,465): change in points against calm crosswind: 5 kt +0.5 (+0.3 to +0.8), 10 kt +2.4 (+2.0 to +2.8), 15 kt +6.2 (+5.0 to +7.3), 20 kt +6.0 (+2.7 to +9.4). Per 5 kt headwind -4.0 (-4.1 to -3.9), per 5 kt gust spread -0.4 (-0.6 to -0.2)
+  all inferred excluded turn to final, log S_turn per 5 kt crosswind: +1.2% (+1.0 to +1.3), n=3,590,465
+  crosswind 0-4 kt: S_fp above 1 49.5%, above 2 17.3%, S_spd above 1 47.1% (n=4,054,916)
+  crosswind 10-14 kt: S_fp above 1 52.3%, above 2 17.3%, S_spd above 1 54.3% (n=96,522)
+  crosswind 15-19 kt: S_fp above 1 55.7%, above 2 20.1%, S_spd above 1 60.1% (n=4,399)
+

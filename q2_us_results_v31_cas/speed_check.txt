@@ -1,0 +1,16 @@
+Speed score diagnostic, 4,406,751 piston approaches with a gate airspeed and a POH approach speed.
+
+By crosswind (kt): n | median gate airspeed minus target | slow | fast | unsteady
+     0 to 5    n=3,441,146 |  +6.3 kt |   3.5% |  29.7% |   4.6%
+     5 to 10   n=  881,127 |  +6.5 kt |   3.5% |  31.1% |   5.8%
+    10 to 15   n=   80,893 |  +6.9 kt |   4.5% |  34.8% |   8.2%
+    15 to 20   n=    3,390 |  +8.1 kt |   5.8% |  41.2% |  12.4%
+
+By headwind (kt): n | median gate airspeed minus target | slow | fast | unsteady
+   -10 to -5   n=   34,128 |  +2.8 kt |  11.0% |  18.9% |   6.0%
+    -5 to 0    n=  579,959 |  +4.3 kt |   5.7% |  20.7% |   4.5%
+     0 to 5    n=1,918,977 |  +5.7 kt |   4.0% |  26.0% |   4.2%
+     5 to 10   n=1,388,385 |  +7.3 kt |   2.4% |  34.6% |   5.0%
+    10 to 15   n=  424,636 |  +8.9 kt |   1.7% |  43.6% |   7.0%
+    15 to 25   n=   59,202 | +11.3 kt |   1.2% |  56.4% |  11.8%
+

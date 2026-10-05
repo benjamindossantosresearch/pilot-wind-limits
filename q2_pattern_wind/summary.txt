@@ -1,0 +1,25 @@
+Pattern-height wind from ground speed in turns: 15,295 airport-hours with a fit (standard error under 3 kt)
+
+Hours with surface wind 5 kt or more: 10,267. Mean fit height 946 ft above the field.
+  pattern / surface wind speed: median 1.98 (IQR 1.56 to 2.51); the 1/7 power law predicts 1.62 at that height
+  implied power-law exponent: median 0.204 (IQR 0.133 to 0.276); 1/7 = 0.143, sensitivity runs use 0 and 0.25
+  direction, pattern minus surface (positive = veering with height): median +4 deg, IQR -10 to +19
+
+By surface wind band: n, median ratio, median exponent
+  5-10 kt: 7,940, 2.09, 0.219
+  10-15 kt: 2,202, 1.79, 0.172
+  15-+ kt: 125, 1.65, 0.147
+By local hour: n, median exponent (morning stable air should show more shear than afternoon mixing)
+  07-10: 1,389, 0.245
+  10-13: 3,083, 0.179
+  13-16: 3,138, 0.185
+  16-20: 2,424, 0.233
+By airport: n, median ratio, median exponent
+  BDR: 3,298, 1.87, 0.187
+  HVN: 802, 1.96, 0.201
+  BED: 2,100, 1.75, 0.165
+  LWM: 1,319, 2.22, 0.238
+  OWD: 1,428, 2.32, 0.251
+  PYM: 851, 1.99, 0.204
+  TAN: 469, 2.34, 0.249
+Check on calm-surface hours (under 2 kt, 1,071): median fitted pattern wind 10.4 kt

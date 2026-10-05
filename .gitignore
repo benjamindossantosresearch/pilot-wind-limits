@@ -1,0 +1,18 @@
+# Inputs and intermediate files, too large or too detailed to publish (see README)
+adsb_cache/
+q2_extract/
+q2_extract_us/
+us_daily/
+weather/
+labeling/
+q2_review/
+q2/
+q2_tas/
+q2_us/
+q2_us_v31/
+q2_us_v31_cas*/
+reference/nasr/
+reference/faa_registry/
+*.pkl
+*.log
+__pycache__/

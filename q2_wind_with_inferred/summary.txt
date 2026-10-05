@@ -1,0 +1,111 @@
+Q2 wind analysis. Primary population: 163,361 measurable piston approaches (VMC, seven airports in their Q1a windows).
+Machine-flown floor: 37,724 jet straight-in approaches.
+
+1. DISTRIBUTION OF S BY WIND (95% intervals: wider of aircraft- and day-cluster bootstrap)
+Piston, crosswind: by xw_kt (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+        0-5: 1.19 (1.17-1.21) / 2.82 (2.73-2.93) / 7.80 / 63.2% (61.9-64.5) / 19.0% (18.2-20.0) / 122,151
+       5-10: 1.23 (1.21-1.25) / 2.96 (2.86-3.08) / 7.80 / 65.4% (64.1-66.7) / 20.6% (19.6-21.5) / 37,120
+      10-15: 1.30 (1.26-1.35) / 2.86 (2.68-3.11) / 7.37 / 70.3% (68.2-72.2) / 22.3% (20.5-24.3) / 3,562
+        15+: 1.57 (1.28-1.89) / 3.83 (2.61-6.92) / 20.73 / 78.8% (69.7-86.1) / 33.6% (21.4-46.5) / 137
+Jets (floor), crosswind: by xw_kt (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+        0-5: 0.67 (0.65-0.69) / 1.58 (1.55-1.62) / 3.12 / 25.6% (24.5-26.8) / 5.5% (5.1-5.9) / 26,807
+       5-10: 0.68 (0.66-0.69) / 1.43 (1.39-1.47) / 2.83 / 23.1% (21.7-24.5) / 3.9% (3.5-4.4) / 9,331
+      10-15: 0.72 (0.69-0.74) / 1.34 (1.28-1.45) / 2.51 / 23.3% (20.9-25.9) / 2.7% (1.9-3.6) / 1,409
+        15+: 0.76 (0.67-0.87) / 1.49 (1.19-1.65) / 2.23 / 27.7% (20.0-35.9) / 1.5% (0.0-3.6) / 130
+Piston, crosswind as a fraction of POH max demonstrated: by frac (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+     0-0.25: 1.18 (1.16-1.20) / 2.71 (2.62-2.81) / 7.50 / 62.4% (61.2-63.6) / 18.1% (17.3-19.0) / 99,292
+   0.25-0.5: 1.21 (1.19-1.23) / 2.89 (2.78-3.02) / 7.64 / 64.6% (63.2-66.0) / 19.6% (18.7-20.7) / 41,573
+   0.5-0.75: 1.27 (1.24-1.30) / 2.96 (2.82-3.13) / 7.90 / 68.4% (66.6-70.0) / 21.5% (20.2-23.0) / 8,994
+      0.75+: 1.41 (1.31-1.48) / 3.18 (2.84-3.88) / 7.81 / 75.0% (70.9-78.7) / 24.8% (21.6-28.8) / 947
+Piston, gust spread: by gust_spread (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+      0-0.5: 1.20 (1.18-1.22) / 2.87 (2.77-3.00) / 7.78 / 63.4% (62.1-64.8) / 19.5% (18.6-20.6) / 39,571
+      0.5-5: 1.20 (1.18-1.22) / 2.88 (2.78-3.00) / 7.91 / 63.6% (62.5-64.8) / 19.6% (18.8-20.4) / 98,089
+       5-10: 1.22 (1.20-1.24) / 2.76 (2.66-2.88) / 7.26 / 65.3% (64.2-66.6) / 19.0% (18.0-20.1) / 23,351
+        10+: 1.25 (1.20-1.28) / 2.47 (2.36-2.62) / 6.75 / 66.9% (64.4-69.2) / 17.6% (15.6-19.4) / 2,350
+Jets (floor), gust spread: by gust_spread (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+      0-0.5: 0.69 (0.67-0.70) / 1.69 (1.64-1.73) / 3.16 / 28.2% (26.9-29.4) / 6.4% (5.8-7.0) / 10,009
+      0.5-5: 0.66 (0.64-0.68) / 1.53 (1.49-1.57) / 3.09 / 23.8% (22.6-25.1) / 5.0% (4.6-5.4) / 18,856
+       5-10: 0.69 (0.67-0.71) / 1.38 (1.34-1.43) / 2.75 / 23.4% (22.0-24.9) / 3.4% (2.9-3.9) / 7,411
+        10+: 0.71 (0.68-0.75) / 1.33 (1.28-1.44) / 2.45 / 23.9% (21.2-26.6) / 2.6% (1.8-3.6) / 1,446
+Piston, headwind (negative = tailwind): by hw_kt (kt unless noted). median / p90 / p99 of s, share above 1, share above 2, n
+         <0: 1.33 (1.31-1.37) / 3.54 (3.33-3.77) / 8.77 / 70.4% (69.0-71.8) / 25.3% (24.0-26.7) / 14,056
+        0-5: 1.23 (1.21-1.25) / 3.06 (2.94-3.19) / 8.21 / 64.8% (63.6-66.1) / 21.2% (20.2-22.2) / 66,614
+       5-10: 1.16 (1.14-1.18) / 2.64 (2.57-2.73) / 7.24 / 61.7% (60.4-63.0) / 17.3% (16.6-18.2) / 64,794
+      10-15: 1.16 (1.14-1.18) / 2.46 (2.37-2.56) / 6.67 / 62.6% (61.1-64.1) / 15.8% (14.7-16.9) / 16,442
+        15+: 1.25 (1.21-1.32) / 2.56 (2.32-2.99) / 5.94 / 70.1% (66.2-73.6) / 19.3% (16.0-22.6) / 1,064
+
+2. MODELS (controls: airport-runway, type, ownership, season, straight-in, height source)
+Piston: logistic model of S above 1 (n=162,970, base share 63.8%)
+  predicted share at crosswind (other conditions as observed, aircraft-cluster bootstrap 95%): 0 kt 62.8% (61.7-63.7), 5 kt 63.7% (62.8-64.8), 10 kt 68.2% (66.9-69.6), 15 kt 77.3% (73.6-80.1)
+  headwind odds ratio per 5 kt 0.926 (95% CI 0.908-0.944); gust spread odds ratio per 5 kt 1.121 (1.088-1.155)
+Piston: logistic model of S above 2 (n=162,970, base share 19.4%)
+  predicted share at crosswind (other conditions as observed, aircraft-cluster bootstrap 95%): 0 kt 18.8% (17.9-19.6), 5 kt 19.4% (18.6-20.3), 10 kt 22.2% (21.0-23.4), 15 kt 24.0% (20.0-28.0)
+  headwind odds ratio per 5 kt 0.835 (95% CI 0.813-0.857); gust spread odds ratio per 5 kt 1.064 (1.023-1.107)
+Jets (floor): logistic model of S above 1 (n=37,677, base share 24.9%)
+  predicted share at crosswind (other conditions as observed, aircraft-cluster bootstrap 95%): 0 kt 26.0% (24.9-27.3), 5 kt 24.4% (23.3-25.8), 10 kt 22.5% (21.1-24.4), 15 kt 31.0% (26.0-35.9)
+  headwind odds ratio per 5 kt 0.982 (95% CI 0.950-1.014); gust spread odds ratio per 5 kt 0.973 (0.925-1.023)
+Jets (floor): logistic model of S above 2 (n=37,677, base share 5.0%)
+  predicted share at crosswind (other conditions as observed, aircraft-cluster bootstrap 95%): 0 kt 5.7% (5.2-6.4), 5 kt 4.7% (4.3-5.3), 10 kt 3.6% (2.7-4.4), 15 kt 3.8% (1.5-7.2)
+  headwind odds ratio per 5 kt 0.811 (95% CI 0.761-0.863); gust spread odds ratio per 5 kt 0.773 (0.681-0.877)
+Piston: log S on wind, per 5 kt (n=162,970): crosswind +4.8% (+3.9 to +5.8), headwind -3.7% (-4.3 to -3.2), gust spread +3.1% (+2.1 to +4.0)
+Jets (floor): log S on wind, per 5 kt (n=37,677): crosswind +1.4% (+0.3 to +2.4), headwind +0.6% (-0.3 to +1.4), gust spread +0.4% (-0.9 to +1.8)
+  piston minus jet, log S per 5 kt crosswind: +3.4% (+2.0 to +4.8), the part not explained by measurement and physics
+
+3. CALIBRATION AGAINST Q1: S at calm, at the revealed limit, and at the POH max demonstrated crosswind
+  calm, crosswind 0-4 kt: n=122,151, median 1.19, p90 2.82, share above 1 63.2%, above 2 19.0%
+  revealed limit band, 10-12 kt (activity halves at 10.8 kt): n=2,697, median 1.27, p90 2.81, share above 1 68.3%, above 2 21.7%
+  at 0.75-1.0 of max demonstrated: n=867, median 1.39, p90 3.01, share above 1 74.0%, above 2 23.3%
+  above max demonstrated: n=80, median 1.72, p90 5.38, share above 1 85.0%, above 2 41.2%
+
+4. WHICH ELEMENTS DEGRADE: share of approaches above 1 on each criterion, by crosswind band
+                                     0-4       5-9     10-14       15+
+  centerline at 300 ft             10.0%     11.3%     12.8%     12.4%
+  lined up at 300 ft               17.9%     19.1%     19.3%     22.1%
+  glide path at 300 ft             17.3%     17.8%     18.0%     21.2%
+  sink rate at 300 ft              27.1%     27.4%     27.7%     29.4%
+  speed stability before 300 ft    27.8%     31.0%     37.6%     45.0%
+  centerline 300-100 ft             8.1%      9.4%     10.9%      8.0%
+  lined up 300-100 ft              15.8%     17.1%     18.1%     16.8%
+  glide path 300-100 ft            16.7%     17.3%     17.3%     17.6%
+  sink rate 300-100 ft             37.5%     39.2%     42.4%     42.3%
+  crosswind 0-5: lined up below 300 ft or never 22.3%, M4 descent-rate SD median 102 fpm, lateral SD median 17 ft (n=122,151)
+  crosswind 5-10: lined up below 300 ft or never 23.8%, M4 descent-rate SD median 106 fpm, lateral SD median 19 ft (n=37,120)
+  crosswind 10-15: lined up below 300 ft or never 24.2%, M4 descent-rate SD median 110 fpm, lateral SD median 22 ft (n=3,562)
+  crosswind 15-+: lined up below 300 ft or never 27.7%, M4 descent-rate SD median 117 fpm, lateral SD median 24 ft (n=137)
+
+5. BENJAMIN'S DIRECTION HYPOTHESIS (pattern approaches with an identified base leg; positive = wind from the base side)
+  -15 to -10 kt: n= 1,332, overshoot median     0 ft, p90    34 ft, share above 200 ft   1.4%, lined up below 300 ft or never  37.2%
+  -10 to -5 kt: n=15,069, overshoot median     0 ft, p90    60 ft, share above 200 ft   2.5%, lined up below 300 ft or never  35.0%
+  -5 to -2 kt: n=23,651, overshoot median     0 ft, p90    73 ft, share above 200 ft   2.9%, lined up below 300 ft or never  31.4%
+  -2 to +2 kt: n=46,742, overshoot median     0 ft, p90   107 ft, share above 200 ft   4.5%, lined up below 300 ft or never  28.0%
+  +2 to +5 kt: n=19,729, overshoot median     0 ft, p90   144 ft, share above 200 ft   6.8%, lined up below 300 ft or never  24.8%
+  +5 to +10 kt: n=11,760, overshoot median    17 ft, p90   201 ft, share above 200 ft  10.1%, lined up below 300 ft or never  24.9%
+  +10 to +15 kt: n= 1,211, overshoot median    35 ft, p90   266 ft, share above 200 ft  14.2%, lined up below 300 ft or never  23.9%
+  logistic, overshoot above 200 ft (n=119,593): odds ratio per 5 kt wind from the base side 1.785 (1.665-1.914), per 5 kt from the far side 0.544 (0.487-0.608)
+
+6. SENSITIVITIES: S above 2, odds ratio per 5 kt crosswind (linear crosswind, same controls), and S above 1
+  primary [s], S>2: n=162,970, share above 2 19.4%, odds ratio per 5 kt crosswind 1.132 (1.092-1.174)
+  primary [s], S>1: n=162,970, share above 1 63.8%, odds ratio per 5 kt crosswind 1.134 (1.105-1.163)
+  LWM out, BED from 2025-07 [s], S>2: n=148,504, share above 2 19.5%, odds ratio per 5 kt crosswind 1.124 (1.082-1.168)
+  LWM out, BED from 2025-07 [s], S>1: n=148,504, share above 1 64.3%, odds ratio per 5 kt crosswind 1.135 (1.104-1.166)
+  straight-in only [s], S>2: n=38,038, share above 2 6.2%, odds ratio per 5 kt crosswind 1.031 (0.947-1.122)
+  straight-in only [s], S>1: n=38,038, share above 1 45.0%, odds ratio per 5 kt crosswind 1.112 (1.068-1.157)
+  late-turn descriptor flag out [s], S>2: n=136,088, share above 2 12.7%, odds ratio per 5 kt crosswind 1.161 (1.107-1.217)
+  late-turn descriptor flag out [s], S>1: n=136,088, share above 1 57.9%, odds ratio per 5 kt crosswind 1.129 (1.100-1.158)
+  25 ft altimeters only [s], S>2: n=94,612, share above 2 18.3%, odds ratio per 5 kt crosswind 1.121 (1.062-1.184)
+  25 ft altimeters only [s], S>1: n=94,612, share above 1 59.7%, odds ratio per 5 kt crosswind 1.145 (1.106-1.185)
+  calibrated GNSS heights only [s], S>2: n=68,300, share above 2 21.1%, odds ratio per 5 kt crosswind 1.150 (1.100-1.203)
+  calibrated GNSS heights only [s], S>1: n=68,300, share above 1 69.6%, odds ratio per 5 kt crosswind 1.123 (1.081-1.167)
+  NACp 10 only [s], S>2: n=116,430, share above 2 18.5%, odds ratio per 5 kt crosswind 1.113 (1.061-1.168)
+  NACp 10 only [s], S>1: n=116,430, share above 1 61.5%, odds ratio per 5 kt crosswind 1.144 (1.109-1.180)
+  true height [s_true], S>2: n=156,897, share above 2 19.3%, odds ratio per 5 kt crosswind 1.123 (1.080-1.168)
+  true height [s_true], S>1: n=156,897, share above 1 64.2%, odds ratio per 5 kt crosswind 1.121 (1.092-1.152)
+  floor 50 ft [s_below50], S>2: n=162,970, share above 2 15.6%, odds ratio per 5 kt crosswind 1.108 (1.071-1.146)
+  floor 50 ft [s_below50], S>1: n=162,970, share above 1 51.7%, odds ratio per 5 kt crosswind 1.102 (1.075-1.130)
+  single-report descent rate [s_c4raw], S>2: n=162,970, share above 2 22.1%, odds ratio per 5 kt crosswind 1.154 (1.118-1.190)
+  single-report descent rate [s_c4raw], S>1: n=162,970, share above 1 69.6%, odds ratio per 5 kt crosswind 1.195 (1.161-1.230)
+  lateral 100 ft, vertical 100 ft, S>2: n=162,970, share above 2 20.9%, odds ratio per 5 kt crosswind 1.150 (1.111-1.190)
+  lateral 300 ft, vertical 100 ft, S>2: n=162,970, share above 2 19.3%, odds ratio per 5 kt crosswind 1.129 (1.089-1.171)
+  lateral 200 ft, vertical 75 ft, S>2: n=162,970, share above 2 21.4%, odds ratio per 5 kt crosswind 1.121 (1.082-1.162)
+  lateral 200 ft, vertical 150 ft, S>2: n=162,970, share above 2 19.2%, odds ratio per 5 kt crosswind 1.135 (1.095-1.176)
+

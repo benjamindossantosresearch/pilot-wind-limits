@@ -1,0 +1,29 @@
+US tower-count check: 6,641 airport-days with OPSNET counts, 6,571 on included days
+
+Detected / tower operations on included days, daily correlation:
+  SUS (MO): 0.820 over 329 days, daily correlation 0.96
+  IXD (KS): 0.919 over 317 days, daily correlation 0.96
+  SLN (KS): 0.922 over 283 days, daily correlation 0.94
+  FRG (NY): 0.867 over 327 days, daily correlation 0.94
+  TTN (NJ): 0.992 over 304 days, daily correlation 0.95
+  LNS (PA): 0.829 over 314 days, daily correlation 0.94
+  GFK (ND): 0.934 over 287 days, daily correlation 0.98
+  DPA (IL): 1.027 over 332 days, daily correlation 0.97
+  FCM (MN): 0.994 over 323 days, daily correlation 0.98
+  APA (CO): 1.090 over 333 days, daily correlation 0.93
+  HIO (OR): 1.014 over 322 days, daily correlation 0.96
+  PAE (WA): 0.978 over 327 days, daily correlation 0.97
+  DAB (FL): 0.977 over 333 days, daily correlation 0.95
+  HWO (FL): 1.143 over 325 days, daily correlation 0.89
+  FXE (FL): 0.944 over 315 days, daily correlation 0.79
+  DTO (TX): 1.019 over 318 days, daily correlation 0.93
+  GKY (TX): 0.910 over 320 days, daily correlation 0.96
+  FTW (TX): 0.743 over 329 days, daily correlation 0.92
+  FFZ (AZ): 0.986 over 331 days, daily correlation 0.94
+  SDL (AZ): 0.942 over 333 days, daily correlation 0.84
+  pooled: 0.970 over 6,402 airport-days
+
+Capture against weather, mean wind (6,121 airport-days): -2.6% per 10 kt (95% CI -4.8 to -0.4) -> PASS
+  all-VMC day against no-VMC day -0.4% (-3.7 to +3.0); all-precipitation day -3.0% (-8.5 to +2.8)
+Capture against weather, mean best-runway crosswind (6,121 airport-days): -3.5% per 10 kt (95% CI -7.1 to +0.2) -> PASS
+  all-VMC day against no-VMC day -0.2% (-3.5 to +3.2); all-precipitation day -2.9% (-8.4 to +2.9)

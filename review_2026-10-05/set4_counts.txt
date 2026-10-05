@@ -1,0 +1,6 @@
+v3.0.1 vs raw: fully correct 84/100. Arrival yes or no agrees 97/100. Labeled arrivals 54, found 53, detector-only 2. Labeled approaches 81, detector approaches 84, matched ignoring runway 80, on the right runway 76
+v3.0.1 vs adjudicated: fully correct 89/100. Arrival yes or no agrees 97/100. Labeled arrivals 54, found 53, detector-only 2. Labeled approaches 81, detector approaches 84, matched ignoring runway 80, on the right runway 80
+v3.0.1 vs adjudicated + U078 relabel: fully correct 89/100. Arrival yes or no agrees 98/100. Labeled arrivals 55, found 54, detector-only 1. Labeled approaches 82, detector approaches 84, matched ignoring runway 81, on the right runway 80
+v3.1 vs raw: fully correct 84/100. Arrival yes or no agrees 97/100. Labeled arrivals 54, found 53, detector-only 2. Labeled approaches 81, detector approaches 84, matched ignoring runway 80, on the right runway 76
+v3.1 vs adjudicated: fully correct 89/100. Arrival yes or no agrees 97/100. Labeled arrivals 54, found 53, detector-only 2. Labeled approaches 81, detector approaches 84, matched ignoring runway 80, on the right runway 80
+v3.1 vs adjudicated + U078 relabel: fully correct 89/100. Arrival yes or no agrees 98/100. Labeled arrivals 55, found 54, detector-only 1. Labeled approaches 82, detector approaches 84, matched ignoring runway 81, on the right runway 80

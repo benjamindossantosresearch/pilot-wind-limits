@@ -1,0 +1,85 @@
+Loaded 19,324,678 approaches (all airports in the extract, before inclusion) from review_2026-10-05/us_cas.pkl
+Included days: 16,800,302. Piston VMC 6,539,832. Measurable piston (Q2) 5,205,992 at 427 airports. Jets straight-in measurable 6,796,476 at 392 airports.
+
+18. COUNT LADDER (US confirmatory, detector v3.1)
+  All detected approaches in the extract (755 airports with traffic): 19,324,678
+  At admitted airports on included days: 16,800,302 at 461 airports
+    group piston: 7,183,705
+    group jet: 8,692,430
+    group turboprop: 575,254
+    group other: 31,704
+  Piston: 7,183,705. In VMC: 6,539,832 (91.0%)
+  Piston VMC by POH crosswind basis: published 4,968,788 (76.0%), nan 987,438 (15.1%), assumed 583,606 (8.9%)
+  Share of piston VMC approaches flown by the 20 POH types (published or assumed value): 84.9%
+  Same share among measurable piston approaches: 85.0%
+  Piston VMC with wind at the lowest observed point: 6,487,925
+    published value (Q1b primary): 4,934,969 approaches, sustained above max demonstrated 3,509 (0.071%), gust above 52,186 (1.06%). Inferred passes among them 278,678
+    published or assumed value: 5,509,555 approaches, sustained above max demonstrated 4,202 (0.076%), gust above 59,303 (1.08%). Inferred passes among them 328,131
+    published, observed passes only: 4,656,291, sustained above 3,210 (0.069%)
+  Measurable at 300 ft (inferred passes excluded): 5,205,992. With gate crosswind: 5,190,504
+    measurable with a published value: 3,982,968; gate crosswind at or above max demonstrated 2,468 (0.062%); 0.75 to 1.0 26,585
+    measurable with a published or assumed value: 4,413,621; gate crosswind at or above max demonstrated 2,968 (0.067%); 0.75 to 1.0 30,148
+    measurable, published: above max demonstrated at the lowest point 2,440, at the 300 ft gate 2,468
+  Measurable piston approaches by gate crosswind band: 0-4 kt 4,054,893 (77.89%), 5-9 kt 1,034,429 (19.87%), 10-14 kt 96,521 (1.85%), 15-19 kt 4,399 (0.08%), 20+ kt 262 (0.01%)
+
+1. SPEED BY CROSSWIND BAND (piston, measurable). Consistency = g_c5b_detr above 1 (range of calibrated airspeed about its
+   straight-line trend over the 30 s before 300 ft, over 10 kt). Excess = calibrated airspeed at 300 ft minus (POH approach speed + half the gust spread).
+    0-4 kt: consistency above 1 5.3% (5.2 to 5.4, n=3,691,029); value check above 1 43.2%; median excess +6.3 kt (IQR +2.0 to +11.1, n=3,441,146); more than 10 kt fast 29.7%, more than 5 kt slow 3.5%; median airspeed range about trend 4.1 kt; jets consistency above 1 25.6% (n=4,589,745)
+    5-9 kt: consistency above 1 6.5% (6.4 to 6.6, n=949,911); value check above 1 45.5%; median excess +6.5 kt (IQR +2.1 to +11.5, n=881,127); more than 10 kt fast 31.1%, more than 5 kt slow 3.5%; median airspeed range about trend 4.4 kt; jets consistency above 1 18.3% (n=1,625,293)
+  10-14 kt: consistency above 1 9.1% (8.9 to 9.4, n=89,708); value check above 1 52.1%; median excess +6.9 kt (IQR +1.9 to +12.5, n=80,893); more than 10 kt fast 34.8%, more than 5 kt slow 4.5%; median airspeed range about trend 4.8 kt; jets consistency above 1 11.9% (n=358,880)
+  15-19 kt: consistency above 1 13.5% (12.2 to 14.6, n=4,152); value check above 1 61.1%; median excess +8.1 kt (IQR +1.9 to +14.8, n=3,390); more than 10 kt fast 41.2%, more than 5 kt slow 5.8%; median airspeed range about trend 5.3 kt; jets consistency above 1 9.2% (n=55,437)
+    20+ kt: consistency above 1 32.0% (24.1 to 40.5, n=247); value check above 1 81.5%; median excess +15.5 kt (IQR +4.9 to +25.9, n=195); more than 10 kt fast 59.5%, more than 5 kt slow 8.2%; median airspeed range about trend 6.7 kt; jets consistency above 1 7.6% (n=7,512)
+
+42. CALM-WIND SPEED SHARE: cutoff and denominator
+  crosswind below 4 kt: S_spd above 1 = 39.8% of the 3,514,822 with a speed score; 39.3% of all 3,558,725 measurable (no speed score counted as not above 1). S_fp above 1 / 2 / 3: 49.5 / 17.4 / 10.7%
+  crosswind below 5 kt: S_spd above 1 = 39.9% of the 4,005,152 with a speed score; 39.4% of all 4,054,893 measurable (no speed score counted as not above 1). S_fp above 1 / 2 / 3: 49.5 / 17.3 / 10.6%
+  Measurable approaches without a speed score: 78,112 (1.50%), of which without a POH approach speed 64,529
+
+44. PERFORMANCE AT FOUR POINTS (Table 4), share above each threshold, 95% interval = wider of aircraft and day cluster bootstrap (500 each).
+    S_spd uses approaches with a speed score as the denominator.
+  Calm, crosswind below 5 kt: n=4,054,893 [published 3,105,025, nan 608,432, assumed 341,436] | S_fp>1 49.5 (49.1 to 49.8) | S_fp>2 17.3 (17.0 to 17.5) | S_fp>3 10.6 (10.4 to 10.8) | S_spd>1 39.9 (39.6 to 40.3)
+  Revealed limit, 11.6 kt plus or minus 1 kt: n=53,540 [published 41,037, nan 8,411, assumed 4,092] | S_fp>1 52.2 (51.6 to 52.9) | S_fp>2 17.4 (16.8 to 17.9) | S_fp>3 10.8 (10.3 to 11.2) | S_spd>1 48.5 (47.9 to 49.1)
+  0.75 to 1.0 of maximum demonstrated: n=30,148 [published 26,585, assumed 3,563] | S_fp>1 56.3 (55.5 to 57.2) | S_fp>2 17.9 (17.3 to 18.6) | S_fp>3 11.1 (10.6 to 11.7) | S_spd>1 57.4 (56.6 to 58.1)
+  Above maximum demonstrated: n=2,968 [published 2,468, assumed 500] | S_fp>1 60.3 (58.0 to 62.7) | S_fp>2 21.0 (19.0 to 23.0) | S_fp>3 13.4 (11.7 to 15.1) | S_spd>1 66.6 (64.6 to 68.7)
+
+38. CLUSTERING. Registered models (linear probability and log score, airport-runway absorbed, controls as registered).
+    Same point estimates, standard errors clustered by aircraft (as registered), airport-day, both (two-way), and airport.
+  S_fp above 1, change at 10 kt: +3.7 points | aircraft +3.4 to +4.0 | airport-day +3.4 to +4.0 | two-way +3.4 to +4.0 | airport +3.2 to +4.3
+  S_fp above 1, change at 15 kt: +6.9 points | aircraft +6.1 to +7.7 | airport-day +6.0 to +7.7 | two-way +6.0 to +7.7 | airport +5.8 to +7.9
+    per 5 kt headwind: -2.0 | aircraft -2.0 to -1.9 | airport-day -2.0 to -1.9 | two-way -2.0 to -1.9 | airport -2.2 to -1.7
+    per 5 kt gust spread: +2.4 | aircraft +2.3 to +2.6 | airport-day +2.3 to +2.6 | two-way +2.3 to +2.6 | airport +2.2 to +2.7
+  S_fp above 2, change at 10 kt: +0.6 points | aircraft +0.4 to +0.9 | airport-day +0.4 to +0.9 | two-way +0.4 to +0.9 | airport +0.1 to +1.2
+  S_fp above 2, change at 15 kt: +2.0 points | aircraft +1.3 to +2.7 | airport-day +1.3 to +2.7 | two-way +1.3 to +2.7 | airport +1.0 to +3.0
+    per 5 kt headwind: -2.1 | aircraft -2.1 to -2.0 | airport-day -2.1 to -2.0 | two-way -2.1 to -2.0 | airport -2.4 to -1.8
+    per 5 kt gust spread: +0.3 | aircraft +0.2 to +0.5 | airport-day +0.2 to +0.5 | two-way +0.2 to +0.5 | airport +0.2 to +0.5
+  S_fp above 3, change at 10 kt: +0.4 points | aircraft +0.2 to +0.6 | airport-day +0.2 to +0.6 | two-way +0.2 to +0.6 | airport -0.0 to +0.9
+  S_fp above 3, change at 15 kt: +1.2 points | aircraft +0.6 to +1.7 | airport-day +0.6 to +1.8 | two-way +0.6 to +1.8 | airport +0.4 to +2.0
+    per 5 kt headwind: -1.7 | aircraft -1.7 to -1.6 | airport-day -1.7 to -1.6 | two-way -1.7 to -1.6 | airport -1.9 to -1.4
+    per 5 kt gust spread: +0.1 | aircraft +0.0 to +0.2 | airport-day +0.0 to +0.2 | two-way +0.0 to +0.2 | airport -0.0 to +0.3
+  S_spd above 1, change at 10 kt: +5.0 points | aircraft +4.7 to +5.3 | airport-day +4.7 to +5.3 | two-way +4.7 to +5.4 | airport +4.1 to +5.9
+  S_spd above 1, change at 15 kt: +13.4 points | aircraft +12.5 to +14.3 | airport-day +12.5 to +14.3 | two-way +12.4 to +14.4 | airport +12.1 to +14.7
+    per 5 kt headwind: +5.9 | aircraft +5.7 to +6.0 | airport-day +5.8 to +6.0 | two-way +5.7 to +6.1 | airport +5.3 to +6.4
+    per 5 kt gust spread: -2.5 | aircraft -2.7 to -2.2 | airport-day -2.6 to -2.3 | two-way -2.7 to -2.2 | airport -3.3 to -1.6
+  S_spd above 2, change at 10 kt: +1.0 points | aircraft +0.8 to +1.1 | airport-day +0.8 to +1.1 | two-way +0.8 to +1.2 | airport +0.6 to +1.3
+  S_spd above 2, change at 15 kt: +4.4 points | aircraft +3.8 to +5.0 | airport-day +3.8 to +5.0 | two-way +3.7 to +5.1 | airport +3.4 to +5.4
+    per 5 kt headwind: +1.6 | aircraft +1.5 to +1.6 | airport-day +1.5 to +1.6 | two-way +1.5 to +1.6 | airport +1.3 to +1.8
+    per 5 kt gust spread: -0.3 | aircraft -0.4 to -0.1 | airport-day -0.4 to -0.1 | two-way -0.4 to -0.1 | airport -0.7 to +0.2
+  S_turn above 1, change at 10 kt: +2.4 | aircraft +2.0 to +2.8 | airport-day +2.0 to +2.8 | two-way +2.0 to +2.8 | airport +1.4 to +3.4
+  S_turn above 1, change at 15 kt: +6.2 | aircraft +5.0 to +7.3 | airport-day +4.9 to +7.4 | two-way +4.9 to +7.4 | airport +4.4 to +8.0
+  Piston log S_fp per 5 kt crosswind: +2.4% | aircraft +2.2 to +2.6 | airport-day +2.2 to +2.6 | two-way +2.2 to +2.6 | airport +1.9 to +2.9
+  Piston log S_spd per 5 kt crosswind: +3.9% | aircraft +3.7 to +4.0 | airport-day +3.7 to +4.1 | two-way +3.6 to +4.1 | airport +3.3 to +4.4
+  Jets log S_fp per 5 kt crosswind: +1.2% | aircraft +1.1 to +1.2 | airport-day +1.1 to +1.3 | two-way +1.1 to +1.3 | airport +0.8 to +1.5
+  overshoot above 200 ft, per 5 kt tailwind on base: +2.69 points | aircraft +2.61 to +2.77 | airport-day +2.62 to +2.76 | two-way +2.61 to +2.78 | airport +2.39 to +3.00
+  not aligned by 300 ft, per 5 kt headwind on base: +4.70 points | aircraft +4.53 to +4.88 | airport-day +4.53 to +4.88 | two-way +4.51 to +4.90 | airport +4.22 to +5.19
+  Clusters: aircraft 75,676, airport-days 91,888, airports 427
+
+13. DEVELOPMENT AIRPORTS OUT (US Q1b and Q2 headline without BDR, HVN, BED, LWM, OWD, PYM, TAN)
+  Development airports in the measurable sample: ['BDR', 'BED', 'HVN', 'LWM', 'OWD', 'PYM', 'TAN'], 92,397 measurable piston approaches
+Traceback (most recent call last):
+  File "/home/dev/wind-limits/review_2026-10-05/q2_checks.py", line 356, in <module>
+    main(sys.argv[1], sys.argv[2])
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/wind-limits/review_2026-10-05/q2_checks.py", line 265, in main
+    Bx = w[(w["poh_xwind_basis"] == "published") & ~w["airport"].isin(DEV)]
+            ~^^^^^^^^^^^^^^^^^^^
+KeyError: 'poh_xwind_basis'

@@ -1,0 +1,7 @@
+Admitted airports 467. With any detected approach on included days 461. With a piston approach in VMC 441. With a measurable piston approach 427.
+Random sample of 1,500,000 of the 5,190,504 measurable approaches with gate wind (seed 20261005)
+Airports with fewer than 200 measurable piston approaches (kept in pooled results): 99
+Design: 1,500,000 approaches, 435 columns (airport fixed effects and registered controls)
+  logistic, S_fp above 1: average predicted share at calm 48.5%, change 10 kt +4.1, 15 kt +6.8
+  logistic, S_fp above 2: average predicted share at calm 16.8%, change 10 kt +1.1, 15 kt +3.4
+  logistic, S_spd above 1: average predicted share at calm 39.9%, change 10 kt +5.0, 15 kt +14.1

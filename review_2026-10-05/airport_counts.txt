@@ -1,0 +1,27 @@
+admitted 467, in Q1a hours 441, missing 26
+  79J: 1 included months (2026-02 to 2026-02), usable ends 2, station 79J, piston arrivals counted on included days 0
+  AHN: 1 included months (2025-10 to 2025-10), usable ends 4, station AHN, piston arrivals counted on included days 12
+  ALI: 2 included months (2026-07 to 2026-09), usable ends 4, station ALI, piston arrivals counted on included days 0
+  BMG: 1 included months (2026-03 to 2026-03), usable ends 4, station BMG, piston arrivals counted on included days 0
+  BRD: 1 included months (2025-11 to 2025-11), usable ends 4, station BRD, piston arrivals counted on included days 2
+  BYI: 6 included months (2026-01 to 2026-06), usable ends 4, station BYI, piston arrivals counted on included days 225
+  CDS: 1 included months (2025-12 to 2025-12), usable ends 4, station CDS, piston arrivals counted on included days 0
+  CSM: 2 included months (2026-02 to 2026-07), usable ends 4, station CSM, piston arrivals counted on included days 2
+  DFI: 1 included months (2025-11 to 2025-11), usable ends 2, station DFI, piston arrivals counted on included days 1
+  DSV: 1 included months (2026-09 to 2026-09), usable ends 2, station DSV, piston arrivals counted on included days 0
+  ELM: 1 included months (2026-08 to 2026-08), usable ends 4, station ELM, piston arrivals counted on included days 0
+  FFT: 12 included months (2025-10 to 2026-09), usable ends 2, station FFT, piston arrivals counted on included days 2726
+  GFL: 2 included months (2026-04 to 2026-09), usable ends 4, station GFL, piston arrivals counted on included days 14
+  GKJ: 1 included months (2026-04 to 2026-04), usable ends 2, station GKJ, piston arrivals counted on included days 0
+  GUY: 2 included months (2026-02 to 2026-06), usable ends 2, station GUY, piston arrivals counted on included days 0
+  HKY: 2 included months (2025-11 to 2025-12), usable ends 2, station HKY, piston arrivals counted on included days 191
+  HQM: 1 included months (2026-01 to 2026-01), usable ends 2, station HQM, piston arrivals counted on included days 2
+  HRI: 2 included months (2026-04 to 2026-08), usable ends 2, station HRI, piston arrivals counted on included days 5
+  HYA: 1 included months (2026-03 to 2026-03), usable ends 4, station HYA, piston arrivals counted on included days 4
+  INK: 2 included months (2026-03 to 2026-07), usable ends 4, station INK, piston arrivals counted on included days 1
+  LBT: 2 included months (2025-11 to 2026-04), usable ends 4, station LBT, piston arrivals counted on included days 2
+  LCH: 2 included months (2025-11 to 2026-06), usable ends 4, station LCH, piston arrivals counted on included days 1
+  MIE: 1 included months (2026-04 to 2026-04), usable ends 4, station MIE, piston arrivals counted on included days 0
+  RXE: 3 included months (2026-02 to 2026-04), usable ends 2, station RXE, piston arrivals counted on included days 9
+  TBN: 1 included months (2026-06 to 2026-06), usable ends 2, station TBN, piston arrivals counted on included days 0
+  YNG: 1 included months (2026-09 to 2026-09), usable ends 6, station YNG, piston arrivals counted on included days 0
