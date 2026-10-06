@@ -73,4 +73,4 @@ The code is released under the MIT License (`LICENSE`). The aggregate results an
 
 DosSantos Jr., B., "Do Pilots Know Their Limits? Comparing Revealed Wind Limits with Measured Approach Performance Using ADS-B," manuscript, 2026.
 
-This repository: DosSantos Jr., B., "Do Pilots Know Their Limits? Code, decision log, and aggregate results," Zenodo, doi:10.5281/zenodo.23173344 (all versions). Version 1.0.1, which matches the paper as submitted, is doi:10.5281/zenodo.23174546.
+This repository: DosSantos Jr., B., "Do Pilots Know Their Limits? Code, decision log, and aggregate results," Zenodo, doi:10.5281/zenodo.23173344 (all versions). The paper cites the specific release that matches its text. Each release has its own DOI, listed on the Zenodo record.
