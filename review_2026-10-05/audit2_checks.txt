@@ -1,0 +1,21 @@
+CELLS, one-minute hours, 14 to 17 kt total wind (day-cluster bootstrap, 2,000 resamples)
+  crosswind 12-15 kt: 0.39 (95% 0.35 to 0.43), 1,517 hours, 1,273 arrivals, 866 airport-days
+  crosswind 15-+ kt: 0.22 (95% 0.14 to 0.31), 162 hours, 53 arrivals, 108 airport-days
+
+CROSSWIND CLIMATE TERTILES (share of VMC daytime hours with best-runway crosswind of 10 kt or more, by airport)
+  cut points 0.38% and 1.88% of hours
+  low    piston : 138 airports, calm activity 1.022, half of normal 10.7 kt (10.3 to 11.9), half of own calm 10.6 kt (10.2 to 11.6)
+  low    private: 138 airports, calm activity 1.021, half of normal 11.0 kt (10.4 to 13.7), half of own calm 10.9 kt (10.3 to 13.5)
+  middle piston : 138 airports, calm activity 1.043, half of normal 11.0 kt (10.6 to 11.8), half of own calm 10.8 kt (10.4 to 11.3)
+  middle private: 138 airports, calm activity 1.044, half of normal 11.3 kt (10.8 to 12.4), half of own calm 10.9 kt (10.6 to 11.6)
+  high   piston : 139 airports, calm activity 1.076, half of normal 11.8 kt (11.5 to 12.1), half of own calm 11.3 kt (11.0 to 11.6)
+  high   private: 139 airports, calm activity 1.066, half of normal 13.0 kt (12.6 to 13.4), half of own calm 12.5 kt (12.1 to 13.0)
+
+METAR GUST SPREAD
+  METAR hours with gust spread above 20 kt: 90
+  METAR hours with gust spread above 25 kt: 20
+  METAR hours with gust spread above 30 kt: 2
+  METAR hours with gust spread above 40 kt: 1
+  top values: 107, 32, 30, 30, 29, 29
+  spline point estimate, all hours: 13.27 kt
+  spline point estimate, METAR gust spread above 30 kt left out: 13.27 kt
